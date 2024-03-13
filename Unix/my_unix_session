@@ -1,0 +1,2403 @@
+Script started on 2024-03-08 12:13:06+05:30 [TERM="xterm-256color" TTY="/dev/pts/0" COLUMNS="112" LINES="28"]
+To run a command as administrator (user "root"), use "sudo <command>".
+See "man sudo_root" for details.
+
+[?2004h]0;kelvin@TIGER04458: ~[01;32mkelvin@TIGER04458[00m:[01;34m~[00m$ ls
+[?2004lmy_unix_session
+[?2004h]0;kelvin@TIGER04458: ~[01;32mkelvin@TIGER04458[00m:[01;34m~[00m$ pwd
+[?2004l/home/kelvin
+[?2004h]0;kelvin@TIGER04458: ~[01;32mkelvin@TIGER04458[00m:[01;34m~[00m$ exit
+[?2004lexit
+
+Script done on 2024-03-08 12:23:17+05:30 [COMMAND_EXIT_CODE="0"]
+Script started on 2024-03-10 19:20:54+05:30 [TERM="xterm-256color" TTY="/dev/pts/0" COLUMNS="112" LINES="28"]
+To run a command as administrator (user "root"), use "sudo <command>".
+See "man sudo_root" for details.
+
+[?2004h]0;kelvin@TIGER04458: ~[01;32mkelvin@TIGER04458[00m:[01;34m~[00m$ [7mls -F[27mls -F
+[?2004lmy_unix_session
+[?2004h]0;kelvin@TIGER04458: ~[01;32mkelvin@TIGER04458[00m:[01;34m~[00m$ [7mls --help[27mls --help
+[?2004lUsage: ls [OPTION]... [FILE]...
+List information about the FILEs (the current directory by default).
+Sort entries alphabetically if none of -cftuvSUX nor --sort is specified.
+
+Mandatory arguments to long options are mandatory for short options too.
+  -a, --all                  do not ignore entries starting with .
+  -A, --almost-all           do not list implied . and ..
+      --author               with -l, print the author of each file
+  -b, --escape               print C-style escapes for nongraphic characters
+      --block-size=SIZE      with -l, scale sizes by SIZE when printing them;
+                               e.g., '--block-size=M'; see SIZE format below
+  -B, --ignore-backups       do not list implied entries ending with ~
+  -c                         with -lt: sort by, and show, ctime (time of last
+                               modification of file status information);
+                               with -l: show ctime and sort by name;
+                               otherwise: sort by ctime, newest first
+  -C                         list entries by columns
+      --color[=WHEN]         colorize the output; WHEN can be 'always' (default
+                               if omitted), 'auto', or 'never'; more info below
+  -d, --directory            list directories themselves, not their contents
+  -D, --dired                generate output designed for Emacs' dired mode
+  -f                         do not sort, enable -aU, disable -ls --color
+  -F, --classify             append indicator (one of */=>@|) to entries
+      --file-type            likewise, except do not append '*'
+      --format=WORD          across -x, commas -m, horizontal -x, long -l,
+                               single-column -1, verbose -l, vertical -C
+      --full-time            like -l --time-style=full-iso
+  -g                         like -l, but do not list owner
+      --group-directories-first
+                             group directories before files;
+                               can be augmented with a --sort option, but any
+                               use of --sort=none (-U) disables grouping
+  -G, --no-group             in a long listing, don't print group names
+  -h, --human-readable       with -l and -s, print sizes like 1K 234M 2G etc.
+      --si                   likewise, but use powers of 1000 not 1024
+  -H, --dereference-command-line
+                             follow symbolic links listed on the command line
+      --dereference-command-line-symlink-to-dir
+                             follow each command line symbolic link
+                               that points to a directory
+      --hide=PATTERN         do not list implied entries matching shell PATTERN
+                               (overridden by -a or -A)
+      --hyperlink[=WHEN]     hyperlink file names; WHEN can be 'always'
+                               (default if omitted), 'auto', or 'never'
+      --indicator-style=WORD  append indicator with style WORD to entry names:
+                               none (default), slash (-p),
+                               file-type (--file-type), classify (-F)
+  -i, --inode                print the index number of each file
+  -I, --ignore=PATTERN       do not list implied entries matching shell PATTERN
+  -k, --kibibytes            default to 1024-byte blocks for disk usage;
+                               used only with -s and per directory totals
+  -l                         use a long listing format
+  -L, --dereference          when showing file information for a symbolic
+                               link, show information for the file the link
+                               references rather than for the link itself
+  -m                         fill width with a comma separated list of entries
+  -n, --numeric-uid-gid      like -l, but list numeric user and group IDs
+  -N, --literal              print entry names without quoting
+  -o                         like -l, but do not list group information
+  -p, --indicator-style=slash
+                             append / indicator to directories
+  -q, --hide-control-chars   print ? instead of nongraphic characters
+      --show-control-chars   show nongraphic characters as-is (the default,
+                               unless program is 'ls' and output is a terminal)
+  -Q, --quote-name           enclose entry names in double quotes
+      --quoting-style=WORD   use quoting style WORD for entry names:
+                               literal, locale, shell, shell-always,
+                               shell-escape, shell-escape-always, c, escape
+                               (overrides QUOTING_STYLE environment variable)
+  -r, --reverse              reverse order while sorting
+  -R, --recursive            list subdirectories recursively
+  -s, --size                 print the allocated size of each file, in blocks
+  -S                         sort by file size, largest first
+      --sort=WORD            sort by WORD instead of name: none (-U), size (-S),
+                               time (-t), version (-v), extension (-X)
+      --time=WORD            change the default of using modification times;
+                               access time (-u): atime, access, use;
+                               change time (-c): ctime, status;
+                               birth time: birth, creation;
+                             with -l, WORD determines which time to show;
+                             with --sort=time, sort by WORD (newest first)
+      --time-style=TIME_STYLE  time/date format with -l; see TIME_STYLE below
+  -t                         sort by time, newest first; see --time
+  -T, --tabsize=COLS         assume tab stops at each COLS instead of 8
+  -u                         with -lt: sort by, and show, access time;
+                               with -l: show access time and sort by name;
+                               otherwise: sort by access time, newest first
+  -U                         do not sort; list entries in directory order
+  -v                         natural sort of (version) numbers within text
+  -w, --width=COLS           set output width to COLS.  0 means no limit
+  -x                         list entries by lines instead of by columns
+  -X                         sort alphabetically by entry extension
+  -Z, --context              print any security context of each file
+  -1                         list one file per line.  Avoid '\n' with -q or -b
+      --help     display this help and exit
+      --version  output version information and exit
+
+The SIZE argument is an integer and optional unit (example: 10K is 10*1024).
+Units are K,M,G,T,P,E,Z,Y (powers of 1024) or KB,MB,... (powers of 1000).
+Binary prefixes can be used, too: KiB=K, MiB=M, and so on.
+
+The TIME_STYLE argument can be full-iso, long-iso, iso, locale, or +FORMAT.
+FORMAT is interpreted like in date(1).  If FORMAT is FORMAT1<newline>FORMAT2,
+then FORMAT1 applies to non-recent files and FORMAT2 to recent files.
+TIME_STYLE prefixed with 'posix-' takes effect only outside the POSIX locale.
+Also the TIME_STYLE environment variable sets the default style to use.
+
+Using color to distinguish file types is disabled both by default and
+with --color=never.  With --color=auto, ls emits color codes only when
+standard output is connected to a terminal.  The LS_COLORS environment
+variable can change the settings.  Use the dircolors command to set it.
+
+Exit status:
+ 0  if OK,
+ 1  if minor problems (e.g., cannot access subdirectory),
+ 2  if serious trouble (e.g., cannot access command-line argument).
+
+GNU coreutils online help: <https://www.gnu.org/software/coreutils/>
+Report any translation bugs to <https://translationproject.org/team/>
+Full documentation <https://www.gnu.org/software/coreutils/ls>
+or available locally via: info '(coreutils) ls invocation'
+[?2004h]0;kelvin@TIGER04458: ~[01;32mkelvin@TIGER04458[00m:[01;34m~[00m$ 0o[K[Kexit
+[?2004lexit
+
+Script done on 2024-03-10 19:23:28+05:30 [COMMAND_EXIT_CODE="0"]
+Script started on 2024-03-10 19:23:59+05:30 [TERM="xterm-256color" TTY="/dev/pts/0" COLUMNS="112" LINES="28"]
+To run a command as administrator (user "root"), use "sudo <command>".
+See "man sudo_root" for details.
+
+[?2004h]0;kelvin@TIGER04458: ~[01;32mkelvin@TIGER04458[00m:[01;34m~[00m$ man ls
+[?2004l[?1049h[22;0;0t[?1h=LS(1)                                           User Commands                                           LS(1)[m
+[m
+[1mNAME[0m[m
+       ls - list directory contents[m
+[m
+[1mSYNOPSIS[0m[m
+       [1mls[0m [[4mOPTION[24m]... [[4mFILE[24m]...[m
+[m
+[1mDESCRIPTION[0m[m
+       List  information  about the FILEs (the current directory by default).  Sort entries alphabetically if[m
+       none of [1m-cftuvSUX[0m nor [1m--sort[0m is specified.[m
+[m
+       Mandatory arguments to long options are mandatory for short options too.[m
+[m
+       [1m-a[0m, [1m--all[0m[m
+              do not ignore entries starting with .[m
+[m
+       [1m-A[0m, [1m--almost-all[0m[m
+              do not list implied . and ..[m
+[m
+       [1m--author[0m[m
+              with [1m-l[0m, print the author of each file[m
+[m
+       [1m-b[0m, [1m--escape[0m[m
+              print C-style escapes for nongraphic characters[m
+[m
+       [1m--block-size[0m=[4mSIZE[24m[m
+[7m Manual page ls(1) line 1 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[K[7m Manual page ls(1) line 1 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[K[7m Manual page ls(1) line 1 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K              with [1m-l[0m, scale sizes by SIZE when printing them; e.g., '--block-size=M'; see SIZE format below[m
+[7m Manual page ls(1) line 2 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page ls(1) line 3 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       [1m-B[0m, [1m--ignore-backups[0m[m
+[7m Manual page ls(1) line 4 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K              do not list implied entries ending with ~[m
+[7m Manual page ls(1) line 5 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page ls(1) line 6 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM[m
+[28;1H[K[7m Manual page ls(1) line 5 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM       ls - list directory contents[m
+[28;1H[K[7m Manual page ls(1) line 4 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM[1mNAME[0m[m
+[28;1H[K[7m Manual page ls(1) line 3 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM[m
+[28;1H[K[7m Manual page ls(1) line 2 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HMLS(1)                                           User Commands                                           LS(1)[m
+[28;1H[K[7m Manual page ls(1) line 1 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[K[7m Manual page ls(1) line 1 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[K[7m Manual page ls(1) line 1 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K              with [1m-l[0m, scale sizes by SIZE when printing them; e.g., '--block-size=M'; see SIZE format below[m
+[7m Manual page ls(1) line 2 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page ls(1) line 3 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       [1m-B[0m, [1m--ignore-backups[0m[m
+[7m Manual page ls(1) line 4 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K              do not list implied entries ending with ~[m
+[7m Manual page ls(1) line 5 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page ls(1) line 6 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       [1m-c[0m     with [1m-lt[0m: sort by, and show, ctime (time of last modification of file status information); with[m
+[7m Manual page ls(1) line 7 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K              [1m-l[0m: show ctime and sort by name; otherwise: sort by ctime, newest first[m
+[7m Manual page ls(1) line 8 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page ls(1) line 9 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       [1m-C[0m     list entries by columns[m
+[7m Manual page ls(1) line 10 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page ls(1) line 11 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       [1m--color[0m[=[4mWHEN[24m][m
+[7m Manual page ls(1) line 12 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K              colorize  the  output; WHEN can be 'always' (default if omitted), 'auto', or 'never'; more info[m
+[7m Manual page ls(1) line 13 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K              below[m
+[7m Manual page ls(1) line 14 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page ls(1) line 15 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       [1m-d[0m, [1m--directory[0m[m
+[7m Manual page ls(1) line 16 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K              list directories themselves, not their contents[m
+[7m Manual page ls(1) line 17 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page ls(1) line 18 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       [1m-D[0m, [1m--dired[0m[m
+[7m Manual page ls(1) line 19 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K              generate output designed for Emacs' dired mode[m
+[7m Manual page ls(1) line 20 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page ls(1) line 21 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       [1m-f[0m     do not sort, enable [1m-aU[0m, disable [1m-ls[0m [1m--color[0m[m
+[7m Manual page ls(1) line 22 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page ls(1) line 23 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       [1m-F[0m, [1m--classify[0m[m
+[7m Manual page ls(1) line 24 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K              append indicator (one of */=>@|) to entries[m
+[7m Manual page ls(1) line 25 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page ls(1) line 26 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       [1m--file-type[0m[m
+[7m Manual page ls(1) line 27 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K              likewise, except do not append '*'[m
+[7m Manual page ls(1) line 28 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page ls(1) line 29 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       [1m--format[0m=[4mWORD[24m[m
+[7m Manual page ls(1) line 30 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K              across [1m-x[0m, commas [1m-m[0m, horizontal [1m-x[0m, long [1m-l[0m, single-column [1m-1[0m, verbose [1m-l[0m, vertical [1m-C[0m[m
+[7m Manual page ls(1) line 31 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page ls(1) line 32 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       [1m--full-time[0m[m
+[7m Manual page ls(1) line 33 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K              like [1m-l[0m [1m--time-style[0m=[4mfull-iso[24m[m
+[7m Manual page ls(1) line 34 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page ls(1) line 35 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       [1m-g[0m     like [1m-l[0m, but do not list owner[m
+[7m Manual page ls(1) line 36 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page ls(1) line 37 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       [1m--group-directories-first[0m[m
+[7m Manual page ls(1) line 38 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K              group directories before files;[m
+[7m Manual page ls(1) line 39 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page ls(1) line 40 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K              can be augmented with a [1m--sort[0m option, but any use of [1m--sort[0m=[4mnone[24m ([1m-U[0m) disables grouping[m
+[7m Manual page ls(1) line 41 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page ls(1) line 42 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       [1m-G[0m, [1m--no-group[0m[m
+[7m Manual page ls(1) line 43 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K              in a long listing, don't print group names[m
+[7m Manual page ls(1) line 44 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page ls(1) line 45 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       [1m-h[0m, [1m--human-readable[0m[m
+[7m Manual page ls(1) line 46 (press h for help or q to quit)[27m[K[K[HM       [1m-D[0m, [1m--dired[0m[m
+[HM[m
+[HM              list directories themselves, not their contents[m
+[HM       [1m-d[0m, [1m--directory[0m[m
+[HM[m
+[HM              below[m
+[HM              colorize  the  output; WHEN can be 'always' (default if omitted), 'auto', or 'never'; more info[m
+[HM       [1m--color[0m[=[4mWHEN[24m][m
+[HM[m
+[HM       [1m-C[0m     list entries by columns[m
+[HM[m
+[HM              [1m-l[0m: show ctime and sort by name; otherwise: sort by ctime, newest first[m
+[HM       [1m-c[0m     with [1m-lt[0m: sort by, and show, ctime (time of last modification of file status information); with[m
+[HM[m
+[HM              do not list implied entries ending with ~[m
+[HM       [1m-B[0m, [1m--ignore-backups[0m[m
+[HM[m
+[HM              with [1m-l[0m, scale sizes by SIZE when printing them; e.g., '--block-size=M'; see SIZE format below[m
+[HM       [1m--block-size[0m=[4mSIZE[24m[m
+[HM[m
+[HM              print C-style escapes for nongraphic characters[m
+[HM       [1m-b[0m, [1m--escape[0m[m
+[HM[m
+[HM              with [1m-l[0m, print the author of each file[m
+[HM       [1m--author[0m[m
+[HM[m
+[HM              do not list implied . and ..[m
+[28;1H[K[7m Manual page ls(1) line 19 (press h for help or q to quit)[27m[K[K              generate output designed for Emacs' dired mode[m
+[m
+       [1m-f[0m     do not sort, enable [1m-aU[0m, disable [1m-ls[0m [1m--color[0m[m
+[m
+       [1m-F[0m, [1m--classify[0m[m
+              append indicator (one of */=>@|) to entries[m
+[m
+       [1m--file-type[0m[m
+              likewise, except do not append '*'[m
+[m
+       [1m--format[0m=[4mWORD[24m[m
+              across [1m-x[0m, commas [1m-m[0m, horizontal [1m-x[0m, long [1m-l[0m, single-column [1m-1[0m, verbose [1m-l[0m, vertical [1m-C[0m[m
+[m
+       [1m--full-time[0m[m
+              like [1m-l[0m [1m--time-style[0m=[4mfull-iso[24m[m
+[m
+       [1m-g[0m     like [1m-l[0m, but do not list owner[m
+[m
+       [1m--group-directories-first[0m[m
+              group directories before files;[m
+[m
+              can be augmented with a [1m--sort[0m option, but any use of [1m--sort[0m=[4mnone[24m ([1m-U[0m) disables grouping[m
+[m
+       [1m-G[0m, [1m--no-group[0m[m
+              in a long listing, don't print group names[m
+[m
+       [1m-h[0m, [1m--human-readable[0m[m
+[7m Manual page ls(1) line 46 (press h for help or q to quit)[27m[K[K[HM       [1m-D[0m, [1m--dired[0m[m
+[HM[m
+[HM              list directories themselves, not their contents[m
+[HM       [1m-d[0m, [1m--directory[0m[m
+[HM[m
+[HM              below[m
+[HM              colorize  the  output; WHEN can be 'always' (default if omitted), 'auto', or 'never'; more info[m
+[HM       [1m--color[0m[=[4mWHEN[24m][m
+[HM[m
+[HM       [1m-C[0m     list entries by columns[m
+[HM[m
+[HM              [1m-l[0m: show ctime and sort by name; otherwise: sort by ctime, newest first[m
+[HM       [1m-c[0m     with [1m-lt[0m: sort by, and show, ctime (time of last modification of file status information); with[m
+[HM[m
+[HM              do not list implied entries ending with ~[m
+[HM       [1m-B[0m, [1m--ignore-backups[0m[m
+[HM[m
+[HM              with [1m-l[0m, scale sizes by SIZE when printing them; e.g., '--block-size=M'; see SIZE format below[m
+[HM       [1m--block-size[0m=[4mSIZE[24m[m
+[HM[m
+[HM              print C-style escapes for nongraphic characters[m
+[HM       [1m-b[0m, [1m--escape[0m[m
+[HM[m
+[HM              with [1m-l[0m, print the author of each file[m
+[HM       [1m--author[0m[m
+[HM[m
+[HM              do not list implied . and ..[m
+[28;1H[K[7m Manual page ls(1) line 19 (press h for help or q to quit)[27m[K[K              generate output designed for Emacs' dired mode[m
+[m
+       [1m-f[0m     do not sort, enable [1m-aU[0m, disable [1m-ls[0m [1m--color[0m[m
+[m
+       [1m-F[0m, [1m--classify[0m[m
+              append indicator (one of */=>@|) to entries[m
+[m
+       [1m--file-type[0m[m
+              likewise, except do not append '*'[m
+[m
+       [1m--format[0m=[4mWORD[24m[m
+              across [1m-x[0m, commas [1m-m[0m, horizontal [1m-x[0m, long [1m-l[0m, single-column [1m-1[0m, verbose [1m-l[0m, vertical [1m-C[0m[m
+[m
+       [1m--full-time[0m[m
+              like [1m-l[0m [1m--time-style[0m=[4mfull-iso[24m[m
+[m
+       [1m-g[0m     like [1m-l[0m, but do not list owner[m
+[m
+       [1m--group-directories-first[0m[m
+              group directories before files;[m
+[m
+              can be augmented with a [1m--sort[0m option, but any use of [1m--sort[0m=[4mnone[24m ([1m-U[0m) disables grouping[m
+[m
+       [1m-G[0m, [1m--no-group[0m[m
+              in a long listing, don't print group names[m
+[m
+       [1m-h[0m, [1m--human-readable[0m[m
+[7m Manual page ls(1) line 46 (press h for help or q to quit)[27m[K[K[HM       [1m-D[0m, [1m--dired[0m[m
+[HM[m
+[HM              list directories themselves, not their contents[m
+[HM       [1m-d[0m, [1m--directory[0m[m
+[HM[m
+[HM              below[m
+[HM              colorize  the  output; WHEN can be 'always' (default if omitted), 'auto', or 'never'; more info[m
+[HM       [1m--color[0m[=[4mWHEN[24m][m
+[HM[m
+[HM       [1m-C[0m     list entries by columns[m
+[HM[m
+[HM              [1m-l[0m: show ctime and sort by name; otherwise: sort by ctime, newest first[m
+[HM       [1m-c[0m     with [1m-lt[0m: sort by, and show, ctime (time of last modification of file status information); with[m
+[HM[m
+[HM              do not list implied entries ending with ~[m
+[HM       [1m-B[0m, [1m--ignore-backups[0m[m
+[HM[m
+[HM              with [1m-l[0m, scale sizes by SIZE when printing them; e.g., '--block-size=M'; see SIZE format below[m
+[HM       [1m--block-size[0m=[4mSIZE[24m[m
+[HM[m
+[HM              print C-style escapes for nongraphic characters[m
+[HM       [1m-b[0m, [1m--escape[0m[m
+[HM[m
+[HM              with [1m-l[0m, print the author of each file[m
+[HM       [1m--author[0m[m
+[HM[m
+[HM              do not list implied . and ..[m
+[28;1H[K[7m Manual page ls(1) line 19 (press h for help or q to quit)[27m[K[K              generate output designed for Emacs' dired mode[m
+[m
+       [1m-f[0m     do not sort, enable [1m-aU[0m, disable [1m-ls[0m [1m--color[0m[m
+[m
+       [1m-F[0m, [1m--classify[0m[m
+              append indicator (one of */=>@|) to entries[m
+[m
+       [1m--file-type[0m[m
+              likewise, except do not append '*'[m
+[m
+       [1m--format[0m=[4mWORD[24m[m
+              across [1m-x[0m, commas [1m-m[0m, horizontal [1m-x[0m, long [1m-l[0m, single-column [1m-1[0m, verbose [1m-l[0m, vertical [1m-C[0m[m
+[m
+       [1m--full-time[0m[m
+              like [1m-l[0m [1m--time-style[0m=[4mfull-iso[24m[m
+[m
+       [1m-g[0m     like [1m-l[0m, but do not list owner[m
+[m
+       [1m--group-directories-first[0m[m
+              group directories before files;[m
+[m
+              can be augmented with a [1m--sort[0m option, but any use of [1m--sort[0m=[4mnone[24m ([1m-U[0m) disables grouping[m
+[m
+       [1m-G[0m, [1m--no-group[0m[m
+              in a long listing, don't print group names[m
+[m
+       [1m-h[0m, [1m--human-readable[0m[m
+[7m Manual page ls(1) line 46 (press h for help or q to quit)[27m[K[K[HM       [1m-D[0m, [1m--dired[0m[m
+[HM[m
+[HM              list directories themselves, not their contents[m
+[HM       [1m-d[0m, [1m--directory[0m[m
+[HM[m
+[HM              below[m
+[HM              colorize  the  output; WHEN can be 'always' (default if omitted), 'auto', or 'never'; more info[m
+[HM       [1m--color[0m[=[4mWHEN[24m][m
+[HM[m
+[HM       [1m-C[0m     list entries by columns[m
+[HM[m
+[HM              [1m-l[0m: show ctime and sort by name; otherwise: sort by ctime, newest first[m
+[HM       [1m-c[0m     with [1m-lt[0m: sort by, and show, ctime (time of last modification of file status information); with[m
+[HM[m
+[HM              do not list implied entries ending with ~[m
+[HM       [1m-B[0m, [1m--ignore-backups[0m[m
+[HM[m
+[HM              with [1m-l[0m, scale sizes by SIZE when printing them; e.g., '--block-size=M'; see SIZE format below[m
+[HM       [1m--block-size[0m=[4mSIZE[24m[m
+[HM[m
+[HM              print C-style escapes for nongraphic characters[m
+[HM       [1m-b[0m, [1m--escape[0m[m
+[HM[m
+[HM              with [1m-l[0m, print the author of each file[m
+[HM       [1m--author[0m[m
+[HM[m
+[HM              do not list implied . and ..[m
+[28;1H[K[7m Manual page ls(1) line 19 (press h for help or q to quit)[27m[K[K              generate output designed for Emacs' dired mode[m
+[m
+       [1m-f[0m     do not sort, enable [1m-aU[0m, disable [1m-ls[0m [1m--color[0m[m
+[m
+       [1m-F[0m, [1m--classify[0m[m
+              append indicator (one of */=>@|) to entries[m
+[m
+       [1m--file-type[0m[m
+              likewise, except do not append '*'[m
+[m
+       [1m--format[0m=[4mWORD[24m[m
+              across [1m-x[0m, commas [1m-m[0m, horizontal [1m-x[0m, long [1m-l[0m, single-column [1m-1[0m, verbose [1m-l[0m, vertical [1m-C[0m[m
+[m
+       [1m--full-time[0m[m
+              like [1m-l[0m [1m--time-style[0m=[4mfull-iso[24m[m
+[m
+       [1m-g[0m     like [1m-l[0m, but do not list owner[m
+[m
+       [1m--group-directories-first[0m[m
+              group directories before files;[m
+[m
+              can be augmented with a [1m--sort[0m option, but any use of [1m--sort[0m=[4mnone[24m ([1m-U[0m) disables grouping[m
+[m
+       [1m-G[0m, [1m--no-group[0m[m
+              in a long listing, don't print group names[m
+[m
+       [1m-h[0m, [1m--human-readable[0m[m
+[7m Manual page ls(1) line 46 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K              with [1m-l[0m and [1m-s[0m, print sizes like 1K 234M 2G etc.[m
+[7m Manual page ls(1) line 47 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page ls(1) line 48 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       [1m--si[0m   likewise, but use powers of 1000 not 1024[m
+[7m Manual page ls(1) line 49 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page ls(1) line 50 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       [1m-H[0m, [1m--dereference-command-line[0m[m
+[7m Manual page ls(1) line 51 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K              follow symbolic links listed on the command line[m
+[7m Manual page ls(1) line 52 (press h for help or q to quit)[27m[K[K[m
+       [1m--dereference-command-line-symlink-to-dir[0m[m
+              follow each command line symbolic link[m
+[m
+              that points to a directory[m
+[m
+       [1m--hide[0m=[4mPATTERN[24m[m
+              do not list implied entries matching shell PATTERN (overridden by [1m-a[0m or [1m-A[0m)[m
+[m
+       [1m--hyperlink[0m[=[4mWHEN[24m][m
+              hyperlink file names; WHEN can be 'always' (default if omitted), 'auto', or 'never'[m
+[m
+       [1m--indicator-style[0m=[4mWORD[24m[m
+              append indicator with style  WORD  to  entry  names:  none  (default),  slash  ([1m-p[0m),  file-type[m
+              ([1m--file-type[0m), classify ([1m-F[0m)[m
+[m
+       [1m-i[0m, [1m--inode[0m[m
+              print the index number of each file[m
+[m
+       [1m-I[0m, [1m--ignore[0m=[4mPATTERN[24m[m
+              do not list implied entries matching shell PATTERN[m
+[m
+       [1m-k[0m, [1m--kibibytes[0m[m
+              default to 1024-byte blocks for disk usage; used only with [1m-s[0m and per directory totals[m
+[m
+       [1m-l[0m     use a long listing format[m
+[m
+[7m Manual page ls(1) line 79 (press h for help or q to quit)[27m[K[K[HM              follow symbolic links listed on the command line[m
+[HM       [1m-H[0m, [1m--dereference-command-line[0m[m
+[HM[m
+[HM       [1m--si[0m   likewise, but use powers of 1000 not 1024[m
+[HM[m
+[HM              with [1m-l[0m and [1m-s[0m, print sizes like 1K 234M 2G etc.[m
+[HM       [1m-h[0m, [1m--human-readable[0m[m
+[HM[m
+[HM              in a long listing, don't print group names[m
+[HM       [1m-G[0m, [1m--no-group[0m[m
+[HM[m
+[HM              can be augmented with a [1m--sort[0m option, but any use of [1m--sort[0m=[4mnone[24m ([1m-U[0m) disables grouping[m
+[HM[m
+[HM              group directories before files;[m
+[HM       [1m--group-directories-first[0m[m
+[HM[m
+[HM       [1m-g[0m     like [1m-l[0m, but do not list owner[m
+[HM[m
+[HM              like [1m-l[0m [1m--time-style[0m=[4mfull-iso[24m[m
+[HM       [1m--full-time[0m[m
+[HM[m
+[HM              across [1m-x[0m, commas [1m-m[0m, horizontal [1m-x[0m, long [1m-l[0m, single-column [1m-1[0m, verbose [1m-l[0m, vertical [1m-C[0m[m
+[HM       [1m--format[0m=[4mWORD[24m[m
+[HM[m
+[HM              likewise, except do not append '*'[m
+[HM       [1m--file-type[0m[m
+[HM[m
+[28;1H[K[7m Manual page ls(1) line 52 (press h for help or q to quit)[27m[K[K[HM              append indicator (one of */=>@|) to entries[m
+[HM       [1m-F[0m, [1m--classify[0m[m
+[HM[m
+[HM       [1m-f[0m     do not sort, enable [1m-aU[0m, disable [1m-ls[0m [1m--color[0m[m
+[HM[m
+[HM              generate output designed for Emacs' dired mode[m
+[HM       [1m-D[0m, [1m--dired[0m[m
+[HM[m
+[HM              list directories themselves, not their contents[m
+[HM       [1m-d[0m, [1m--directory[0m[m
+[HM[m
+[HM              below[m
+[HM              colorize  the  output; WHEN can be 'always' (default if omitted), 'auto', or 'never'; more info[m
+[HM       [1m--color[0m[=[4mWHEN[24m][m
+[HM[m
+[HM       [1m-C[0m     list entries by columns[m
+[HM[m
+[HM              [1m-l[0m: show ctime and sort by name; otherwise: sort by ctime, newest first[m
+[HM       [1m-c[0m     with [1m-lt[0m: sort by, and show, ctime (time of last modification of file status information); with[m
+[HM[m
+[HM              do not list implied entries ending with ~[m
+[HM       [1m-B[0m, [1m--ignore-backups[0m[m
+[HM[m
+[HM              with [1m-l[0m, scale sizes by SIZE when printing them; e.g., '--block-size=M'; see SIZE format below[m
+[HM       [1m--block-size[0m=[4mSIZE[24m[m
+[HM[m
+[HM              print C-style escapes for nongraphic characters[m
+[28;1H[K[7m Manual page ls(1) line 25 (press h for help or q to quit)[27m[K[K[m
+       [1m--file-type[0m[m
+              likewise, except do not append '*'[m
+[m
+       [1m--format[0m=[4mWORD[24m[m
+              across [1m-x[0m, commas [1m-m[0m, horizontal [1m-x[0m, long [1m-l[0m, single-column [1m-1[0m, verbose [1m-l[0m, vertical [1m-C[0m[m
+[m
+       [1m--full-time[0m[m
+              like [1m-l[0m [1m--time-style[0m=[4mfull-iso[24m[m
+[m
+       [1m-g[0m     like [1m-l[0m, but do not list owner[m
+[m
+       [1m--group-directories-first[0m[m
+              group directories before files;[m
+[m
+              can be augmented with a [1m--sort[0m option, but any use of [1m--sort[0m=[4mnone[24m ([1m-U[0m) disables grouping[m
+[m
+       [1m-G[0m, [1m--no-group[0m[m
+              in a long listing, don't print group names[m
+[m
+       [1m-h[0m, [1m--human-readable[0m[m
+              with [1m-l[0m and [1m-s[0m, print sizes like 1K 234M 2G etc.[m
+[m
+       [1m--si[0m   likewise, but use powers of 1000 not 1024[m
+[m
+       [1m-H[0m, [1m--dereference-command-line[0m[m
+              follow symbolic links listed on the command line[m
+[7m Manual page ls(1) line 52 (press h for help or q to quit)[27m[K[K[HM              append indicator (one of */=>@|) to entries[m
+[HM       [1m-F[0m, [1m--classify[0m[m
+[HM[m
+[HM       [1m-f[0m     do not sort, enable [1m-aU[0m, disable [1m-ls[0m [1m--color[0m[m
+[HM[m
+[HM              generate output designed for Emacs' dired mode[m
+[HM       [1m-D[0m, [1m--dired[0m[m
+[HM[m
+[HM              list directories themselves, not their contents[m
+[HM       [1m-d[0m, [1m--directory[0m[m
+[HM[m
+[HM              below[m
+[HM              colorize  the  output; WHEN can be 'always' (default if omitted), 'auto', or 'never'; more info[m
+[HM       [1m--color[0m[=[4mWHEN[24m][m
+[HM[m
+[HM       [1m-C[0m     list entries by columns[m
+[HM[m
+[HM              [1m-l[0m: show ctime and sort by name; otherwise: sort by ctime, newest first[m
+[HM       [1m-c[0m     with [1m-lt[0m: sort by, and show, ctime (time of last modification of file status information); with[m
+[HM[m
+[HM              do not list implied entries ending with ~[m
+[HM       [1m-B[0m, [1m--ignore-backups[0m[m
+[HM[m
+[HM              with [1m-l[0m, scale sizes by SIZE when printing them; e.g., '--block-size=M'; see SIZE format below[m
+[HM       [1m--block-size[0m=[4mSIZE[24m[m
+[HM[m
+[HM              print C-style escapes for nongraphic characters[m
+[28;1H[K[7m Manual page ls(1) line 25 (press h for help or q to quit)[27m[K[K[m
+       [1m--file-type[0m[m
+              likewise, except do not append '*'[m
+[m
+       [1m--format[0m=[4mWORD[24m[m
+              across [1m-x[0m, commas [1m-m[0m, horizontal [1m-x[0m, long [1m-l[0m, single-column [1m-1[0m, verbose [1m-l[0m, vertical [1m-C[0m[m
+[m
+       [1m--full-time[0m[m
+              like [1m-l[0m [1m--time-style[0m=[4mfull-iso[24m[m
+[m
+       [1m-g[0m     like [1m-l[0m, but do not list owner[m
+[m
+       [1m--group-directories-first[0m[m
+              group directories before files;[m
+[m
+              can be augmented with a [1m--sort[0m option, but any use of [1m--sort[0m=[4mnone[24m ([1m-U[0m) disables grouping[m
+[m
+       [1m-G[0m, [1m--no-group[0m[m
+              in a long listing, don't print group names[m
+[m
+       [1m-h[0m, [1m--human-readable[0m[m
+              with [1m-l[0m and [1m-s[0m, print sizes like 1K 234M 2G etc.[m
+[m
+       [1m--si[0m   likewise, but use powers of 1000 not 1024[m
+[m
+       [1m-H[0m, [1m--dereference-command-line[0m[m
+              follow symbolic links listed on the command line[m
+[7m Manual page ls(1) line 52 (press h for help or q to quit)[27m[K[K[HM              append indicator (one of */=>@|) to entries[m
+[HM       [1m-F[0m, [1m--classify[0m[m
+[HM[m
+[HM       [1m-f[0m     do not sort, enable [1m-aU[0m, disable [1m-ls[0m [1m--color[0m[m
+[HM[m
+[HM              generate output designed for Emacs' dired mode[m
+[HM       [1m-D[0m, [1m--dired[0m[m
+[HM[m
+[HM              list directories themselves, not their contents[m
+[HM       [1m-d[0m, [1m--directory[0m[m
+[HM[m
+[HM              below[m
+[HM              colorize  the  output; WHEN can be 'always' (default if omitted), 'auto', or 'never'; more info[m
+[HM       [1m--color[0m[=[4mWHEN[24m][m
+[HM[m
+[HM       [1m-C[0m     list entries by columns[m
+[HM[m
+[HM              [1m-l[0m: show ctime and sort by name; otherwise: sort by ctime, newest first[m
+[HM       [1m-c[0m     with [1m-lt[0m: sort by, and show, ctime (time of last modification of file status information); with[m
+[HM[m
+[HM              do not list implied entries ending with ~[m
+[HM       [1m-B[0m, [1m--ignore-backups[0m[m
+[HM[m
+[HM              with [1m-l[0m, scale sizes by SIZE when printing them; e.g., '--block-size=M'; see SIZE format below[m
+[HM       [1m--block-size[0m=[4mSIZE[24m[m
+[HM[m
+[HM              print C-style escapes for nongraphic characters[m
+[28;1H[K[7m Manual page ls(1) line 25 (press h for help or q to quit)[27m[K[K[m
+       [1m--file-type[0m[m
+              likewise, except do not append '*'[m
+[m
+       [1m--format[0m=[4mWORD[24m[m
+              across [1m-x[0m, commas [1m-m[0m, horizontal [1m-x[0m, long [1m-l[0m, single-column [1m-1[0m, verbose [1m-l[0m, vertical [1m-C[0m[m
+[m
+       [1m--full-time[0m[m
+              like [1m-l[0m [1m--time-style[0m=[4mfull-iso[24m[m
+[m
+       [1m-g[0m     like [1m-l[0m, but do not list owner[m
+[m
+       [1m--group-directories-first[0m[m
+              group directories before files;[m
+[m
+              can be augmented with a [1m--sort[0m option, but any use of [1m--sort[0m=[4mnone[24m ([1m-U[0m) disables grouping[m
+[m
+       [1m-G[0m, [1m--no-group[0m[m
+              in a long listing, don't print group names[m
+[m
+       [1m-h[0m, [1m--human-readable[0m[m
+              with [1m-l[0m and [1m-s[0m, print sizes like 1K 234M 2G etc.[m
+[m
+       [1m--si[0m   likewise, but use powers of 1000 not 1024[m
+[m
+       [1m-H[0m, [1m--dereference-command-line[0m[m
+              follow symbolic links listed on the command line[m
+[7m Manual page ls(1) line 52 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM              append indicator (one of */=>@|) to entries[m
+[28;1H[K[7m Manual page ls(1) line 51 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM       [1m-F[0m, [1m--classify[0m[m
+[28;1H[K[7m Manual page ls(1) line 50 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM[m
+[28;1H[K[7m Manual page ls(1) line 49 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM       [1m-f[0m     do not sort, enable [1m-aU[0m, disable [1m-ls[0m [1m--color[0m[m
+[28;1H[K[7m Manual page ls(1) line 48 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM[m
+[28;1H[K[7m Manual page ls(1) line 47 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM              generate output designed for Emacs' dired mode[m
+[28;1H[K[7m Manual page ls(1) line 46 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM       [1m-D[0m, [1m--dired[0m[m
+[28;1H[K[7m Manual page ls(1) line 45 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM[m
+[28;1H[K[7m Manual page ls(1) line 44 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM              list directories themselves, not their contents[m
+[28;1H[K[7m Manual page ls(1) line 43 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM       [1m-d[0m, [1m--directory[0m[m
+[28;1H[K[7m Manual page ls(1) line 42 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM[m
+[28;1H[K[7m Manual page ls(1) line 41 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM              below[m
+[28;1H[K[7m Manual page ls(1) line 40 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM              colorize  the  output; WHEN can be 'always' (default if omitted), 'auto', or 'never'; more info[m
+[28;1H[K[7m Manual page ls(1) line 39 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM       [1m--color[0m[=[4mWHEN[24m][m
+[28;1H[K[7m Manual page ls(1) line 38 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM[m
+[28;1H[K[7m Manual page ls(1) line 37 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM       [1m-C[0m     list entries by columns[m
+[28;1H[K[7m Manual page ls(1) line 36 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM[m
+[28;1H[K[7m Manual page ls(1) line 35 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM              [1m-l[0m: show ctime and sort by name; otherwise: sort by ctime, newest first[m
+[28;1H[K[7m Manual page ls(1) line 34 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM       [1m-c[0m     with [1m-lt[0m: sort by, and show, ctime (time of last modification of file status information); with[m
+[28;1H[K[7m Manual page ls(1) line 33 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM[m
+[28;1H[K[7m Manual page ls(1) line 32 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM              do not list implied entries ending with ~[m
+[28;1H[K[7m Manual page ls(1) line 31 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM       [1m-B[0m, [1m--ignore-backups[0m[m
+[28;1H[K[7m Manual page ls(1) line 30 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM[m
+[28;1H[K[7m Manual page ls(1) line 29 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM              with [1m-l[0m, scale sizes by SIZE when printing them; e.g., '--block-size=M'; see SIZE format below[m
+[28;1H[K[7m Manual page ls(1) line 28 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM       [1m--block-size[0m=[4mSIZE[24m[m
+[28;1H[K[7m Manual page ls(1) line 27 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM[m
+[28;1H[K[7m Manual page ls(1) line 26 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM              print C-style escapes for nongraphic characters[m
+[28;1H[K[7m Manual page ls(1) line 25 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM       [1m-b[0m, [1m--escape[0m[m
+[28;1H[K[7m Manual page ls(1) line 24 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM[m
+[28;1H[K[7m Manual page ls(1) line 23 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM              with [1m-l[0m, print the author of each file[m
+[28;1H[K[7m Manual page ls(1) line 22 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM       [1m--author[0m[m
+[28;1H[K[7m Manual page ls(1) line 21 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM[m
+[28;1H[K[7m Manual page ls(1) line 20 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM              do not list implied . and ..[m
+[28;1H[K[7m Manual page ls(1) line 19 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM       [1m-A[0m, [1m--almost-all[0m[m
+[28;1H[K[7m Manual page ls(1) line 18 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM[m
+[28;1H[K[7m Manual page ls(1) line 17 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM              do not ignore entries starting with .[m
+[28;1H[K[7m Manual page ls(1) line 16 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM       [1m-a[0m, [1m--all[0m[m
+[28;1H[K[7m Manual page ls(1) line 15 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM[m
+[28;1H[K[7m Manual page ls(1) line 14 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM       Mandatory arguments to long options are mandatory for short options too.[m
+[28;1H[K[7m Manual page ls(1) line 13 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM[m
+[28;1H[K[7m Manual page ls(1) line 12 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM       none of [1m-cftuvSUX[0m nor [1m--sort[0m is specified.[m
+[28;1H[K[7m Manual page ls(1) line 11 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM       List  information  about the FILEs (the current directory by default).  Sort entries alphabetically if[m
+[28;1H[K[7m Manual page ls(1) line 10 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM[1mDESCRIPTION[0m[m
+[28;1H[K[7m Manual page ls(1) line 9 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM[m
+[28;1H[K[7m Manual page ls(1) line 8 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM       [1mls[0m [[4mOPTION[24m]... [[4mFILE[24m]...[m
+[28;1H[K[7m Manual page ls(1) line 7 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM[1mSYNOPSIS[0m[m
+[28;1H[K[7m Manual page ls(1) line 6 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM[m
+[28;1H[K[7m Manual page ls(1) line 5 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM       ls - list directory contents[m
+[28;1H[K[7m Manual page ls(1) line 4 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM[1mNAME[0m[m
+[28;1H[K[7m Manual page ls(1) line 3 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM[m
+[28;1H[K[7m Manual page ls(1) line 2 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HMLS(1)                                           User Commands                                           LS(1)[m
+[28;1H[K[7m Manual page ls(1) line 1 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[K[7m Manual page ls(1) line 1 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K              with [1m-l[0m, scale sizes by SIZE when printing them; e.g., '--block-size=M'; see SIZE format below[m
+[7m Manual page ls(1) line 2 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page ls(1) line 3 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       [1m-B[0m, [1m--ignore-backups[0m[m
+[7m Manual page ls(1) line 4 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K              do not list implied entries ending with ~[m
+[7m Manual page ls(1) line 5 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page ls(1) line 6 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       [1m-c[0m     with [1m-lt[0m: sort by, and show, ctime (time of last modification of file status information); with[m
+[7m Manual page ls(1) line 7 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K              [1m-l[0m: show ctime and sort by name; otherwise: sort by ctime, newest first[m
+[7m Manual page ls(1) line 8 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page ls(1) line 9 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       [1m-C[0m     list entries by columns[m
+[7m Manual page ls(1) line 10 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page ls(1) line 11 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       [1m--color[0m[=[4mWHEN[24m][m
+[7m Manual page ls(1) line 12 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K              colorize  the  output; WHEN can be 'always' (default if omitted), 'auto', or 'never'; more info[m
+[7m Manual page ls(1) line 13 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K              below[m
+[7m Manual page ls(1) line 14 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page ls(1) line 15 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       [1m-d[0m, [1m--directory[0m[m
+[7m Manual page ls(1) line 16 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K              list directories themselves, not their contents[m
+[7m Manual page ls(1) line 17 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page ls(1) line 18 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       [1m-D[0m, [1m--dired[0m[m
+[7m Manual page ls(1) line 19 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K              generate output designed for Emacs' dired mode[m
+[7m Manual page ls(1) line 20 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page ls(1) line 21 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       [1m-f[0m     do not sort, enable [1m-aU[0m, disable [1m-ls[0m [1m--color[0m[m
+[7m Manual page ls(1) line 22 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page ls(1) line 23 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       [1m-F[0m, [1m--classify[0m[m
+[7m Manual page ls(1) line 24 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K              append indicator (one of */=>@|) to entries[m
+[7m Manual page ls(1) line 25 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page ls(1) line 26 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       [1m--file-type[0m[m
+[7m Manual page ls(1) line 27 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K              likewise, except do not append '*'[m
+[7m Manual page ls(1) line 28 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page ls(1) line 29 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       [1m--format[0m=[4mWORD[24m[m
+[7m Manual page ls(1) line 30 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K              across [1m-x[0m, commas [1m-m[0m, horizontal [1m-x[0m, long [1m-l[0m, single-column [1m-1[0m, verbose [1m-l[0m, vertical [1m-C[0m[m
+[7m Manual page ls(1) line 31 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page ls(1) line 32 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       [1m--full-time[0m[m
+[7m Manual page ls(1) line 33 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K              like [1m-l[0m [1m--time-style[0m=[4mfull-iso[24m[m
+[7m Manual page ls(1) line 34 (press h for help or q to quit)[27m[K[K/[Kcc[Kll[Kaa[Kss[Kss[K[1;1H              [1m-l[0m: show ctime and sort by name; otherwise: sort by ctime, newest first[m
+[2;1H[m
+[3;1H       [1m-C[0m     list entries by columns[m
+[4;1H[m
+[5;1H       [1m--color[0m[=[4mWHEN[24m][m
+[6;1H              colorize  the  output; WHEN can be 'always' (default if omitted), 'auto', or 'never'; more info[m
+[7;1H              below[m
+[8;1H[m
+[9;1H       [1m-d[0m, [1m--directory[0m[m
+[10;1H              list directories themselves, not their contents[m
+[11;1H[m
+[12;1H       [1m-D[0m, [1m--dired[0m[m
+[13;1H              generate output designed for Emacs' dired mode[m
+[14;1H[m
+[15;1H       [1m-f[0m     do not sort, enable [1m-aU[0m, disable [1m-ls[0m [1m--color[0m[m
+[16;1H[m
+[17;1H       [1m-F[0m, [1m--classify[0m[m
+[18;1H              append indicator (one of */=>@|) to entries[m
+[19;1H[m
+[20;1H       [1m--file-type[0m[m
+[21;1H              likewise, except do not append '*'[m
+[22;1H[m
+[23;1H       [1m--format[0m=[4mWORD[24m[m
+[24;1H              across [1m-x[0m, commas [1m-m[0m, horizontal [1m-x[0m, long [1m-l[0m, single-column [1m-1[0m, verbose [1m-l[0m, vertical [1m-C[0m[m
+[25;1H[m
+[26;1H       [1m--full-time[0m[m
+[27;1H              like [1m-l[0m [1m--time-style[0m=[4mfull-iso[24m[m
+[28;1H[1;1H              [1m-l[0m: show ctime and sort by name; otherwise: sort by ctime, newest first[m
+[2;1H[m
+[3;1H       [1m-C[0m     list entries by columns[m
+[4;1H[m
+[5;1H       [1m--color[0m[=[4mWHEN[24m][m
+[6;1H              colorize  the  output; WHEN can be 'always' (default if omitted), 'auto', or 'never'; more info[m
+[7;1H              below[m
+[8;1H[m
+[9;1H       [1m-d[0m, [1m--directory[0m[m
+[10;1H              list directories themselves, not their contents[m
+[11;1H[m
+[12;1H       [1m-D[0m, [1m--dired[0m[m
+[13;1H              generate output designed for Emacs' dired mode[m
+[14;1H[m
+[15;1H       [1m-f[0m     do not sort, enable [1m-aU[0m, disable [1m-ls[0m [1m--color[0m[m
+[16;1H[m
+[17;1H       [1m-F[0m, [1m--[0m[1m[7mclass[27m[0m[1mify[0m[m
+[18;1H              append indicator (one of */=>@|) to entries[m
+[19;1H[m
+[20;1H       [1m--file-type[0m[m
+[21;1H              likewise, except do not append '*'[m
+[22;1H[m
+[23;1H       [1m--format[0m=[4mWORD[24m[m
+[24;1H              across [1m-x[0m, commas [1m-m[0m, horizontal [1m-x[0m, long [1m-l[0m, single-column [1m-1[0m, verbose [1m-l[0m, vertical [1m-C[0m[m
+[25;1H[m
+[26;1H       [1m--full-time[0m[m
+[27;1H              like [1m-l[0m [1m--time-style[0m=[4mfull-iso[24m[m
+[28;1H[m
+       [1m-g[0m     like [1m-l[0m, but do not list owner[m
+[m
+       [1m--group-directories-first[0m[m
+              group directories before files;[m
+[m
+              can be augmented with a [1m--sort[0m option, but any use of [1m--sort[0m=[4mnone[24m ([1m-U[0m) disables grouping[m
+[m
+       [1m-G[0m, [1m--no-group[0m[m
+              in a long listing, don't print group names[m
+[m
+       [1m-h[0m, [1m--human-readable[0m[m
+              with [1m-l[0m and [1m-s[0m, print sizes like 1K 234M 2G etc.[m
+[m
+       [1m--si[0m   likewise, but use powers of 1000 not 1024[m
+[m
+[7m Manual page ls(1) line 50 (press h for help or q to quit)[27m[K[K/[K...skipping...
+              ([1m--file-type[0m), [7mclass[27mify ([1m-F[0m)[m
+[m
+       [1m-i[0m, [1m--inode[0m[m
+              print the index number of each file[m
+[m
+       [1m-I[0m, [1m--ignore[0m=[4mPATTERN[24m[m
+              do not list implied entries matching shell PATTERN[m
+[m
+       [1m-k[0m, [1m--kibibytes[0m[m
+              default to 1024-byte blocks for disk usage; used only with [1m-s[0m and per directory totals[m
+[m
+       [1m-l[0m     use a long listing format[m
+[m
+       [1m-L[0m, [1m--dereference[0m[m
+              when  showing file information for a symbolic link, show information for the file the link ref‐[m
+              erences rather than for the link itself[m
+[m
+       [1m-m[0m     fill width with a comma separated list of entries[m
+[m
+       [1m-n[0m, [1m--numeric-uid-gid[0m[m
+              like [1m-l[0m, but list numeric user and group IDs[m
+[m
+       [1m-N[0m, [1m--literal[0m[m
+              print entry names without quoting[m
+[m
+       [1m-o[0m     like [1m-l[0m, but do not list group information[m
+[m
+[7m Manual page ls(1) line 93 (press h for help or q to quit)[27m[K[K/[K[K[7mPattern not found  (press RETURN)[27m[28;1H[K[K/[K[K[7mPattern not found  (press RETURN)[27m[28;1H[K[K?[K[H[2J[HM[m
+[HM       [1m--si[0m   likewise, but use powers of 1000 not 1024[m
+[HM[m
+[HM              with [1m-l[0m and [1m-s[0m, print sizes like 1K 234M 2G etc.[m
+[HM       [1m-h[0m, [1m--human-readable[0m[m
+[HM[m
+[HM              in a long listing, don't print group names[m
+[HM       [1m-G[0m, [1m--no-group[0m[m
+[HM[m
+[HM              can be augmented with a [1m--sort[0m option, but any use of [1m--sort[0m=[4mnone[24m ([1m-U[0m) disables grouping[m
+[HM[m
+[HM              group directories before files;[m
+[HM       [1m--group-directories-first[0m[m
+[HM[m
+[HM       [1m-g[0m     like [1m-l[0m, but do not list owner[m
+[HM[m
+[HM              like [1m-l[0m [1m--time-style[0m=[4mfull-iso[24m[m
+[HM       [1m--full-time[0m[m
+[HM[m
+[HM              across [1m-x[0m, commas [1m-m[0m, horizontal [1m-x[0m, long [1m-l[0m, single-column [1m-1[0m, verbose [1m-l[0m, vertical [1m-C[0m[m
+[HM       [1m--format[0m=[4mWORD[24m[m
+[HM[m
+[HM              likewise, except do not append '*'[m
+[HM       [1m--file-type[0m[m
+[HM[m
+[HM              append indicator (one of */=>@|) to entries[m
+[HM       [1m-F[0m, [1m--[0m[1m[7mclass[27m[0m[1mify[0m[m
+[28;1H[K[7m Manual page ls(1) line 50/225 31% (press h for help or q to quit)[27m[K[K?[K[K[7mPattern not found  (press RETURN)[27m[28;1H[K[K/[K...skipping...
+              ([1m--file-type[0m), [7mclass[27mify ([1m-F[0m)[m
+[m
+       [1m-i[0m, [1m--inode[0m[m
+              print the index number of each file[m
+[m
+       [1m-I[0m, [1m--ignore[0m=[4mPATTERN[24m[m
+              do not list implied entries matching shell PATTERN[m
+[m
+       [1m-k[0m, [1m--kibibytes[0m[m
+              default to 1024-byte blocks for disk usage; used only with [1m-s[0m and per directory totals[m
+[m
+       [1m-l[0m     use a long listing format[m
+[m
+       [1m-L[0m, [1m--dereference[0m[m
+              when  showing file information for a symbolic link, show information for the file the link ref‐[m
+              erences rather than for the link itself[m
+[m
+       [1m-m[0m     fill width with a comma separated list of entries[m
+[m
+       [1m-n[0m, [1m--numeric-uid-gid[0m[m
+              like [1m-l[0m, but list numeric user and group IDs[m
+[m
+       [1m-N[0m, [1m--literal[0m[m
+              print entry names without quoting[m
+[m
+       [1m-o[0m     like [1m-l[0m, but do not list group information[m
+[m
+[7m Manual page ls(1) line 93/225 50% (press h for help or q to quit)[27m[K[K/[K[K[7mPattern not found  (press RETURN)[27m[28;1H[K[K/[K[K[7mPattern not found  (press RETURN)[27m[28;1H[K[K?[K[H[2J[HM[m
+[HM       [1m--si[0m   likewise, but use powers of 1000 not 1024[m
+[HM[m
+[HM              with [1m-l[0m and [1m-s[0m, print sizes like 1K 234M 2G etc.[m
+[HM       [1m-h[0m, [1m--human-readable[0m[m
+[HM[m
+[HM              in a long listing, don't print group names[m
+[HM       [1m-G[0m, [1m--no-group[0m[m
+[HM[m
+[HM              can be augmented with a [1m--sort[0m option, but any use of [1m--sort[0m=[4mnone[24m ([1m-U[0m) disables grouping[m
+[HM[m
+[HM              group directories before files;[m
+[HM       [1m--group-directories-first[0m[m
+[HM[m
+[HM       [1m-g[0m     like [1m-l[0m, but do not list owner[m
+[HM[m
+[HM              like [1m-l[0m [1m--time-style[0m=[4mfull-iso[24m[m
+[HM       [1m--full-time[0m[m
+[HM[m
+[HM              across [1m-x[0m, commas [1m-m[0m, horizontal [1m-x[0m, long [1m-l[0m, single-column [1m-1[0m, verbose [1m-l[0m, vertical [1m-C[0m[m
+[HM       [1m--format[0m=[4mWORD[24m[m
+[HM[m
+[HM              likewise, except do not append '*'[m
+[HM       [1m--file-type[0m[m
+[HM[m
+[HM              append indicator (one of */=>@|) to entries[m
+[HM       [1m-F[0m, [1m--[0m[1m[7mclass[27m[0m[1mify[0m[m
+[28;1H[K[7m Manual page ls(1) line 50/225 31% (press h for help or q to quit)[27m[K[K/[K...skipping...
+              ([1m--file-type[0m), [7mclass[27mify ([1m-F[0m)[m
+[m
+       [1m-i[0m, [1m--inode[0m[m
+              print the index number of each file[m
+[m
+       [1m-I[0m, [1m--ignore[0m=[4mPATTERN[24m[m
+              do not list implied entries matching shell PATTERN[m
+[m
+       [1m-k[0m, [1m--kibibytes[0m[m
+              default to 1024-byte blocks for disk usage; used only with [1m-s[0m and per directory totals[m
+[m
+       [1m-l[0m     use a long listing format[m
+[m
+       [1m-L[0m, [1m--dereference[0m[m
+              when  showing file information for a symbolic link, show information for the file the link ref‐[m
+              erences rather than for the link itself[m
+[m
+       [1m-m[0m     fill width with a comma separated list of entries[m
+[m
+       [1m-n[0m, [1m--numeric-uid-gid[0m[m
+              like [1m-l[0m, but list numeric user and group IDs[m
+[m
+       [1m-N[0m, [1m--literal[0m[m
+              print entry names without quoting[m
+[m
+       [1m-o[0m     like [1m-l[0m, but do not list group information[m
+[m
+[7m Manual page ls(1) line 93/225 50% (press h for help or q to quit)[27m[K[K?[K[H[2J[HM[m
+[HM       [1m--si[0m   likewise, but use powers of 1000 not 1024[m
+[HM[m
+[HM              with [1m-l[0m and [1m-s[0m, print sizes like 1K 234M 2G etc.[m
+[HM       [1m-h[0m, [1m--human-readable[0m[m
+[HM[m
+[HM              in a long listing, don't print group names[m
+[HM       [1m-G[0m, [1m--no-group[0m[m
+[HM[m
+[HM              can be augmented with a [1m--sort[0m option, but any use of [1m--sort[0m=[4mnone[24m ([1m-U[0m) disables grouping[m
+[HM[m
+[HM              group directories before files;[m
+[HM       [1m--group-directories-first[0m[m
+[HM[m
+[HM       [1m-g[0m     like [1m-l[0m, but do not list owner[m
+[HM[m
+[HM              like [1m-l[0m [1m--time-style[0m=[4mfull-iso[24m[m
+[HM       [1m--full-time[0m[m
+[HM[m
+[HM              across [1m-x[0m, commas [1m-m[0m, horizontal [1m-x[0m, long [1m-l[0m, single-column [1m-1[0m, verbose [1m-l[0m, vertical [1m-C[0m[m
+[HM       [1m--format[0m=[4mWORD[24m[m
+[HM[m
+[HM              likewise, except do not append '*'[m
+[HM       [1m--file-type[0m[m
+[HM[m
+[HM              append indicator (one of */=>@|) to entries[m
+[HM       [1m-F[0m, [1m--[0m[1m[7mclass[27m[0m[1mify[0m[m
+[28;1H[K[7m Manual page ls(1) line 50/225 31% (press h for help or q to quit)[27m[K[K[?1l>[?1049l[23;0;0t[?2004h]0;kelvin@TIGER04458: ~[01;32mkelvin@TIGER04458[00m:[01;34m~[00m$ ls -l
+[?2004ltotal 72
+-rw-r--r-- 1 kelvin kelvin 66537 Mar 10 19:28 my_unix_session
+[?2004h]0;kelvin@TIGER04458: ~[01;32mkelvin@TIGER04458[00m:[01;34m~[00m$ ls -l -h
+[?2004ltotal 72K
+-rw-r--r-- 1 kelvin kelvin 65K Mar 10 19:28 my_unix_session
+[?2004h]0;kelvin@TIGER04458: ~[01;32mkelvin@TIGER04458[00m:[01;34m~[00m$ ls -t
+[?2004lmy_unix_session
+[?2004h]0;kelvin@TIGER04458: ~[01;32mkelvin@TIGER04458[00m:[01;34m~[00m$ ls -r
+[?2004lmy_unix_session
+[?2004h]0;kelvin@TIGER04458: ~[01;32mkelvin@TIGER04458[00m:[01;34m~[00m$ ls -t -r
+[?2004lmy_unix_session
+[?2004h]0;kelvin@TIGER04458: ~[01;32mkelvin@TIGER04458[00m:[01;34m~[00m$ ls -rt
+[?2004lmy_unix_session
+[?2004h]0;kelvin@TIGER04458: ~[01;32mkelvin@TIGER04458[00m:[01;34m~[00m$ [7mls -F Desktop[27mls -F Desktop
+[?2004lls: cannot access 'Desktop': No such file or directory
+[?2004h]0;kelvin@TIGER04458: ~[01;32mkelvin@TIGER04458[00m:[01;34m~[00m$ [7mls -F Desktop[27mls -F Desktop
+[?2004lls: cannot access 'Desktop': No such file or directory
+[?2004h]0;kelvin@TIGER04458: ~[01;32mkelvin@TIGER04458[00m:[01;34m~[00m$ [7mcd ~[27mcd ~
+[?2004l[?2004h]0;kelvin@TIGER04458: ~[01;32mkelvin@TIGER04458[00m:[01;34m~[00m$ [7mls -F Desktop[27mls -F Desktop
+[?2004lls: cannot access 'Desktop': No such file or directory
+[?2004h]0;kelvin@TIGER04458: ~[01;32mkelvin@TIGER04458[00m:[01;34m~[00m$ exit
+[?2004lexit
+
+Script done on 2024-03-10 19:39:04+05:30 [COMMAND_EXIT_CODE="2"]
+Script started on 2024-03-10 19:44:50+05:30 [TERM="xterm-256color" TTY="/dev/pts/0" COLUMNS="112" LINES="28"]
+To run a command as administrator (user "root"), use "sudo <command>".
+See "man sudo_root" for details.
+
+[?2004h]0;kelvin@TIGER04458: ~[01;32mkelvin@TIGER04458[00m:[01;34m~[00m$ ls
+[?2004lmy_unix_session  [0m[01;34mshell-lesson-data[0m
+[?2004h]0;kelvin@TIGER04458: ~[01;32mkelvin@TIGER04458[00m:[01;34m~[00m$ ls -F
+[?2004lmy_unix_session  [0m[01;34mshell-lesson-data[0m/
+[?2004h]0;kelvin@TIGER04458: ~[01;32mkelvin@TIGER04458[00m:[01;34m~[00m$ [7mscript -a ~/my_unix_session[27m[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[1Pscript -a ~/my_unix_sessio[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[Kls -F shell-lesson-data
+[?2004l[0m[01;34mexercise-data[0m/  [01;34mnorth-pacific-gyre[0m/
+[?2004h]0;kelvin@TIGER04458: ~[01;32mkelvin@TIGER04458[00m:[01;34m~[00m$ exit
+[?2004lexit
+
+Script done on 2024-03-10 19:47:29+05:30 [COMMAND_EXIT_CODE="0"]
+Script started on 2024-03-10 19:49:35+05:30 [TERM="xterm-256color" TTY="/dev/pts/0" COLUMNS="112" LINES="28"]
+To run a command as administrator (user "root"), use "sudo <command>".
+See "man sudo_root" for details.
+
+[?2004h]0;kelvin@TIGER04458: ~[01;32mkelvin@TIGER04458[00m:[01;34m~[00m$ pwd
+[?2004l/home/kelvin
+[?2004h]0;kelvin@TIGER04458: ~[01;32mkelvin@TIGER04458[00m:[01;34m~[00m$ [7mcd shell-lesson-data[27mcd shell-lesson-data
+[?2004l[?2004h]0;kelvin@TIGER04458: ~/shell-lesson-data[01;32mkelvin@TIGER04458[00m:[01;34m~/shell-lesson-data[00m$ cd exercise-data
+[?2004l[?2004h]0;kelvin@TIGER04458: ~/shell-lesson-data/exercise-data[01;32mkelvin@TIGER04458[00m:[01;34m~/shell-lesson-data/exercise-data[00m$ pwd
+[?2004l/home/kelvin/shell-lesson-data/exercise-data
+[?2004h]0;kelvin@TIGER04458: ~/shell-lesson-data/exercise-data[01;32mkelvin@TIGER04458[00m:[01;34m~/shell-lesson-data/exercise-data[00m$ ls -F
+[?2004l[0m[01;34malkanes[0m/  [01;34manimal-counts[0m/  [01;34mcreatures[0m/  numbers.txt  numbers.txt:Zone.Identifier  [01;34mwriting[0m/
+[?2004h]0;kelvin@TIGER04458: ~/shell-lesson-data/exercise-data[01;32mkelvin@TIGER04458[00m:[01;34m~/shell-lesson-data/exercise-data[00m$ cd ..
+[?2004l[?2004h]0;kelvin@TIGER04458: ~/shell-lesson-data[01;32mkelvin@TIGER04458[00m:[01;34m~/shell-lesson-data[00m$ pe[Kwd
+[?2004l/home/kelvin/shell-lesson-data
+[?2004h]0;kelvin@TIGER04458: ~/shell-lesson-data[01;32mkelvin@TIGER04458[00m:[01;34m~/shell-lesson-data[00m$ ls -F -a
+[?2004l[0m[01;34m.[0m/  [01;34m..[0m/  [01;34mexercise-data[0m/  [01;34mnorth-pacific-gyre[0m/
+[?2004h]0;kelvin@TIGER04458: ~/shell-lesson-data[01;32mkelvin@TIGER04458[00m:[01;34m~/shell-lesson-data[00m$ ls -Fa
+[?2004l[0m[01;34m.[0m/  [01;34m..[0m/  [01;34mexercise-data[0m/  [01;34mnorth-pacific-gyre[0m/
+[?2004h]0;kelvin@TIGER04458: ~/shell-lesson-data[01;32mkelvin@TIGER04458[00m:[01;34m~/shell-lesson-data[00m$ cd
+[?2004l[?2004h]0;kelvin@TIGER04458: ~[01;32mkelvin@TIGER04458[00m:[01;34m~[00m$ pwd
+[?2004l/home/kelvin
+[?2004h]0;kelvin@TIGER04458: ~[01;32mkelvin@TIGER04458[00m:[01;34m~[00m$ cd [7mshell-lesson-data/exercise-data[27m[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[1Pshell-lesson-data/exercise-data
+[?2004l[?2004h]0;kelvin@TIGER04458: ~/shell-lesson-data/exercise-data[01;32mkelvin@TIGER04458[00m:[01;34m~/shell-lesson-data/exercise-data[00m$ cd [7mshell-lesson-data/exercise-data[27m[1Pshell-lesson-data/exercise-dat[K[K[K[K[K[K[K[K[K[K[K[K[K
+[?2004lbash: cd: shell-lesson-data: No such file or directory
+[?2004h]0;kelvin@TIGER04458: ~/shell-lesson-data/exercise-data[01;32mkelvin@TIGER04458[00m:[01;34m~/shell-lesson-data/exercise-data[00m$ pwd
+[?2004l/home/kelvin/shell-lesson-data/exercise-data
+[?2004h]0;kelvin@TIGER04458: ~/shell-lesson-data/exercise-data[01;32mkelvin@TIGER04458[00m:[01;34m~/shell-lesson-data/exercise-data[00m$ cd/shell-lesson-data
+[?2004lbash: cd/shell-lesson-data: No such file or directory
+[?2004h]0;kelvin@TIGER04458: ~/shell-lesson-data/exercise-data[01;32mkelvin@TIGER04458[00m:[01;34m~/shell-lesson-data/exercise-data[00m$ cd /[7m/home/kelvin/shell-lesson-data[27m[1P/home/kelvin/shell-lesson-dat[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[7m/home/kelvin/shell-lesson-data[27m/home/kelvin/shell-lesson-data
+[?2004l[?2004h]0;kelvin@TIGER04458: ~/shell-lesson-data[01;32mkelvin@TIGER04458[00m:[01;34m~/shell-lesson-data[00m$ [7mcd ~/Desktop/shell-lesson-data[27mcd ~/Desktop/shell-lesson-data [K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[Kshell-lesson-data
+[?2004l[?2004h]0;kelvin@TIGER04458: ~/shell-lesson-data[01;32mkelvin@TIGER04458[00m:[01;34m~/shell-lesson-data[00m$ cd `[K~/
+[?2004l[?2004h]0;kelvin@TIGER04458: ~[01;32mkelvin@TIGER04458[00m:[01;34m~[00m$ cd [7m~/shell-lesson-data[27m~/shell-lesson-data
+[?2004l[?2004h]0;kelvin@TIGER04458: ~/shell-lesson-data[01;32mkelvin@TIGER04458[00m:[01;34m~/shell-lesson-data[00m$ cd
+[?2004l[?2004h]0;kelvin@TIGER04458: ~[01;32mkelvin@TIGER04458[00m:[01;34m~[00m$ cd ~/shell=[K-lesson-data
+[?2004l[?2004h]0;kelvin@TIGER04458: ~/shell-lesson-data[01;32mkelvin@TIGER04458[00m:[01;34m~/shell-lesson-data[00m$ [7mcd exercise-data/creatures[27mcd exercise-data/creatures
+[?2004l[?2004h]0;kelvin@TIGER04458: ~/shell-lesson-data/exercise-data/creatures[01;32mkelvin@TIGER04458[00m:[01;34m~/shell-lesson-data/exercise-data/creatures[00m$ cd -
+[?2004l/home/kelvin/shell-lesson-data
+[?2004h]0;kelvin@TIGER04458: ~/shell-lesson-data[01;32mkelvin@TIGER04458[00m:[01;34m~/shell-lesson-data[00m$ cd-[K -
+[?2004l/home/kelvin/shell-lesson-data/exercise-data/creatures
+[?2004h]0;kelvin@TIGER04458: ~/shell-lesson-data/exercise-data/creatures[01;32mkelvin@TIGER04458[00m:[01;34m~/shell-lesson-data/exercise-data/creatures[00m$ [7mls -F /[27mls -F /
+[?2004l[0m[01;36mbin[0m@   [01;34mdev[0m/  [01;34mhome[0m/  [01;36mlib[0m@    [01;36mlib64[0m@   [01;34mlost+found[0m/  [01;34mmnt[0m/  [01;34mproc[0m/  [01;34mrun[0m/   [01;34msnap[0m/  [01;34msys[0m/  [01;34musr[0m/
+[01;34mboot[0m/  [01;34metc[0m/  [01;32minit[0m*  [01;36mlib32[0m@  [01;36mlibx32[0m@  [01;34mmedia[0m/       [01;34mopt[0m/  [01;34mroot[0m/  [01;36msbin[0m@  [01;34msrv[0m/   [30;42mtmp[0m/  [01;34mvar[0m/
+[?2004h]0;kelvin@TIGER04458: ~/shell-lesson-data/exercise-data/creatures[01;32mkelvin@TIGER04458[00m:[01;34m~/shell-lesson-data/exercise-data/creatures[00m$ ls -F
+[?2004lbasilisk.dat                  minotaur.dat                  unicorn.dat
+basilisk.dat:Zone.Identifier  minotaur.dat:Zone.Identifier  unicorn.dat:Zone.Identifier
+[?2004h]0;kelvin@TIGER04458: ~/shell-lesson-data/exercise-data/creatures[01;32mkelvin@TIGER04458[00m:[01;34m~/shell-lesson-data/exercise-data/creatures[00m$ [7mcd ~/Desktop/shell-lesson-data[27m[1Pcd ~/Desktop/shell-lesson-dat[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[Kshell-lesson-data/[K/
+[?2004l[?2004h]0;kelvin@TIGER04458: ~/shell-lesson-data[01;32mkelvin@TIGER04458[00m:[01;34m~/shell-lesson-data[00m$ [7mcd ~/Desktop/shell-lesson-data[27m[1Pcd ~/Desktop/shell-lesson-dat[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[Kshell-lesson-data/[K
+[?2004l[?2004h]0;kelvin@TIGER04458: ~/shell-lesson-data[01;32mkelvin@TIGER04458[00m:[01;34m~/shell-lesson-data[00m$ [7mls -s exercise-data[27mls -s exercise-data
+[?2004ltotal 24
+4 [0m[01;34malkanes[0m  4 [01;34manimal-counts[0m  4 [01;34mcreatures[0m  4 numbers.txt  4 numbers.txt:Zone.Identifier  4 [01;34mwriting[0m
+[?2004h]0;kelvin@TIGER04458: ~/shell-lesson-data[01;32mkelvin@TIGER04458[00m:[01;34m~/shell-lesson-data[00m$ [7mls -S exercise-data[27mls -S exercise-data
+[?2004l[0m[01;34malkanes[0m  [01;34manimal-counts[0m  [01;34mcreatures[0m  [01;34mwriting[0m  numbers.txt:Zone.Identifier  numbers.txt
+[?2004h]0;kelvin@TIGER04458: ~/shell-lesson-data[01;32mkelvin@TIGER04458[00m:[01;34m~/shell-lesson-data[00m$ ls -F/
+[?2004lls: invalid option -- '/'
+Try 'ls --help' for more information.
+[?2004h]0;kelvin@TIGER04458: ~/shell-lesson-data[01;32mkelvin@TIGER04458[00m:[01;34m~/shell-lesson-data[00m$ ls -F /
+[?2004l[0m[01;36mbin[0m@   [01;34mdev[0m/  [01;34mhome[0m/  [01;36mlib[0m@    [01;36mlib64[0m@   [01;34mlost+found[0m/  [01;34mmnt[0m/  [01;34mproc[0m/  [01;34mrun[0m/   [01;34msnap[0m/  [01;34msys[0m/  [01;34musr[0m/
+[01;34mboot[0m/  [01;34metc[0m/  [01;32minit[0m*  [01;36mlib32[0m@  [01;36mlibx32[0m@  [01;34mmedia[0m/       [01;34mopt[0m/  [01;34mroot[0m/  [01;36msbin[0m@  [01;34msrv[0m/   [30;42mtmp[0m/  [01;34mvar[0m/
+[?2004h]0;kelvin@TIGER04458: ~/shell-lesson-data[01;32mkelvin@TIGER04458[00m:[01;34m~/shell-lesson-data[00m$ ls -F
+[?2004l[0m[01;34mexercise-data[0m/  [01;34mnorth-pacific-gyre[0m/
+[?2004h]0;kelvin@TIGER04458: ~/shell-lesson-data[01;32mkelvin@TIGER04458[00m:[01;34m~/shell-lesson-data[00m$ ls north-pacific-gyre/
+[?2004lNENE01729A.txt                  NENE01843A.txt:Zone.Identifier  NENE02040B.txt
+NENE01729A.txt:Zone.Identifier  NENE01843B.txt                  NENE02040B.txt:Zone.Identifier
+NENE01729B.txt                  NENE01843B.txt:Zone.Identifier  NENE02040Z.txt
+NENE01729B.txt:Zone.Identifier  NENE01971Z.txt                  NENE02040Z.txt:Zone.Identifier
+NENE01736A.txt                  NENE01971Z.txt:Zone.Identifier  NENE02043A.txt
+NENE01736A.txt:Zone.Identifier  NENE01978A.txt                  NENE02043A.txt:Zone.Identifier
+NENE01751A.txt                  NENE01978A.txt:Zone.Identifier  NENE02043B.txt
+NENE01751A.txt:Zone.Identifier  NENE01978B.txt                  NENE02043B.txt:Zone.Identifier
+NENE01751B.txt                  NENE01978B.txt:Zone.Identifier  goodiff.sh
+NENE01751B.txt:Zone.Identifier  NENE02018B.txt                  goodiff.sh:Zone.Identifier
+NENE01812A.txt                  NENE02018B.txt:Zone.Identifier  goostats.sh
+NENE01812A.txt:Zone.Identifier  NENE02040A.txt                  goostats.sh:Zone.Identifier
+NENE01843A.txt                  NENE02040A.txt:Zone.Identifier
+[?2004h]0;kelvin@TIGER04458: ~/shell-lesson-data[01;32mkelvin@TIGER04458[00m:[01;34m~/shell-lesson-data[00m$ ls 
+exercise-data/      north-pacific-gyre/ 
+]0;kelvin@TIGER04458: ~/shell-lesson-data[01;32mkelvin@TIGER04458[00m:[01;34m~/shell-lesson-data[00m$ ls 
+exercise-data/      north-pacific-gyre/ 
+]0;kelvin@TIGER04458: ~/shell-lesson-data[01;32mkelvin@TIGER04458[00m:[01;34m~/shell-lesson-data[00m$ ls north-pacific-gyre/
+NENE01729A.txt                  NENE01843A.txt:Zone.Identifier  NENE02040B.txt
+NENE01729A.txt:Zone.Identifier  NENE01843B.txt                  NENE02040B.txt:Zone.Identifier
+NENE01729B.txt                  NENE01843B.txt:Zone.Identifier  NENE02040Z.txt
+NENE01729B.txt:Zone.Identifier  NENE01971Z.txt                  NENE02040Z.txt:Zone.Identifier
+NENE01736A.txt                  NENE01971Z.txt:Zone.Identifier  NENE02043A.txt
+NENE01736A.txt:Zone.Identifier  NENE01978A.txt                  NENE02043A.txt:Zone.Identifier
+NENE01751A.txt                  NENE01978A.txt:Zone.Identifier  NENE02043B.txt
+NENE01751A.txt:Zone.Identifier  NENE01978B.txt                  NENE02043B.txt:Zone.Identifier
+NENE01751B.txt                  NENE01978B.txt:Zone.Identifier  goodiff.sh
+NENE01751B.txt:Zone.Identifier  NENE02018B.txt                  goodiff.sh:Zone.Identifier
+NENE01812A.txt                  NENE02018B.txt:Zone.Identifier  goostats.sh
+NENE01812A.txt:Zone.Identifier  NENE02040A.txt                  goostats.sh:Zone.Identifier
+NENE01843A.txt                  NENE02040A.txt:Zone.Identifier  
+]0;kelvin@TIGER04458: ~/shell-lesson-data[01;32mkelvin@TIGER04458[00m:[01;34m~/shell-lesson-data[00m$ ls north-pacific-gyre/goo
+goodiff.sh                   goostats.sh                  
+goodiff.sh:Zone.Identifier   goostats.sh:Zone.Identifier  
+]0;kelvin@TIGER04458: ~/shell-lesson-data[01;32mkelvin@TIGER04458[00m:[01;34m~/shell-lesson-data[00m$ ls north-pacific-gyre/goo
+goodiff.sh                   goostats.sh                  
+goodiff.sh:Zone.Identifier   goostats.sh:Zone.Identifier  
+]0;kelvin@TIGER04458: ~/shell-lesson-data[01;32mkelvin@TIGER04458[00m:[01;34m~/shell-lesson-data[00m$ ls north-pacific-gyre/goodiff.sh[K[K[K[K[K[K[K[K[Koo
+goodiff.sh                   goostats.sh                  
+goodiff.sh:Zone.Identifier   goostats.sh:Zone.Identifier  
+]0;kelvin@TIGER04458: ~/shell-lesson-data[01;32mkelvin@TIGER04458[00m:[01;34m~/shell-lesson-data[00m$ ls north-pacific-gyre/goo[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[Kpwd
+[?2004l/home/kelvin/shell-lesson-data
+[?2004h]0;kelvin@TIGER04458: ~/shell-lesson-data[01;32mkelvin@TIGER04458[00m:[01;34m~/shell-lesson-data[00m$ cd exercise-data/writing/
+[?2004l[?2004h]0;kelvin@TIGER04458: ~/shell-lesson-data/exercise-data/writing[01;32mkelvin@TIGER04458[00m:[01;34m~/shell-lesson-data/exercise-data/writing[00m$ ls -F
+[?2004lLittleWomen.txt  LittleWomen.txt:Zone.Identifier  haiku.txt  haiku.txt:Zone.Identifier
+[?2004h]0;kelvin@TIGER04458: ~/shell-lesson-data/exercise-data/writing[01;32mkelvin@TIGER04458[00m:[01;34m~/shell-lesson-data/exercise-data/writing[00m$ mkdir thesis
+[?2004l[?2004h]0;kelvin@TIGER04458: ~/shell-lesson-data/exercise-data/writing[01;32mkelvin@TIGER04458[00m:[01;34m~/shell-lesson-data/exercise-data/writing[00m$ ls -F
+[?2004lLittleWomen.txt  LittleWomen.txt:Zone.Identifier  haiku.txt  haiku.txt:Zone.Identifier  [0m[01;34mthesis[0m/
+[?2004h]0;kelvin@TIGER04458: ~/shell-lesson-data/exercise-data/writing[01;32mkelvin@TIGER04458[00m:[01;34m~/shell-lesson-data/exercise-data/writing[00m$ ls -F thesis/
+[?2004l[?2004h]0;kelvin@TIGER04458: ~/shell-lesson-data/exercise-data/writing[01;32mkelvin@TIGER04458[00m:[01;34m~/shell-lesson-data/exercise-data/writing[00m$ ls -F thesis/[K
+[?2004l[?2004h]0;kelvin@TIGER04458: ~/shell-lesson-data/exercise-data/writing[01;32mkelvin@TIGER04458[00m:[01;34m~/shell-lesson-data/exercise-data/writing[00m$ [7mmkdir -p ../project/data ../project/results[27mmkdir -p ../project/data ../project/results [K
+[?2004l[?2004h]0;kelvin@TIGER04458: ~/shell-lesson-data/exercise-data/writing[01;32mkelvin@TIGER04458[00m:[01;34m~/shell-lesson-data/exercise-data/writing[00m$ ls -F
+[?2004lLittleWomen.txt  LittleWomen.txt:Zone.Identifier  haiku.txt  haiku.txt:Zone.Identifier  [0m[01;34mthesis[0m/
+[?2004h]0;kelvin@TIGER04458: ~/shell-lesson-data/exercise-data/writing[01;32mkelvin@TIGER04458[00m:[01;34m~/shell-lesson-data/exercise-data/writing[00m$ [7mls -FR ../project[27mls -FR ../project
+[?2004l../project:
+[0m[01;34mdata[0m/  [01;34mresults[0m/
+
+../project/data:
+
+../project/results:
+[?2004h]0;kelvin@TIGER04458: ~/shell-lesson-data/exercise-data/writing[01;32mkelvin@TIGER04458[00m:[01;34m~/shell-lesson-data/exercise-data/writing[00m$ cd thesis
+[?2004l[?2004h]0;kelvin@TIGER04458: ~/shell-lesson-data/exercise-data/writing/thesis[01;32mkelvin@TIGER04458[00m:[01;34m~/shell-lesson-data/exercise-data/writing/thesis[00m$ nano draft.txt
+[?2004l[?2004h[?1049h[22;0;0t[1;28r(B[m[4l[?7h[39;49m[?1h=[?1h=[?25l[39;49m(B[m[H[2J[26;51H(B[0;7m[ New File ](B[m[H(B[0;7m  GNU nano 6.2                                        draft.txt                                                 [1;111H(B[m[27d(B[0;7m^G(B[m Help[27;17H(B[0;7m^O(B[m Write Out    (B[0;7m^W(B[m Where Is     (B[0;7m^K(B[m Cut[27;65H(B[0;7m^T(B[m Execute[81G(B[0;7m^C(B[m Location     (B[0;7mM-U(B[m Undo[28d(B[0;7m^X(B[m Exit[28;17H(B[0;7m^R(B[m Read File    (B[0;7m^\(B[m Replace[49G(B[0;7m^U(B[m Paste[28;65H(B[0;7m^J(B[m Justify[81G(B[0;7m^/(B[m Go To Line   (B[0;7mM-E(B[m Redo[2d[?12l[?25h[?25l[1;65H(B[0;7m*[111G(B[m[?12l[?25h[2dI[?25l[?12l[?25ht[?25l[?12l[?25h'[?25l[?12l[?25hs[?25l[?12l[?25hn[?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h[?25l[?12l[?25hn[?25l[?12l[?25ho[?25l[?12l[?25ht[?25l[?12l[?25h [?25l[?12l[?25hp[?25l[?12l[?25hu[?25l[?12l[?25hb[?25l[?12l[?25hl[?25l[?12l[?25hi[?25l[?12l[?25hs[?25l[26d[K[?12l[?25h[2;16Hh[?25l[?12l[?25he[?25l[?12l[?25hd[?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h"[?25l[?12l[?25hp[?25l[?12l[?25hu[?25l[?12l[?25hb[?25l[?12l[?25hi[?25l[?12l[?25hs[?25l[?12l[?25hh[?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25hl[?25l[?12l[?25hi[?25l[?12l[?25ha[?25l[?12l[?25hh[?25l[?12l[?25h [?25l[?12l[?25h[?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25hs[?25l[?12l[?25hh[?25l[?12l[?25h [?25l[?12l[?25ho[?25l[?12l[?25hr[?25l[?12l[?25h [?25l[?12l[?25hp[?25l[?12l[?25he[?25l[?12l[?25hr[?25l[?12l[?25hs[?25l[?12l[?25hi[?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25hi[?25l[?12l[?25hs[?25l[?12l[?25hh[?25l[?12l[?25h"[?25l[?12l[?25h [?25l[?12l[?25ha[?25l[?12l[?25hn[?25l[?12l[?25hy[?25l[?12l[?25h [?25l[?12l[?25hm[?25l[?12l[?25ho[?25l[?12l[?25hr[?25l[?12l[?25he[?25l[?12l[?25h,[?25l[3d[?12l[?25h[?25l[?12l[?25hi[?25l[?12l[?25ht[?25l[?12l[?25h'[?25l[?12l[?25hs[?25l[?12l[?25h [?25l[?12l[?25h"[?25l[?12l[?25hs[?25l[?12l[?25hh[?25l[?12l[?25ha[?25l[?12l[?25hr[?25l[?12l[?25he[?25l[?12l[?25h [?25l[?12l[?25ha[?25l[?12l[?25hn[?25l[?12l[?25hd[?25l[?12l[?25h [?25l[?12l[?25ht[?25l[?12l[?25hh[?25l[?12l[?25hr[?25l[?12l[?25hi[?25l[?12l[?25hv[?25l[?12l[?25he[?25l[?12l[?25h"[?25l[?12l[?25h.[?25l[27;17H            (B[0;7mM-D(B[m DOS Format[14X[27;57H(B[0;7mM-A(B[m Append        [81G    (B[0;7mM-B(B[m Backup File[K[28;2H(B[0;7mC(B[m Cancel[17G            (B[0;7mM-M(B[m Mac Format[49G        (B[0;7mM-P(B[m Prepend       [81G    (B[0;7m^T(B[m Browse[K[26d(B[0;7mFile Name to Write: draft.txt                                                                                   [26;30H(B[m[?12l[?25h[?25l(B[0;7m (B[m[?12l[?25h[?25l(B[0;7mt(B[m[?12l[?25h[?25l[26;49H[1K (B[0;7m[ Writing... ](B[m[K[1;65H(B[0;7m [111G(B[m[26;48H(B[0;7m[ Wrote 2 lines ](B[m[27;17H(B[0;7m^O(B[m Write Out    (B[0;7m^W(B[m Where Is     (B[0;7m^K(B[m Cut          (B[0;7m^T(B[m Execute[81G(B[0;7m^C(B[m Location     (B[0;7mM-U(B[m Undo[28;2H(B[0;7mX(B[m Exit  [17G(B[0;7m^R(B[m Read File    (B[0;7m^\(B[m Replace[49G(B[0;7m^U(B[m Paste        (B[0;7m^J(B[m Justify[81G(B[0;7m^/(B[m Go To Line   (B[0;7mM-E(B[m Redo[?12l[?25h[3;25H[?25l[26d[J[28d[?12l[?25h[28;1H[?1049l[23;0;0t[?1l>[?2004l[?2004h]0;kelvin@TIGER04458: ~/shell-lesson-data/exercise-data/writing/thesis[01;32mkelvin@TIGER04458[00m:[01;34m~/shell-lesson-data/exercise-data/writing/thesis[00m$ ls
+[?2004ldraft.txt
+[?2004h]0;kelvin@TIGER04458: ~/shell-lesson-data/exercise-data/writing/thesis[01;32mkelvin@TIGER04458[00m:[01;34m~/shell-lesson-data/exercise-data/writing/thesis[00m$ [7mtouch my_file.txt[27mtouch my_file.txt [K
+[?2004l[?2004h]0;kelvin@TIGER04458: ~/shell-lesson-data/exercise-data/writing/thesis[01;32mkelvin@TIGER04458[00m:[01;34m~/shell-lesson-data/exercise-data/writing/thesis[00m$ ls -l
+[?2004ltotal 4
+-rw-r--r-- 1 kelvin kelvin 64 Mar 10 20:53 draft.txt
+-rw-r--r-- 1 kelvin kelvin  0 Mar 10 20:54 my_file.txt
+[?2004h]0;kelvin@TIGER04458: ~/shell-lesson-data/exercise-data/writing/thesis[01;32mkelvin@TIGER04458[00m:[01;34m~/shell-lesson-data/exercise-data/writing/thesis[00m$ rm my_file.txt 
+[?2004l[?2004h]0;kelvin@TIGER04458: ~/shell-lesson-data/exercise-data/writing/thesis[01;32mkelvin@TIGER04458[00m:[01;34m~/shell-lesson-data/exercise-data/writing/thesis[00m$ exit
+[?2004lexit
+
+Script done on 2024-03-10 20:57:08+05:30 [COMMAND_EXIT_CODE="0"]
+Script started on 2024-03-11 09:53:37+05:30 [TERM="xterm-256color" TTY="/dev/pts/0" COLUMNS="112" LINES="28"]
+To run a command as administrator (user "root"), use "sudo <command>".
+See "man sudo_root" for details.
+
+[?2004h]0;kelvin@TIGER04458: ~[01;32mkelvin@TIGER04458[00m:[01;34m~[00m$ cd ~/shell-lesson-data/exercise-data/writing/
+[?2004l[?2004h]0;kelvin@TIGER04458: ~/shell-lesson-data/exercise-data/writing[01;32mkelvin@TIGER04458[00m:[01;34m~/shell-lesson-data/exercise-data/writing[00m$ mv thesis/draft.txt thesus[K[Kis/quotes.txt
+[?2004l[?2004h]0;kelvin@TIGER04458: ~/shell-lesson-data/exercise-data/writing[01;32mkelvin@TIGER04458[00m:[01;34m~/shell-lesson-data/exercise-data/writing[00m$ ls thesis/
+[?2004lquotes.txt
+[?2004h]0;kelvin@TIGER04458: ~/shell-lesson-data/exercise-data/writing[01;32mkelvin@TIGER04458[00m:[01;34m~/shell-lesson-data/exercise-data/writing[00m$ mv thesis.[K/quotes.txt .
+[?2004l[?2004h]0;kelvin@TIGER04458: ~/shell-lesson-data/exercise-data/writing[01;32mkelvin@TIGER04458[00m:[01;34m~/shell-lesson-data/exercise-data/writing[00m$ ls thesis/
+[?2004l[?2004h]0;kelvin@TIGER04458: ~/shell-lesson-data/exercise-data/writing[01;32mkelvin@TIGER04458[00m:[01;34m~/shell-lesson-data/exercise-data/writing[00m$ ls thesis/quotes.txt
+[?2004lls: cannot access 'thesis/quotes.txt': No such file or directory
+[?2004h]0;kelvin@TIGER04458: ~/shell-lesson-data/exercise-data/writing[01;32mkelvin@TIGER04458[00m:[01;34m~/shell-lesson-data/exercise-data/writing[00m$ ls quotes.txt 
+[?2004lquotes.txt
+[?2004h]0;kelvin@TIGER04458: ~/shell-lesson-data/exercise-data/writing[01;32mkelvin@TIGER04458[00m:[01;34m~/shell-lesson-data/exercise-data/writing[00m$ cp quotes.txt thesis/quotations.txt
+[?2004l[?2004h]0;kelvin@TIGER04458: ~/shell-lesson-data/exercise-data/writing[01;32mkelvin@TIGER04458[00m:[01;34m~/shell-lesson-data/exercise-data/writing[00m$ ls quotes.txt thesis/quotations.txt 
+[?2004lquotes.txt  thesis/quotations.txt
+[?2004h]0;kelvin@TIGER04458: ~/shell-lesson-data/exercise-data/writing[01;32mkelvin@TIGER04458[00m:[01;34m~/shell-lesson-data/exercise-data/writing[00m$ cp thesis[K[K[K[K[K[K-r thesis/[K thesis/[K_backup
+[?2004l[?2004h]0;kelvin@TIGER04458: ~/shell-lesson-data/exercise-data/writing[01;32mkelvin@TIGER04458[00m:[01;34m~/shell-lesson-data/exercise-data/writing[00m$ ls thesis thesis_backup/[K
+[?2004lthesis:
+quotations.txt
+
+thesis_backup:
+quotations.txt
+[?2004h]0;kelvin@TIGER04458: ~/shell-lesson-data/exercise-data/writing[01;32mkelvin@TIGER04458[00m:[01;34m~/shell-lesson-data/exercise-data/writing[00m$ rm quotes.txt 
+[?2004l[?2004h]0;kelvin@TIGER04458: ~/shell-lesson-data/exercise-data/writing[01;32mkelvin@TIGER04458[00m:[01;34m~/shell-lesson-data/exercise-data/writing[00m$ ls quotest[K[Ks.txt
+[?2004lls: cannot access 'quotes.txt': No such file or directory
+[?2004h]0;kelvin@TIGER04458: ~/shell-lesson-data/exercise-data/writing[01;32mkelvin@TIGER04458[00m:[01;34m~/shell-lesson-data/exercise-data/writing[00m$ rm thesis
+[?2004lrm: cannot remove 'thesis': Is a directory
+[?2004h]0;kelvin@TIGER04458: ~/shell-lesson-data/exercise-data/writing[01;32mkelvin@TIGER04458[00m:[01;34m~/shell-lesson-data/exercise-data/writing[00m$ rm -r thesis
+[?2004l[?2004h]0;kelvin@TIGER04458: ~/shell-lesson-data/exercise-data/writing[01;32mkelvin@TIGER04458[00m:[01;34m~/shell-lesson-data/exercise-data/writing[00m$ ls
+[?2004lLittleWomen.txt  LittleWomen.txt:Zone.Identifier  haiku.txt  haiku.txt:Zone.Identifier  [0m[01;34mthesis_backup[0m
+[?2004h]0;kelvin@TIGER04458: ~/shell-lesson-data/exercise-data/writing[01;32mkelvin@TIGER04458[00m:[01;34m~/shell-lesson-data/exercise-data/writing[00m$ cd ~sh[K[K/shell-lesson-data/exercise-data/
+[?2004l[?2004h]0;kelvin@TIGER04458: ~/shell-lesson-data/exercise-data[01;32mkelvin@TIGER04458[00m:[01;34m~/shell-lesson-data/exercise-data[00m$ mkdir backup
+[?2004l[?2004h]0;kelvin@TIGER04458: ~/shell-lesson-data/exercise-data[01;32mkelvin@TIGER04458[00m:[01;34m~/shell-lesson-data/exercise-data[00m$ cp creatures/minotaur.dat creatures/unicorn.dat bc[Kackup/
+[?2004l[?2004h]0;kelvin@TIGER04458: ~/shell-lesson-data/exercise-data[01;32mkelvin@TIGER04458[00m:[01;34m~/shell-lesson-data/exercise-data[00m$ cd creatures/
+[?2004l[?2004h]0;kelvin@TIGER04458: ~/shell-lesson-data/exercise-data/creatures[01;32mkelvin@TIGER04458[00m:[01;34m~/shell-lesson-data/exercise-data/creatures[00m$ ls -F
+[?2004lbasilisk.dat                  minotaur.dat                  unicorn.dat
+basilisk.dat:Zone.Identifier  minotaur.dat:Zone.Identifier  unicorn.dat:Zone.Identifier
+[?2004h]0;kelvin@TIGER04458: ~/shell-lesson-data/exercise-data/creatures[01;32mkelvin@TIGER04458[00m:[01;34m~/shell-lesson-data/exercise-data/creatures[00m$ cp minotaur.dat unicorn.dat basilisk.dat
+[?2004lcp: target 'basilisk.dat' is not a directory
+[?2004h]0;kelvin@TIGER04458: ~/shell-lesson-data/exercise-data/creatures[01;32mkelvin@TIGER04458[00m:[01;34m~/shell-lesson-data/exercise-data/creatures[00m$ cd ..
+[?2004l[?2004h]0;kelvin@TIGER04458: ~/shell-lesson-data/exercise-data[01;32mkelvin@TIGER04458[00m:[01;34m~/shell-lesson-data/exercise-data[00m$ cd alkanes/
+[?2004l[?2004h]0;kelvin@TIGER04458: ~/shell-lesson-data/exercise-data/alkanes[01;32mkelvin@TIGER04458[00m:[01;34m~/shell-lesson-data/exercise-data/alkanes[00m$ ls *.pdf
+[?2004lls: cannot access '*.pdf': No such file or directory
+[?2004h]0;kelvin@TIGER04458: ~/shell-lesson-data/exercise-data/alkanes[01;32mkelvin@TIGER04458[00m:[01;34m~/shell-lesson-data/exercise-data/alkanes[00m$ ls *.pdb
+[?2004lcubane.pdb  ethane.pdb  methane.pdb  octane.pdb  pentane.pdb  propane.pdb
+[?2004h]0;kelvin@TIGER04458: ~/shell-lesson-data/exercise-data/alkanes[01;32mkelvin@TIGER04458[00m:[01;34m~/shell-lesson-data/exercise-data/alkanes[00m$ ls
+[?2004lcubane.pdb                  methane.pdb                  pentane.pdb
+cubane.pdb:Zone.Identifier  methane.pdb:Zone.Identifier  pentane.pdb:Zone.Identifier
+ethane.pdb                  octane.pdb                   propane.pdb
+ethane.pdb:Zone.Identifier  octane.pdb:Zone.Identifier   propane.pdb:Zone.Identifier
+[?2004h]0;kelvin@TIGER04458: ~/shell-lesson-data/exercise-data/alkanes[01;32mkelvin@TIGER04458[00m:[01;34m~/shell-lesson-data/exercise-data/alkanes[00m$ wc cubane.pdb
+[?2004l  20  156 1158 cubane.pdb
+[?2004h]0;kelvin@TIGER04458: ~/shell-lesson-data/exercise-data/alkanes[01;32mkelvin@TIGER04458[00m:[01;34m~/shell-lesson-data/exercise-data/alkanes[00m$ wc *.pdb
+[?2004l  20  156 1158 cubane.pdb
+  12   84  622 ethane.pdb
+   9   57  422 methane.pdb
+  30  246 1828 octane.pdb
+  21  165 1226 pentane.pdb
+  15  111  825 propane.pdb
+ 107  819 6081 total
+[?2004h]0;kelvin@TIGER04458: ~/shell-lesson-data/exercise-data/alkanes[01;32mkelvin@TIGER04458[00m:[01;34m~/shell-lesson-data/exercise-data/alkanes[00m$ wc -l *.pdb
+[?2004l  20 cubane.pdb
+  12 ethane.pdb
+   9 methane.pdb
+  30 octane.pdb
+  21 pentane.pdb
+  15 propane.pdb
+ 107 total
+[?2004h]0;kelvin@TIGER04458: ~/shell-lesson-data/exercise-data/alkanes[01;32mkelvin@TIGER04458[00m:[01;34m~/shell-lesson-data/exercise-data/alkanes[00m$ wc -w *.pdb
+[?2004l 156 cubane.pdb
+  84 ethane.pdb
+  57 methane.pdb
+ 246 octane.pdb
+ 165 pentane.pdb
+ 111 propane.pdb
+ 819 total
+[?2004h]0;kelvin@TIGER04458: ~/shell-lesson-data/exercise-data/alkanes[01;32mkelvin@TIGER04458[00m:[01;34m~/shell-lesson-data/exercise-data/alkanes[00m$ wc -m *.pdb
+[?2004l1158 cubane.pdb
+ 622 ethane.pdb
+ 422 methane.pdb
+1828 octane.pdb
+1226 pentane.pdb
+ 825 propane.pdb
+6081 total
+[?2004h]0;kelvin@TIGER04458: ~/shell-lesson-data/exercise-data/alkanes[01;32mkelvin@TIGER04458[00m:[01;34m~/shell-lesson-data/exercise-data/alkanes[00m$ wc -l *.pdb > lengths.ttx[K[Kxt
+[?2004l[?2004h]0;kelvin@TIGER04458: ~/shell-lesson-data/exercise-data/alkanes[01;32mkelvin@TIGER04458[00m:[01;34m~/shell-lesson-data/exercise-data/alkanes[00m$ ls lengths.txt 
+[?2004llengths.txt
+[?2004h]0;kelvin@TIGER04458: ~/shell-lesson-data/exercise-data/alkanes[01;32mkelvin@TIGER04458[00m:[01;34m~/shell-lesson-data/exercise-data/alkanes[00m$ car[Kt lengths.txt 
+[?2004l  20 cubane.pdb
+  12 ethane.pdb
+   9 methane.pdb
+  30 octane.pdb
+  21 pentane.pdb
+  15 propane.pdb
+ 107 total
+[?2004h]0;kelvin@TIGER04458: ~/shell-lesson-data/exercise-data/alkanes[01;32mkelvin@TIGER04458[00m:[01;34m~/shell-lesson-data/exercise-data/alkanes[00m$ less te[K[Klengths.txt 
+[?2004l[?1049h[22;0;0t[?1h=  20 cubane.pdb
+  12 ethane.pdb
+   9 methane.pdb
+  30 octane.pdb
+  21 pentane.pdb
+  15 propane.pdb
+ 107 total
+[7mlengths.txt (END)[27m[K[K[K[7m(END)[27m[K[K...skipping...
+  20 cubane.pdb
+  12 ethane.pdb
+   9 methane.pdb
+  30 octane.pdb
+  21 pentane.pdb
+  15 propane.pdb
+ 107 total
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[7m(END)[27m[K[K[K[7m(END)[27m[K[K[K[7m(END)[27m[K[K[?1l>[?1049l[23;0;0t[?2004h]0;kelvin@TIGER04458: ~/shell-lesson-data/exercise-data/alkanes[01;32mkelvin@TIGER04458[00m:[01;34m~/shell-lesson-data/exercise-data/alkanes[00m$ cd ~/shell-lesson-data/exercise-data/len[K[K[Knumbbers[K[K[K[Kers,[K.txt
+[?2004lbash: cd: /home/kelvin/shell-lesson-data/exercise-data/numbers.txt: Not a directory
+[?2004h]0;kelvin@TIGER04458: ~/shell-lesson-data/exercise-data/alkanes[01;32mkelvin@TIGER04458[00m:[01;34m~/shell-lesson-data/exercise-data/alkanes[00m$ sort -n lengths.txt 
+[?2004l   9 methane.pdb
+  12 ethane.pdb
+  15 propane.pdb
+  20 cubane.pdb
+  21 pentane.pdb
+  30 octane.pdb
+ 107 total
+[?2004h]0;kelvin@TIGER04458: ~/shell-lesson-data/exercise-data/alkanes[01;32mkelvin@TIGER04458[00m:[01;34m~/shell-lesson-data/exercise-data/alkanes[00m$ sort -n lengths.txt sorted-lengths.txt>sorted-lengths.txt sorted-lengths.txt[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C
+[?2004l[?2004h]0;kelvin@TIGER04458: ~/shell-lesson-data/exercise-data/alkanes[01;32mkelvin@TIGER04458[00m:[01;34m~/shell-lesson-data/exercise-data/alkanes[00m$ head -n 1 sorted-lengths.txt 
+[?2004l   9 methane.pdb
+[?2004h]0;kelvin@TIGER04458: ~/shell-lesson-data/exercise-data/alkanes[01;32mkelvin@TIGER04458[00m:[01;34m~/shell-lesson-data/exercise-data/alkanes[00m$ echo The echo command prints text
+[?2004lThe echo command prints text
+[?2004h]0;kelvin@TIGER04458: ~/shell-lesson-data/exercise-data/alkanes[01;32mkelvin@TIGER04458[00m:[01;34m~/shell-lesson-data/exercise-data/alkanes[00m$ echo hello > testfile01.txt
+[?2004l[?2004h]0;kelvin@TIGER04458: ~/shell-lesson-data/exercise-data/alkanes[01;32mkelvin@TIGER04458[00m:[01;34m~/shell-lesson-data/exercise-data/alkanes[00m$ echo hello >> testfile02.txt
+[?2004l[?2004h]0;kelvin@TIGER04458: ~/shell-lesson-data/exercise-data/alkanes[01;32mkelvin@TIGER04458[00m:[01;34m~/shell-lesson-data/exercise-data/alkanes[00m$ echo hello > testfile01.txt
+[?2004l[?2004h]0;kelvin@TIGER04458: ~/shell-lesson-data/exercise-data/alkanes[01;32mkelvin@TIGER04458[00m:[01;34m~/shell-lesson-data/exercise-data/alkanes[00m$ echo hello >> testfile02.txt
+[?2004l[?2004h]0;kelvin@TIGER04458: ~/shell-lesson-data/exercise-data/alkanes[01;32mkelvin@TIGER04458[00m:[01;34m~/shell-lesson-data/exercise-data/alkanes[00m$ echo > is [K[K[Koverwrites the coo[Kmmand whereas >> append s[K[Ks th e command
+[?2004l[?2004h]0;kelvin@TIGER04458: ~/shell-lesson-data/exercise-data/alkanes[01;32mkelvin@TIGER04458[00m:[01;34m~/shell-lesson-data/exercise-data/alkanes[00m$ echo The > overwrites the command whereas >> append s the command
+[?2004l[?2004h]0;kelvin@TIGER04458: ~/shell-lesson-data/exercise-data/alkanes[01;32mkelvin@TIGER04458[00m:[01;34m~/shell-lesson-data/exercise-data/alkanes[00m$ cd ~/shell-lesson-data/exercise-data/animal-counts/ [A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K/
+[?2004l[?2004h]0;kelvin@TIGER04458: ~/shell-lesson-data/exercise-data/animal-counts[01;32mkelvin@TIGER04458[00m:[01;34m~/shell-lesson-data/exercise-data/animal-counts[00m$ ls
+[?2004lanimals.csv  animals.csv:Zone.Identifier
+[?2004h]0;kelvin@TIGER04458: ~/shell-lesson-data/exercise-data/animal-counts[01;32mkelvin@TIGER04458[00m:[01;34m~/shell-lesson-data/exercise-data/animal-counts[00m$ head -n 3 animals.csv animals-subset.csv[C animals-subset.csv> animals-subset.csv[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C
+[?2004l[?2004h]0;kelvin@TIGER04458: ~/shell-lesson-data/exercise-data/animal-counts[01;32mkelvin@TIGER04458[00m:[01;34m~/shell-lesson-data/exercise-data/animal-counts[00m$ tail -n 2 animals.csv >> animals-subset.csv 
+[?2004l[?2004h]0;kelvin@TIGER04458: ~/shell-lesson-data/exercise-data/animal-counts[01;32mkelvin@TIGER04458[00m:[01;34m~/shell-lesson-data/exercise-data/animal-counts[00m$ cd ..
+[?2004l[?2004h]0;kelvin@TIGER04458: ~/shell-lesson-data/exercise-data[01;32mkelvin@TIGER04458[00m:[01;34m~/shell-lesson-data/exercise-data[00m$ cd alkanes/
+[?2004l[?2004h]0;kelvin@TIGER04458: ~/shell-lesson-data/exercise-data/alkanes[01;32mkelvin@TIGER04458[00m:[01;34m~/shell-lesson-data/exercise-data/alkanes[00m$ sort -n lengths.txt head 1[K-n 1
+[?2004lsort: cannot read: head: No such file or directory
+[?2004h]0;kelvin@TIGER04458: ~/shell-lesson-data/exercise-data/alkanes[01;32mkelvin@TIGER04458[00m:[01;34m~/shell-lesson-data/exercise-data/alkanes[00m$ sort -n lengths.txt | head -n 1
+[?2004l   9 methane.pdb
+[?2004h]0;kelvin@TIGER04458: ~/shell-lesson-data/exercise-data/alkanes[01;32mkelvin@TIGER04458[00m:[01;34m~/shell-lesson-data/exercise-data/alkanes[00m$ wc -l [K[K[K*.pdb
+[?2004l  20  156 1158 cubane.pdb
+  12   84  622 ethane.pdb
+   9   57  422 methane.pdb
+  30  246 1828 octane.pdb
+  21  165 1226 pentane.pdb
+  15  111  825 propane.pdb
+ 107  819 6081 total
+[?2004h]0;kelvin@TIGER04458: ~/shell-lesson-data/exercise-data/alkanes[01;32mkelvin@TIGER04458[00m:[01;34m~/shell-lesson-data/exercise-data/alkanes[00m$ wc -l *.pdb
+[?2004l  20 cubane.pdb
+  12 ethane.pdb
+   9 methane.pdb
+  30 octane.pdb
+  21 pentane.pdb
+  15 propane.pdb
+ 107 total
+[?2004h]0;kelvin@TIGER04458: ~/shell-lesson-data/exercise-data/alkanes[01;32mkelvin@TIGER04458[00m:[01;34m~/shell-lesson-data/exercise-data/alkanes[00m$ wc -l *.[[Kpdb ?[K| sort -n
+[?2004l   9 methane.pdb
+  12 ethane.pdb
+  15 propane.pdb
+  20 cubane.pdb
+  21 pentane.pdb
+  30 octane.pdb
+ 107 total
+[?2004h]0;kelvin@TIGER04458: ~/shell-lesson-data/exercise-data/alkanes[01;32mkelvin@TIGER04458[00m:[01;34m~/shell-lesson-data/exercise-data/alkanes[00m$ wc -l *.pdb | sort -n | head -n 1
+[?2004l   9 methane.pdb
+[?2004h]0;kelvin@TIGER04458: ~/shell-lesson-data/exercise-data/alkanes[01;32mkelvin@TIGER04458[00m:[01;34m~/shell-lesson-data/exercise-data/alkanes[00m$ wc -l * | sort -n | head -n 3
+[?2004l   1 testfile01.txt
+   2 testfile02.txt
+   3 cubane.pdb:Zone.Identifier
+[?2004h]0;kelvin@TIGER04458: ~/shell-lesson-data/exercise-data/alkanes[01;32mkelvin@TIGER04458[00m:[01;34m~/shell-lesson-data/exercise-data/alkanes[00m$ cd ..
+[?2004l[?2004h]0;kelvin@TIGER04458: ~/shell-lesson-data/exercise-data[01;32mkelvin@TIGER04458[00m:[01;34m~/shell-lesson-data/exercise-data[00m$ cd animal-counts/
+[?2004l[?2004h]0;kelvin@TIGER04458: ~/shell-lesson-data/exercise-data/animal-counts[01;32mkelvin@TIGER04458[00m:[01;34m~/shell-lesson-data/exercise-data/animal-counts[00m$ car[Kt animals
+[?2004lcat: animals: No such file or directory
+[?2004h]0;kelvin@TIGER04458: ~/shell-lesson-data/exercise-data/animal-counts[01;32mkelvin@TIGER04458[00m:[01;34m~/shell-lesson-data/exercise-data/animal-counts[00m$ car[Kt animals.csv
+[?2004l2012-11-05,deer,5
+2012-11-05,rabbit,22
+2012-11-05,raccoon,7
+2012-11-06,rabbit,19
+2012-11-06,deer,2
+2012-11-06,fox,4
+2012-11-07,rabbit,16
+2012-11-07,bear,1
+[?2004h]0;kelvin@TIGER04458: ~/shell-lesson-data/exercise-data/animal-counts[01;32mkelvin@TIGER04458[00m:[01;34m~/shell-lesson-data/exercise-data/animal-counts[00m$ cat animals.csv | head -n 5 | tail -n 3 > fin al.txt
+[?2004l[?2004h]0;kelvin@TIGER04458: ~/shell-lesson-data/exercise-data/animal-counts[01;32mkelvin@TIGER04458[00m:[01;34m~/shell-lesson-data/exercise-data/animal-counts[00m$ cat final.txt 
+[?2004l2012-11-05,raccoon,7
+2012-11-06,rabbit,19
+2012-11-06,deer,2
+[?2004h]0;kelvin@TIGER04458: ~/shell-lesson-data/exercise-data/animal-counts[01;32mkelvin@TIGER04458[00m:[01;34m~/shell-lesson-data/exercise-data/animal-counts[00m$ [7mcat animals.csv | head -n 5 | tail -n 3 | sor[27m[7mt[27m[7m -r > final.txt[27m[A]0;kelvin@TIGER04458: ~/shell-lesson-data/exercise-data/animal-counts[01;32mkelvin@TIGER04458[00m:[01;34m~/shell-lesson-data/exercise-data/animal-counts[00m$ cat animals.csv | head -n 5 | tail -n 3 | sort -r > final.txt [K
+[?2004l[?2004h]0;kelvin@TIGER04458: ~/shell-lesson-data/exercise-data/animal-counts[01;32mkelvin@TIGER04458[00m:[01;34m~/shell-lesson-data/exercise-data/animal-counts[00m$ cat final.txt 
+[?2004l2012-11-06,rabbit,19
+2012-11-06,deer,2
+2012-11-05,raccoon,7
+[?2004h]0;kelvin@TIGER04458: ~/shell-lesson-data/exercise-data/animal-counts[01;32mkelvin@TIGER04458[00m:[01;34m~/shell-lesson-data/exercise-data/animal-counts[00m$ cut -d, -f 2 animals.csv
+[?2004ldeer
+rabbit
+raccoon
+rabbit
+deer
+fox
+rabbit
+bear
+[?2004h]0;kelvin@TIGER04458: ~/shell-lesson-data/exercise-data/animal-counts[01;32mkelvin@TIGER04458[00m:[01;34m~/shell-lesson-data/exercise-data/animal-counts[00m$ cut -d, -f 2 animals.csv | sort | uniq
+[?2004lbear
+deer
+fox
+rabbit
+raccoon
+[?2004h]0;kelvin@TIGER04458: ~/shell-lesson-data/exercise-data/animal-counts[01;32mkelvin@TIGER04458[00m:[01;34m~/shell-lesson-data/exercise-data/animal-counts[00m$ cut 0[K-d, -f 2 animals.csv | sort | uniq -c
+[?2004l      1 bear
+      2 deer
+      1 fox
+      3 rabbit
+      1 raccoon
+[?2004h]0;kelvin@TIGER04458: ~/shell-lesson-data/exercise-data/animal-counts[01;32mkelvin@TIGER04458[00m:[01;34m~/shell-lesson-data/exercise-data/animal-counts[00m$ [7mcd north-pacific-gyre[27mcd north-pacific-gyre
+[?2004lbash: cd: north-pacific-gyre: No such file or directory
+[?2004h]0;kelvin@TIGER04458: ~/shell-lesson-data/exercise-data/animal-counts[01;32mkelvin@TIGER04458[00m:[01;34m~/shell-lesson-data/exercise-data/animal-counts[00m$ cd ..
+[?2004l[?2004h]0;kelvin@TIGER04458: ~/shell-lesson-data/exercise-data[01;32mkelvin@TIGER04458[00m:[01;34m~/shell-lesson-data/exercise-data[00m$ [7mcd north-pacific-gyre[27m[1Pcd north-pacific-gyr[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K..
+[?2004l[?2004h]0;kelvin@TIGER04458: ~/shell-lesson-data[01;32mkelvin@TIGER04458[00m:[01;34m~/shell-lesson-data[00m$ [7mcd north-pacific-gyre[27mcd north-pacific-gyre
+[?2004l[?2004h]0;kelvin@TIGER04458: ~/shell-lesson-data/north-pacific-gyre[01;32mkelvin@TIGER04458[00m:[01;34m~/shell-lesson-data/north-pacific-gyre[00m$ wc -l *.txt
+[?2004l  300 NENE01729A.txt
+  300 NENE01729B.txt
+  300 NENE01736A.txt
+  300 NENE01751A.txt
+  300 NENE01751B.txt
+  300 NENE01812A.txt
+  300 NENE01843A.txt
+  300 NENE01843B.txt
+  300 NENE01971Z.txt
+  300 NENE01978A.txt
+  300 NENE01978B.txt
+  240 NENE02018B.txt
+  300 NENE02040A.txt
+  300 NENE02040B.txt
+  300 NENE02040Z.txt
+  300 NENE02043A.txt
+  300 NENE02043B.txt
+ 5040 total
+[?2004h]0;kelvin@TIGER04458: ~/shell-lesson-data/north-pacific-gyre[01;32mkelvin@TIGER04458[00m:[01;34m~/shell-lesson-data/north-pacific-gyre[00m$ wc -l *.tct[K[Kxt | sort -n | head -n 5
+[?2004l  240 NENE02018B.txt
+  300 NENE01729A.txt
+  300 NENE01729B.txt
+  300 NENE01736A.txt
+  300 NENE01751A.txt
+[?2004h]0;kelvin@TIGER04458: ~/shell-lesson-data/north-pacific-gyre[01;32mkelvin@TIGER04458[00m:[01;34m~/shell-lesson-data/north-pacific-gyre[00m$ wc -l *.txt | sprt[K[K[Kp[Kort -n ?[K| tail -n 5
+[?2004l  300 NENE02040B.txt
+  300 NENE02040Z.txt
+  300 NENE02043A.txt
+  300 NENE02043B.txt
+ 5040 total
+[?2004h]0;kelvin@TIGER04458: ~/shell-lesson-data/north-pacific-gyre[01;32mkelvin@TIGER04458[00m:[01;34m~/shell-lesson-data/north-pacific-gyre[00m$ ls *Z.txt
+[?2004lNENE01971Z.txt  NENE02040Z.txt
+[?2004h]0;kelvin@TIGER04458: ~/shell-lesson-data/north-pacific-gyre[01;32mkelvin@TIGER04458[00m:[01;34m~/shell-lesson-data/north-pacific-gyre[00m$ cd..[K[K ..
+[?2004l[?2004h]0;kelvin@TIGER04458: ~/shell-lesson-data[01;32mkelvin@TIGER04458[00m:[01;34m~/shell-lesson-data[00m$ cd d[Kexercise-data/
+[?2004l[?2004h]0;kelvin@TIGER04458: ~/shell-lesson-data/exercise-data[01;32mkelvin@TIGER04458[00m:[01;34m~/shell-lesson-data/exercise-data[00m$ cd  creatures/
+[?2004l[?2004h]0;kelvin@TIGER04458: ~/shell-lesson-data/exercise-data/creatures[01;32mkelvin@TIGER04458[00m:[01;34m~/shell-lesson-data/exercise-data/creatures[00m$ ls
+[?2004lbasilisk.dat                  minotaur.dat                  unicorn.dat
+basilisk.dat:Zone.Identifier  minotaur.dat:Zone.Identifier  unicorn.dat:Zone.Identifier
+[?2004h]0;kelvin@TIGER04458: ~/shell-lesson-data/exercise-data/creatures[01;32mkelvin@TIGER04458[00m:[01;34m~/shell-lesson-data/exercise-data/creatures[00m$ head -n 5 basilisk.dat minotaur.dat unicorn.dat
+[?2004l==> basilisk.dat <==
+COMMON NAME: basilisk
+CLASSIFICATION: basiliscus vulgaris
+UPDATED: 1745-05-02
+CCCCAACGAG
+GAAACAGATC
+
+==> minotaur.dat <==
+COMMON NAME: minotaur
+CLASSIFICATION: bos hominus
+UPDATED: 1765-02-17
+CCCGAAGGAC
+CGACATCTCT
+
+==> unicorn.dat <==
+COMMON NAME: unicorn
+CLASSIFICATION: equus monoceros
+UPDATED: 1738-11-24
+AGCCGGGTCG
+CTTTACCTTA
+[?2004h]0;kelvin@TIGER04458: ~/shell-lesson-data/exercise-data/creatures[01;32mkelvin@TIGER04458[00m:[01;34m~/shell-lesson-data/exercise-data/creatures[00m$ for filename in basilisk.dat minotaur.dat unicorn.dat
+[?2004l[?2004h> do
+[?2004l[?2004h> 
+Display all 6230 possibilities? (y or n)
+!
+./
+07409496-a423-4a3e-b620-2cfb01a9318d_HyperV-ComputeNetwork.dll
+0ae3b998-9a38-4b72-a4c4-06849441518d_Servicing-Stack.dll
+4545ffe2-0dc4-4df4-9d02-299ef204635e_hvsocket.dll
+69fe178f-26e7-43a9-aa7d-2b616b672dde_eventlogservice.dll
+6bea57fb-8dfb-4177-9ae8-42e8b3529933_RuntimeDeviceInstall.dll
+:
+@AdvancedKeySettingsNotification.png
+@AppHelpToast.png
+@AudioToastIcon.png
+@BackgroundAccessToastIcon.png
+@EnrollmentToastIcon.png
+@StorageSenseToastIcon.png
+@VpnToastIcon.png
+@WLOGO_96x96.png
+@WindowsHelloFaceToastIcon.png
+@WindowsUpdateToastIcon.contrast-black.png
+@WindowsUpdateToastIcon.contrast-white.png
+@WindowsUpdateToastIcon.png
+@WirelessDisplayToast.png
+@bitlockertoastimage.png
+@edptoastimage.png
+@facial-recognition-windows-hello.gif
+@language_notification_icon.png
+@optionalfeatures.png
+ACPBackgroundManagerPolicy.dll
+--More--[KAJRouter.dll
+APHostClient.dll
+APHostRes.dll
+APHostService.dll
+APMon.dll
+APMonUI.dll
+ARP.EXE
+AUDIOKSE.dll
+AarSvc.dll
+AboutSettingsHandlers.dll
+AboveLockAppHost.dll
+AcGenral.dll
+AcLayers.dll
+AcSpecfc.dll
+AcWinRT.dll
+AcXtrnal.dll
+AccountsRt.dll
+ActionCenter.dll
+ActionCenterCPL.dll
+ActionQueue.dll
+ActivationClient.dll
+ActivationManager.dll
+ActivationVdev.dll
+ActiveHours.png
+ActiveSyncCsp.dll
+ActiveSyncProvider.dll
+AdaptiveCards.dll
+--More--[KAddressParser.dll
+AdmTmpl.dll
+AdvancedEmojiDS.dll
+AgentService.exe
+AgentWmi.mof
+AgentWmiUninstall.mof
+AggregatorHost.exe
+Analog.Shell.Broker.dll
+AnalogCommonProxyStub.dll
+ApiSetHost.AppExecutionAlias.dll
+AppContracts.dll
+AppExtension.dll
+AppHostRegistrationVerifier.exe
+AppIdPolicyEngineApi.dll
+AppInstallerBackgroundUpdate.exe
+AppInstallerPrompt.Desktop.dll
+AppListBackupLauncher.dll
+AppLockerCSP.dll
+AppManagementConfiguration.dll
+AppMon.dll
+AppReadiness.dll
+AppResolver.dll
+AppVCatalog.dll
+AppVClient.exe
+AppVClientPS.dll
+AppVDllSurrogate.exe
+AppVEntStreamingManager.dll
+--More--[KAppVEntSubsystemController.dll
+AppVEntSubsystems64.dll
+AppVEntVirtualization.dll
+AppVFileSystemMetadata.dll
+AppVIntegration.dll
+AppVManifest.dll
+AppVNice.exe
+AppVOrchestration.dll
+AppVPolicy.dll
+AppVPublishing.dll
+AppVReporting.dll
+AppVScripting.dll
+AppVSentinel.dll
+AppVShNotify.exe
+AppVStreamMap.dll
+AppVStreamingUX.dll
+AppVTerminator.dll
+AppXApplicabilityBlob.dll
+AppXDeploymentClient.dll
+AppXDeploymentExtensions.desktop.dll
+AppXDeploymentExtensions.onecore.dll
+AppXDeploymentServer.dll
+Apphlpdm.dll
+ApplicationControlCSP.dll
+ApplicationFrame.dll
+ApplicationFrameHost.exe
+ApplicationTargetedFeatureDatabase.dll
+--More--[K> echo
+[?2004l[?2004h> 
+[?2004l[?2004h> exi[K[K[K
+[?2004l[?2004h> cc[K[K
+[?2004l[?2004h> q
+[?2004l[?2004h> 
+[?2004l[?2004h> qqq
+[?2004l[?2004h> `
+[?2004l[?2004h> 
+[?2004l[?2004h> 
+[?2004l[?2004h> 
+[?2004l[?2004h> 
+[?2004l[?2004h> 
+[?2004l[?2004h> 
+[?2004l[?2004h> 
+[?2004l[?2004h> 
+[?2004l[?2004h> 
+[?2004l[?2004h> 
+[?2004l[?2004h> 
+[?2004l[?2004h> 
+[?2004l[?2004h> 
+[?2004l[?2004h> 
+[?2004l[?2004h> 
+[?2004l[?2004h> 
+[?2004l[?2004h> 
+[?2004l[?2004h> 
+[?2004l[?2004h> 
+[?2004l[?2004h> 
+[?2004l[?2004h> 
+[?2004l[?2004h> 
+[?2004l[?2004h> 
+[?2004l[?2004h> 
+[?2004l[?2004h> 
+[?2004l[?2004h> 
+[?2004l[?2004h> 
+[?2004l[?2004h> 
+[?2004l[?2004h> 
+[?2004l[?2004h> 
+[?2004l[?2004h> 
+[?2004l[?2004h> 
+[?2004l[?2004h> 
+[?2004l[?2004h> 
+[?2004l[?2004h> 
+[?2004l[?2004h> 
+[?2004l[?2004h> 
+[?2004l[?2004h> 
+[?2004l[?2004h> 
+[?2004l[?2004h> 
+[?2004l[?2004h> 
+[?2004l[?2004h> 
+[?2004l[?2004h> 
+[?2004l[?2004h> 
+[?2004l[?2004h> 
+[?2004l[?2004h> 
+[?2004l[?2004h> 
+[?2004l[?2004h> 
+[?2004l[?2004h> 
+[?2004l[?2004h> 
+[?2004l[?2004h> 
+[?2004l[?2004h> 
+[?2004l[?2004h> 
+[?2004l[?2004h> 
+[?2004l[?2004h> q
+[?2004l[?2004h> q
+[?2004l[?2004h> exit
+[?2004l[?2004h> done
+[?2004l[?2004h> y
+[?2004l[?2004h> n
+[?2004l[?2004h> m
+[?2004l[?2004h> $echo[K[K[K[K[Kecho $filename
+[?2004l[?2004h> done
+[?2004l[?2004h> [?2004l
+bash: unexpected EOF while looking for matching ``'
+bash: syntax error: unexpected end of file
+[?2004h]0;kelvin@TIGER04458: ~/shell-lesson-data/exercise-data/creatures[01;32mkelvin@TIGER04458[00m:[01;34m~/shell-lesson-data/exercise-data/creatures[00m$ exit
+[?2004lexit
+
+Script done on 2024-03-11 11:40:22+05:30 [COMMAND_EXIT_CODE="2"]
+Script started on 2024-03-11 11:43:01+05:30 [TERM="xterm-256color" TTY="/dev/pts/2" COLUMNS="112" LINES="28"]
+To run a command as administrator (user "root"), use "sudo <command>".
+See "man sudo_root" for details.
+
+[?2004h]0;kelvin@TIGER04458: ~[01;32mkelvin@TIGER04458[00m:[01;34m~[00m$ [7mfor filename in basilisk.dat minotaur.dat unicorn.dat[27m[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cfor filename in basilisk.dat minotaur.dat unicorn.dat
+[?2004l[?2004h> [?2004l
+bash: syntax error: unexpected end of file
+exit
+
+Script done on 2024-03-11 11:43:27+05:30 [COMMAND_EXIT_CODE="2"]
+Script started on 2024-03-11 12:38:52+05:30 [TERM="xterm-256color" TTY="/dev/pts/2" COLUMNS="112" LINES="28"]
+To run a command as administrator (user "root"), use "sudo <command>".
+See "man sudo_root" for details.
+
+[?2004h]0;kelvin@TIGER04458: ~[01;32mkelvin@TIGER04458[00m:[01;34m~[00m$ [7mfor filename in basilisk.dat minotaur.dat unicorn.dat[27m[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[1Pfor filename in basilisk.dat minotaur.dat unicorn.da[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[Kcd ~/shell-lesson-data/exercise-data/creatures/
+[?2004l[?2004h]0;kelvin@TIGER04458: ~/shell-lesson-data/exercise-data/creatures[01;32mkelvin@TIGER04458[00m:[01;34m~/shell-lesson-data/exercise-data/creatures[00m$ [7mfor filename in basilisk.dat minotaur.dat unicorn[27m[7m.[27m[7mdat[27m[A]0;kelvin@TIGER04458: ~/shell-lesson-data/exercise-data/creatures[01;32mkelvin@TIGER04458[00m:[01;34m~/shell-lesson-data/exercise-data/creatures[00m$ for filename in basilisk.dat minotaur.dat unicorn.dat
+[?2004l[?2004h> do
+[?2004l[?2004h> [7m    echo $filename[27m[C[C    echo $filename
+[?2004l[?2004h> [7m    head -n 2 $filename | tail -n 1[27m[C[C    head -n 2 $filename | tail -n 1
+[?2004l[?2004h> s[Kdone
+[?2004lbasilisk.dat
+CLASSIFICATION: basiliscus vulgaris
+minotaur.dat
+CLASSIFICATION: bos hominus
+unicorn.dat
+CLASSIFICATION: equus monoceros
+[?2004h]0;kelvin@TIGER04458: ~/shell-lesson-data/exercise-data/creatures[01;32mkelvin@TIGER04458[00m:[01;34m~/shell-lesson-data/exercise-data/creatures[00m$ [7mfor loop_variable in 0 1 2 3 4 5 6 7 8 9[27mfor loop_variable in 0 1 2 3 4 5 6 7 8 9
+[?2004l[?2004h> do
+[?2004l[?2004h> [7mecho $loop_variable[27m[C[C[1Pecho $loop_variabl[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K    [7mecho $loop_variable[27m[C[C[C[C[C[Cecho $loop_variable
+[?2004l[?2004h> done
+[?2004l0
+1
+2
+3
+4
+5
+6
+7
+8
+9
+[?2004h]0;kelvin@TIGER04458: ~/shell-lesson-data/exercise-data/creatures[01;32mkelvin@TIGER04458[00m:[01;34m~/shell-lesson-data/exercise-data/creatures[00m$ [K]0;kelvin@TIGER04458: ~/shell-lesson-data/exercise-data/creatures[01;32mkelvin@TIGER04458[00m:[01;34m~/shell-lesson-data/exercise-data/creatures[00m$ [K]0;kelvin@TIGER04458: ~/shell-lesson-data/exercise-data/creatures[01;32mkelvin@TIGER04458[00m:[01;34m~/shell-lesson-data/exercise-data/creatures[00m$ cd ..
+[?2004l[?2004h]0;kelvin@TIGER04458: ~/shell-lesson-data/exercise-data[01;32mkelvin@TIGER04458[00m:[01;34m~/shell-lesson-data/exercise-data[00m$ cd a[Kalkanes/
+[?2004l[?2004h]0;kelvin@TIGER04458: ~/shell-lesson-data/exercise-data/alkanes[01;32mkelvin@TIGER04458[00m:[01;34m~/shell-lesson-data/exercise-data/alkanes[00m$ [7mls *.pdb[27mls *.pdb
+[?2004lalkanes.pdb  all.pdb  cubane.pdb  ethane.pdb  methane.pdb  octane.pdb  pentane.pdb  propane.pdb
+[?2004h]0;kelvin@TIGER04458: ~/shell-lesson-data/exercise-data/alkanes[01;32mkelvin@TIGER04458[00m:[01;34m~/shell-lesson-data/exercise-data/alkanes[00m$ [7mfor datafile in *.pdb[27mfor datafile in *.pdb
+[?2004l[?2004h> do
+[?2004l[?2004h> [7m    ls *.pdb[27m[C[C    ls *.pdb
+[?2004l[?2004h> done
+[?2004lalkanes.pdb  all.pdb  cubane.pdb  ethane.pdb  methane.pdb  octane.pdb  pentane.pdb  propane.pdb
+alkanes.pdb  all.pdb  cubane.pdb  ethane.pdb  methane.pdb  octane.pdb  pentane.pdb  propane.pdb
+alkanes.pdb  all.pdb  cubane.pdb  ethane.pdb  methane.pdb  octane.pdb  pentane.pdb  propane.pdb
+alkanes.pdb  all.pdb  cubane.pdb  ethane.pdb  methane.pdb  octane.pdb  pentane.pdb  propane.pdb
+alkanes.pdb  all.pdb  cubane.pdb  ethane.pdb  methane.pdb  octane.pdb  pentane.pdb  propane.pdb
+alkanes.pdb  all.pdb  cubane.pdb  ethane.pdb  methane.pdb  octane.pdb  pentane.pdb  propane.pdb
+alkanes.pdb  all.pdb  cubane.pdb  ethane.pdb  methane.pdb  octane.pdb  pentane.pdb  propane.pdb
+alkanes.pdb  all.pdb  cubane.pdb  ethane.pdb  methane.pdb  octane.pdb  pentane.pdb  propane.pdb
+[?2004h]0;kelvin@TIGER04458: ~/shell-lesson-data/exercise-data/alkanes[01;32mkelvin@TIGER04458[00m:[01;34m~/shell-lesson-data/exercise-data/alkanes[00m$ [7mfor datafile in *.pdb[27mfor datafile in *.pdb
+[?2004l[?2004h> do
+[?2004l[?2004h> [7m    ls $datafile[27m[C[C    ls $datafile
+[?2004l[?2004h> done
+[?2004lalkanes.pdb
+all.pdb
+cubane.pdb
+ethane.pdb
+methane.pdb
+octane.pdb
+pentane.pdb
+propane.pdb
+[?2004h]0;kelvin@TIGER04458: ~/shell-lesson-data/exercise-data/alkanes[01;32mkelvin@TIGER04458[00m:[01;34m~/shell-lesson-data/exercise-data/alkanes[00m$ [7mfor filename in c*[27mfor filename in c*
+[?2004l[?2004h> do
+[?2004l[?2004h> [7m    ls $filename[27m[C[C    ls $filename
+[?2004l[?2004h> done
+[?2004lcubane.pdb
+cubane.pdb:Zone.Identifier
+[?2004h]0;kelvin@TIGER04458: ~/shell-lesson-data/exercise-data/alkanes[01;32mkelvin@TIGER04458[00m:[01;34m~/shell-lesson-data/exercise-data/alkanes[00m$ [7mfor filename in *c*[27mfor filename in *c*
+[?2004l[?2004h> do
+[?2004l[?2004h> [7m    ls $filename[27m[C[C    ls $filename
+[?2004l[?2004h> done
+[?2004lcubane.pdb
+cubane.pdb:Zone.Identifier
+octane.pdb
+octane.pdb:Zone.Identifier
+[?2004h]0;kelvin@TIGER04458: ~/shell-lesson-data/exercise-data/alkanes[01;32mkelvin@TIGER04458[00m:[01;34m~/shell-lesson-data/exercise-data/alkanes[00m$ [7mfor alkanes in *.pdb[27mfor alkanes in *.pdb
+[?2004l[?2004h> do
+[?2004l[?2004h> [7m    echo $alkanes[27m[C[C    echo $alkanes
+[?2004l[?2004h>     [7mcat $alkanes > alkanes.pdb[27m[C[C[C[C[C[Ccat $alkanes > alkanes.pdb
+[?2004l[?2004h> done'[K
+[?2004lalkanes.pdb
+all.pdb
+cubane.pdb
+ethane.pdb
+methane.pdb
+octane.pdb
+pentane.pdb
+propane.pdb
+[?2004h]0;kelvin@TIGER04458: ~/shell-lesson-data/exercise-data/alkanes[01;32mkelvin@TIGER04458[00m:[01;34m~/shell-lesson-data/exercise-data/alkanes[00m$ for alkanes in *.pdb; do     echo $alkanes;     cat $alkanes > alkanes.pdb; done[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K
+[?2004l[?2004h> do
+[?2004l[?2004h>     echo $alkanes
+[?2004l[?2004h> [7mcat $alkanes > alkanes.pdb[27m[C[Ccat $alkanes > alkanes.pdb[1@ [1@ [1@ [1@ 
+[?2004l[?2004h> done
+[?2004lcubane.pdb
+ethane.pdb
+methane.pdb
+octane.pdb
+pentane.pdb
+propane.pdb
+[?2004h]0;kelvin@TIGER04458: ~/shell-lesson-data/exercise-data/alkanes[01;32mkelvin@TIGER04458[00m:[01;34m~/shell-lesson-data/exercise-data/alkanes[00m$ [7mfor datafile in *.pdb[27mfor datafile in *.pdb
+[?2004l[?2004h> do
+[?2004l[?2004h> [7m    cat $datafile >> all.pdb[27m[C[C    cat $datafile >> all.pdb
+[?2004l[?2004h> done'
+[?2004l[?2004h> done
+[?2004l[?2004h> xit[K[K[K^C[?2004l[?2004h[?2004l
+[?2004h]0;kelvin@TIGER04458: ~/shell-lesson-data/exercise-data/alkanes[01;32mkelvin@TIGER04458[00m:[01;34m~/shell-lesson-data/exercise-data/alkanes[00m$ [7m    cat $datafile >> all.pdb[27m[1P    cat $datafile >> all.pd[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[Kfor datafiul[K[Kle in *.pdb
+[?2004l[?2004h> do
+[?2004l[?2004h> [7m    cat $datafile >> all.pdb[27m[C[C    cat $datafile >> all.pdb
+[?2004l[?2004h> done
+[?2004l[?2004h]0;kelvin@TIGER04458: ~/shell-lesson-data/exercise-data/alkanes[01;32mkelvin@TIGER04458[00m:[01;34m~/shell-lesson-data/exercise-data/alkanes[00m$ cd ..
+[?2004l[?2004h]0;kelvin@TIGER04458: ~/shell-lesson-data/exercise-data[01;32mkelvin@TIGER04458[00m:[01;34m~/shell-lesson-data/exercise-data[00m$ cd creatures/
+[?2004l[?2004h]0;kelvin@TIGER04458: ~/shell-lesson-data/exercise-data/creatures[01;32mkelvin@TIGER04458[00m:[01;34m~/shell-lesson-data/exercise-data/creatures[00m$ [7mfor filename in *.dat[27mfor filename in *.dat
+[?2004l[?2004h> do
+[?2004l[?2004h> [7m    echo $filename[27m[C[C    echo $filename
+[?2004l[?2004h> [7m    head -n 100 $filename | tail -n 20[27m[C[C    head -n 100 $filename | tail -n 20
+[?2004l[?2004h> done
+[?2004lbasilisk.dat
+CGGTACCGAA
+AAGGGTCGCG
+CAAGTGTTCC
+CGGGACAATA
+GTTCTGCTAA
+GATAAGTATG
+TGCCGACTTA
+CCCGACCGTC
+TAGGTTATAA
+GGCACAACCG
+CTTCACTGTA
+GAGGTGTACA
+AGGATCCGTT
+GCGCGGGCGG
+CAGTCTATGT
+TTTTCGACAC
+TGGACTGCTT
+CCCTTTGAGG
+GTGGATTTTT
+CGTAACGGGT
+minotaur.dat
+GGTTGGACCG
+AGTGAACGAA
+GCGATTGATG
+CCCAGTATTG
+GTTTCGGGTC
+CCACCAGGAA
+CAATGTTGGA
+CTTTAGCACG
+ACAGGAATCA
+ATCGTTTCGT
+AATGGTGGCA
+CTTTGGGGTT
+GCAGGCCCGC
+CTGTGCCTTC
+AACGGTCGGC
+AAATAGGACA
+GAGATTTCCT
+GCCTCAAACA
+TCGCAAGACG
+ATTTATCCGG
+unicorn.dat
+CGGTACCGAA
+AAGGGTCGCG
+CAAGTGTTCC
+CGGGACAATA
+GTTCTGCTAA
+GATAAGTATG
+TGCCGACTTA
+CCCGACCGTC
+TAGGTTATAA
+GGCACAACCG
+CTTCACTGTA
+GAGGTGTACA
+AGGATCCGTT
+GCGCGGGCGG
+CAGTCTATGT
+TTTTCGACAC
+TGGACTGCTT
+CCCTTTGAGG
+GTGGATTTTT
+CGTAACGGGT
+[?2004h]0;kelvin@TIGER04458: ~/shell-lesson-data/exercise-data/creatures[01;32mkelvin@TIGER04458[00m:[01;34m~/shell-lesson-data/exercise-data/creatures[00m$ [7mecho hello there[27mecho hello there
+[?2004lhello there
+[?2004h]0;kelvin@TIGER04458: ~/shell-lesson-data/exercise-data/creatures[01;32mkelvin@TIGER04458[00m:[01;34m~/shell-lesson-data/exercise-data/creatures[00m$ [7mfor filename in *.dat[27mfor filename in *.dat
+[?2004l[?2004h> do
+[?2004l[?2004h>     $filename
+[?2004l[?2004h> [7m    head -n 100 $filename | tail -n 20[27m[C[C    head -n 100 $filename | tail -n 20
+[?2004l[?2004h> done
+[?2004lbasilisk.dat: command not found
+CGGTACCGAA
+AAGGGTCGCG
+CAAGTGTTCC
+CGGGACAATA
+GTTCTGCTAA
+GATAAGTATG
+TGCCGACTTA
+CCCGACCGTC
+TAGGTTATAA
+GGCACAACCG
+CTTCACTGTA
+GAGGTGTACA
+AGGATCCGTT
+GCGCGGGCGG
+CAGTCTATGT
+TTTTCGACAC
+TGGACTGCTT
+CCCTTTGAGG
+GTGGATTTTT
+CGTAACGGGT
+minotaur.dat: command not found
+GGTTGGACCG
+AGTGAACGAA
+GCGATTGATG
+CCCAGTATTG
+GTTTCGGGTC
+CCACCAGGAA
+CAATGTTGGA
+CTTTAGCACG
+ACAGGAATCA
+ATCGTTTCGT
+AATGGTGGCA
+CTTTGGGGTT
+GCAGGCCCGC
+CTGTGCCTTC
+AACGGTCGGC
+AAATAGGACA
+GAGATTTCCT
+GCCTCAAACA
+TCGCAAGACG
+ATTTATCCGG
+unicorn.dat: command not found
+CGGTACCGAA
+AAGGGTCGCG
+CAAGTGTTCC
+CGGGACAATA
+GTTCTGCTAA
+GATAAGTATG
+TGCCGACTTA
+CCCGACCGTC
+TAGGTTATAA
+GGCACAACCG
+CTTCACTGTA
+GAGGTGTACA
+AGGATCCGTT
+GCGCGGGCGG
+CAGTCTATGT
+TTTTCGACAC
+TGGACTGCTT
+CCCTTTGAGG
+GTGGATTTTT
+CGTAACGGGT
+[?2004h]0;kelvin@TIGER04458: ~/shell-lesson-data/exercise-data/creatures[01;32mkelvin@TIGER04458[00m:[01;34m~/shell-lesson-data/exercise-data/creatures[00m$ [7mfor filename in *.dat[27mfor filename in *.dat
+[?2004l[?2004h> do
+[?2004l[?2004h> [7m    cp $filename original-$filename[27m[C[C    cp $filename original-$filename
+[?2004l[?2004h> done
+[?2004l[?2004h]0;kelvin@TIGER04458: ~/shell-lesson-data/exercise-data/creatures[01;32mkelvin@TIGER04458[00m:[01;34m~/shell-lesson-data/exercise-data/creatures[00m$ cd ~/shell-lesson-data/north-pacific-gyre/
+[?2004l[?2004h]0;kelvin@TIGER04458: ~/shell-lesson-data/north-pacific-gyre[01;32mkelvin@TIGER04458[00m:[01;34m~/shell-lesson-data/north-pacific-gyre[00m$ [7mfor datafile in NENE*A.txt NENE*B.txt[27mfor datafile in NENE*A.txt NENE*B.txt
+[?2004l[?2004h> do
+[?2004l[?2004h>     $echo[K[K[K[K[Kecho $datafile
+[?2004l[?2004h> done
+[?2004lNENE01729A.txt
+NENE01736A.txt
+NENE01751A.txt
+NENE01812A.txt
+NENE01843A.txt
+NENE01978A.txt
+NENE02040A.txt
+NENE02043A.txt
+NENE01729B.txt
+NENE01751B.txt
+NENE01843B.txt
+NENE01978B.txt
+NENE02018B.txt
+NENE02040B.txt
+NENE02043B.txt
+[?2004h]0;kelvin@TIGER04458: ~/shell-lesson-data/north-pacific-gyre[01;32mkelvin@TIGER04458[00m:[01;34m~/shell-lesson-data/north-pacific-gyre[00m$ [7m$ for datafile in NENE*A.txt NENE*B.txt[27m$ for datafile in NENE*A.txt NENE*B.txt
+[?2004l$: command not found
+[?2004h]0;kelvin@TIGER04458: ~/shell-lesson-data/north-pacific-gyre[01;32mkelvin@TIGER04458[00m:[01;34m~/shell-lesson-data/north-pacific-gyre[00m$ [7m$ for datafile in NENE*A.txt NENE*B.txt[27m$ for datafile in NENE*A.txt NENE*B.txt[1P[1P
+[?2004l[?2004h> do
+[?2004l[?2004h> [7m    echo $datafile stats-$datafile[27m[C[C    echo $datafile stats-$datafile
+[?2004l[?2004h> done
+[?2004lNENE01729A.txt stats-NENE01729A.txt
+NENE01736A.txt stats-NENE01736A.txt
+NENE01751A.txt stats-NENE01751A.txt
+NENE01812A.txt stats-NENE01812A.txt
+NENE01843A.txt stats-NENE01843A.txt
+NENE01978A.txt stats-NENE01978A.txt
+NENE02040A.txt stats-NENE02040A.txt
+NENE02043A.txt stats-NENE02043A.txt
+NENE01729B.txt stats-NENE01729B.txt
+NENE01751B.txt stats-NENE01751B.txt
+NENE01843B.txt stats-NENE01843B.txt
+NENE01978B.txt stats-NENE01978B.txt
+NENE02018B.txt stats-NENE02018B.txt
+NENE02040B.txt stats-NENE02040B.txt
+NENE02043B.txt stats-NENE02043B.txt
+[?2004h]0;kelvin@TIGER04458: ~/shell-lesson-data/north-pacific-gyre[01;32mkelvin@TIGER04458[00m:[01;34m~/shell-lesson-data/north-pacific-gyre[00m$ for datafile in NENE*A.txt NENE*B.txt; do     echo $datafile stats-$datafile; done[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C $data[1P[A]0;kelvin@TIGER04458: ~/shell-lesson-data/north-pacific-gyre[01;32mkelvin@TIGER04458[00m:[01;34m~/shell-lesson-data/north-pacific-gyre[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C $dataf[1P[A]0;kelvin@TIGER04458: ~/shell-lesson-data/north-pacific-gyre[01;32mkelvin@TIGER04458[00m:[01;34m~/shell-lesson-data/north-pacific-gyre[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C $datafi[1P[A]0;kelvin@TIGER04458: ~/shell-lesson-data/north-pacific-gyre[01;32mkelvin@TIGER04458[00m:[01;34m~/shell-lesson-data/north-pacific-gyre[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C $datafil[1P[A]0;kelvin@TIGER04458: ~/shell-lesson-data/north-pacific-gyre[01;32mkelvin@TIGER04458[00m:[01;34m~/shell-lesson-data/north-pacific-gyre[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C$datafile[1P[A]0;kelvin@TIGER04458: ~/shell-lesson-data/north-pacific-gyre[01;32mkelvin@TIGER04458[00m:[01;34m~/shell-lesson-data/north-pacific-gyre[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C$datafile [1P[A]0;kelvin@TIGER04458: ~/shell-lesson-data/north-pacific-gyre[01;32mkelvin@TIGER04458[00m:[01;34m~/shell-lesson-data/north-pacific-gyre[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C$datafile s[1P[A]0;kelvin@TIGER04458: ~/shell-lesson-data/north-pacific-gyre[01;32mkelvin@TIGER04458[00m:[01;34m~/shell-lesson-data/north-pacific-gyre[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C$datafile st[1P[A]0;kelvin@TIGER04458: ~/shell-lesson-data/north-pacific-gyre[01;32mkelvin@TIGER04458[00m:[01;34m~/shell-lesson-data/north-pacific-gyre[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C$datafile sta[1P[A]0;kelvin@TIGER04458: ~/shell-lesson-data/north-pacific-gyre[01;32mkelvin@TIGER04458[00m:[01;34m~/shell-lesson-data/north-pacific-gyre[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C $datafile st[1@a[A]0;kelvin@TIGER04458: ~/shell-lesson-data/north-pacific-gyre[01;32mkelvin@TIGER04458[00m:[01;34m~/shell-lesson-data/north-pacific-gyre[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cb $datafile s[1@t[A]0;kelvin@TIGER04458: ~/shell-lesson-data/north-pacific-gyre[01;32mkelvin@TIGER04458[00m:[01;34m~/shell-lesson-data/north-pacific-gyre[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Ca $datafile [1@s[A]0;kelvin@TIGER04458: ~/shell-lesson-data/north-pacific-gyre[01;32mkelvin@TIGER04458[00m:[01;34m~/shell-lesson-data/north-pacific-gyre[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cs $datafile[1@ [A]0;kelvin@TIGER04458: ~/shell-lesson-data/north-pacific-gyre[01;32mkelvin@TIGER04458[00m:[01;34m~/shell-lesson-data/north-pacific-gyre[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Ch $datafil[1@e[A]0;kelvin@TIGER04458: ~/shell-lesson-data/north-pacific-gyre[01;32mkelvin@TIGER04458[00m:[01;34m~/shell-lesson-data/north-pacific-gyre[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C $datafi[1@l[A]0;kelvin@TIGER04458: ~/shell-lesson-data/north-pacific-gyre[01;32mkelvin@TIGER04458[00m:[01;34m~/shell-lesson-data/north-pacific-gyre[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cg $dataf[1@i[A]0;kelvin@TIGER04458: ~/shell-lesson-data/north-pacific-gyre[01;32mkelvin@TIGER04458[00m:[01;34m~/shell-lesson-data/north-pacific-gyre[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Co $data[1@f[A]0;kelvin@TIGER04458: ~/shell-lesson-data/north-pacific-gyre[01;32mkelvin@TIGER04458[00m:[01;34m~/shell-lesson-data/north-pacific-gyre[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Co $dat[1@a[A]0;kelvin@TIGER04458: ~/shell-lesson-data/north-pacific-gyre[01;32mkelvin@TIGER04458[00m:[01;34m~/shell-lesson-data/north-pacific-gyre[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cs $da[1@t[A]0;kelvin@TIGER04458: ~/shell-lesson-data/north-pacific-gyre[01;32mkelvin@TIGER04458[00m:[01;34m~/shell-lesson-data/north-pacific-gyre[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Ct $d[1@a[A]0;kelvin@TIGER04458: ~/shell-lesson-data/north-pacific-gyre[01;32mkelvin@TIGER04458[00m:[01;34m~/shell-lesson-data/north-pacific-gyre[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cs $[1@d[A]0;kelvin@TIGER04458: ~/shell-lesson-data/north-pacific-gyre[01;32mkelvin@TIGER04458[00m:[01;34m~/shell-lesson-data/north-pacific-gyre[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C $d[1P[A]0;kelvin@TIGER04458: ~/shell-lesson-data/north-pacific-gyre[01;32mkelvin@TIGER04458[00m:[01;34m~/shell-lesson-data/north-pacific-gyre[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cats[6@.sh $d
+[?2004l^C
+[?2004h]0;kelvin@TIGER04458: ~/shell-lesson-data/north-pacific-gyre[01;32mkelvin@TIGER04458[00m:[01;34m~/shell-lesson-data/north-pacific-gyre[00m$ for datafile in NENE*A.txt NENE*B.txt; do bash goostats.sh $datafile stats-$datafile; done[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C bash goostat[1@s[A]0;kelvin@TIGER04458: ~/shell-lesson-data/north-pacific-gyre[01;32mkelvin@TIGER04458[00m:[01;34m~/shell-lesson-data/north-pacific-gyre[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Ce bash goosta[1@t[A]0;kelvin@TIGER04458: ~/shell-lesson-data/north-pacific-gyre[01;32mkelvin@TIGER04458[00m:[01;34m~/shell-lesson-data/north-pacific-gyre[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cc bash goost[1@a[A]0;kelvin@TIGER04458: ~/shell-lesson-data/north-pacific-gyre[01;32mkelvin@TIGER04458[00m:[01;34m~/shell-lesson-data/north-pacific-gyre[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Ch bash goos[1@t[A]0;kelvin@TIGER04458: ~/shell-lesson-data/north-pacific-gyre[01;32mkelvin@TIGER04458[00m:[01;34m~/shell-lesson-data/north-pacific-gyre[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Co bash goo[1@s[A]0;kelvin@TIGER04458: ~/shell-lesson-data/north-pacific-gyre[01;32mkelvin@TIGER04458[00m:[01;34m~/shell-lesson-data/north-pacific-gyre[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C bash go[1@o[A]0;kelvin@TIGER04458: ~/shell-lesson-data/north-pacific-gyre[01;32mkelvin@TIGER04458[00m:[01;34m~/shell-lesson-data/north-pacific-gyre[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C$ bash g[C[1@o[A]0;kelvin@TIGER04458: ~/shell-lesson-data/north-pacific-gyre[01;32mkelvin@TIGER04458[00m:[01;34m~/shell-lesson-data/north-pacific-gyre[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cd bash [1@g[A]0;kelvin@TIGER04458: ~/shell-lesson-data/north-pacific-gyre[01;32mkelvin@TIGER04458[00m:[01;34m~/shell-lesson-data/north-pacific-gyre[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Ca bash[1@ [A]0;kelvin@TIGER04458: ~/shell-lesson-data/north-pacific-gyre[01;32mkelvin@TIGER04458[00m:[01;34m~/shell-lesson-data/north-pacific-gyre[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Ct bas[1@h[A]0;kelvin@TIGER04458: ~/shell-lesson-data/north-pacific-gyre[01;32mkelvin@TIGER04458[00m:[01;34m~/shell-lesson-data/north-pacific-gyre[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Ca ba[1@s[A]0;kelvin@TIGER04458: ~/shell-lesson-data/north-pacific-gyre[01;32mkelvin@TIGER04458[00m:[01;34m~/shell-lesson-data/north-pacific-gyre[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cf b[1@a[A]0;kelvin@TIGER04458: ~/shell-lesson-data/north-pacific-gyre[01;32mkelvin@TIGER04458[00m:[01;34m~/shell-lesson-data/north-pacific-gyre[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Ci [1@b[1@l[1@e[1@;
+[?2004lNENE01729A.txt
+NENE01736A.txt
+NENE01751A.txt
+NENE01812A.txt
+NENE01843A.txt
+NENE01978A.txt
+NENE02040A.txt
+NENE02043A.txt
+NENE01729B.txt
+NENE01751B.txt
+NENE01843B.txt
+NENE01978B.txt
+NENE02018B.txt
+NENE02040B.txt
+NENE02043B.txt
+[?2004h]0;kelvin@TIGER04458: ~/shell-lesson-data/north-pacific-gyre[01;32mkelvin@TIGER04458[00m:[01;34m~/shell-lesson-data/north-pacific-gyre[00m$ [7mhistory | tail -n 5[27mhistory | tail -n 5
+[?2004l  253  $ for datafile in NENE*A.txt NENE*B.txt
+  254  for datafile in NENE*A.txt NENE*B.txt; do     echo $datafile stats-$datafile; done
+  255  for datafile in NENE*A.txt NENE*B.txt; do bash goostats.sh $datafile stats-$datafile; done
+  256  for datafile in NENE*A.txt NENE*B.txt; do echo $datafile; bash goostats.sh $datafile stats-$datafile; done
+  257  history | tail -n 5
+[?2004h]0;kelvin@TIGER04458: ~/shell-lesson-data/north-pacific-gyre[01;32mkelvin@TIGER04458[00m:[01;34m~/shell-lesson-data/north-pacific-gyre[00m$ exit
+[?2004lexit
+
+Script done on 2024-03-11 13:00:27+05:30 [COMMAND_EXIT_CODE="0"]
+Script started on 2024-03-11 13:01:32+05:30 [TERM="xterm-256color" TTY="/dev/pts/2" COLUMNS="112" LINES="28"]
+To run a command as administrator (user "root"), use "sudo <command>".
+See "man sudo_root" for details.
+
+[?2004h]0;kelvin@TIGER04458: ~[01;32mkelvin@TIGER04458[00m:[01;34m~[00m$ cd ~/shell-lesson-data/north-pacific-gyre/
+[?2004l[?2004h]0;kelvin@TIGER04458: ~/shell-lesson-data/north-pacific-gyre[01;32mkelvin@TIGER04458[00m:[01;34m~/shell-lesson-data/north-pacific-gyre[00m$ (reverse-i-search)`': [K]0;kelvin@TIGER04458: ~/shell-lesson-data/north-pacific-gyre[01;32mkelvin@TIGER04458[00m:[01;34m~/shell-lesson-data/north-pacific-gyre[00m$ 
+[?2004l[?2004h]0;kelvin@TIGER04458: ~/shell-lesson-data/north-pacific-gyre[01;32mkelvin@TIGER04458[00m:[01;34m~/shell-lesson-data/north-pacific-gyre[00m$ (reverse-i-search)`': [K]0;kelvin@TIGER04458: ~/shell-lesson-data/north-pacific-gyre[01;32mkelvin@TIGER04458[00m:[01;34m~/shell-lesson-data/north-pacific-gyre[00m$ cd ~/shell-lesson-data/north-pacific-gyre/[Kcd ~/shell-lesson-data/exercise-data/alkanes/
+[?2004l[?2004h]0;kelvin@TIGER04458: ~/shell-lesson-data/exercise-data/alkanes[01;32mkelvin@TIGER04458[00m:[01;34m~/shell-lesson-data/exercise-data/alkanes[00m$ [7mfor datafile in *.pdb[27mfor datafile in *.pdb
+[?2004l[?2004h> do
+[?2004l[?2004h> ^C[?2004l[?2004h[?2004l
+[?2004h]0;kelvin@TIGER04458: ~/shell-lesson-data/exercise-data/alkanes[01;32mkelvin@TIGER04458[00m:[01;34m~/shell-lesson-data/exercise-data/alkanes[00m$ [7mfor datafile in *.pdb[27mfor datafile in *.pdb
+[?2004l[?2004h> do
+[?2004l[?2004h> [7m    echo "cat $datafile >> all.pdb"[27m[C[C    echo "cat $datafile >> all.pdb"
+[?2004l[?2004h> done
+[?2004lcat alkanes.pdb >> all.pdb
+cat all.pdb >> all.pdb
+cat cubane.pdb >> all.pdb
+cat ethane.pdb >> all.pdb
+cat methane.pdb >> all.pdb
+cat octane.pdb >> all.pdb
+cat pentane.pdb >> all.pdb
+cat propane.pdb >> all.pdb
+[?2004h]0;kelvin@TIGER04458: ~/shell-lesson-data/exercise-data/alkanes[01;32mkelvin@TIGER04458[00m:[01;34m~/shell-lesson-data/exercise-data/alkanes[00m$ [7mfor species in cubane ethane methane[27mfor species in cubane ethane methane
+[?2004l[?2004h> do
+[?2004l[?2004h> [7m     for temperature in 25 30 37 40[27m[C[C     for temperature in 25 30 37 40
+[?2004l[?2004h>      do
+[?2004l[?2004h> [7m        mkdir $species-$temperature[27m[C[C        mkdir $species-$temperature
+[?2004l[?2004h>      done
+[?2004l[?2004h> done
+[?2004l[?2004h]0;kelvin@TIGER04458: ~/shell-lesson-data/exercise-data/alkanes[01;32mkelvin@TIGER04458[00m:[01;34m~/shell-lesson-data/exercise-data/alkanes[00m$ exit
+[?2004lexit
+
+Script done on 2024-03-11 13:12:25+05:30 [COMMAND_EXIT_CODE="0"]
+Script started on 2024-03-11 13:44:54+05:30 [TERM="xterm-256color" TTY="/dev/pts/2" COLUMNS="112" LINES="28"]
+To run a command as administrator (user "root"), use "sudo <command>".
+See "man sudo_root" for details.
+
+[?2004h]0;kelvin@TIGER04458: ~[01;32mkelvin@TIGER04458[00m:[01;34m~[00m$ cd ~/shell-lesson-data/exercise-data/alkanes/
+[?2004l[?2004h]0;kelvin@TIGER04458: ~/shell-lesson-data/exercise-data/alkanes[01;32mkelvin@TIGER04458[00m:[01;34m~/shell-lesson-data/exercise-data/alkanes[00m$ n[7mano middle.sh[27mano middle.sh
+[?2004l[?2004h[?1049h[22;0;0t[1;28r(B[m[4l[?7h[39;49m[?1h=[?1h=[?25l[39;49m(B[m[H[2J[26;50H(B[0;7m[ Reading... ](B[m[26;49H(B[0;7m[ Read 3 lines ](B[m[H(B[0;7m  GNU nano 6.2                                        middle.sh                                                 [1;111H(B[m[27d(B[0;7m^G(B[m Help[27;17H(B[0;7m^O(B[m Write Out    (B[0;7m^W(B[m Where Is     (B[0;7m^K(B[m Cut[27;65H(B[0;7m^T(B[m Execute[81G(B[0;7m^C(B[m Location     (B[0;7mM-U(B[m Undo[28d(B[0;7m^X(B[m Exit[28;17H(B[0;7m^R(B[m Read File    (B[0;7m^\(B[m Replace[49G(B[0;7m^U(B[m Paste[28;65H(B[0;7m^J(B[m Justify[81G(B[0;7m^/(B[m Go To Line   (B[0;7mM-E(B[m Redo[2d[36m# Select lines from the middle of a file.[3d# Usage: bash middle.sh filename end_line num_lines[4d(B[0;1m[34mhead[35m -n[39m(B[m (B[0;1m[33m"$2"[39m(B[m (B[0;1m[33m"$1"[39m(B[m [32m|[39m(B[m (B[0;1m[34mtail[35m -n[39m(B[m (B[0;1m[33m"$3"[2d[39m(B[m[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[C[?25l[?12l[?25h[3d[?25l[?12l[?25h[4d[?25l[?12l[?25h[C[?25l[?12l[?25h[C[?25l[?12l[?25h[C[?25l[?12l[?25h[C[?25l[?12l[?25h[C[?25l[?12l[?25h[C[?25l[?12l[?25h [?25l[?12l[?25h[C[?25l[?12l[?25h[C[?25l[?12l[?25h[C[?25l[?12l[?25h[C[?25l[?12l[?25h [?25l[?12l[?25h[C[?25l[?12l[?25h[C[?25l[?12l[?25h[C[?25l[26d[K[?12l[?25h[4;18H[?25l[?12l[?25h [?25l[?12l[?25h[C[?25l[?12l[?25h [?25l[?12l[?25h[C[?25l[?12l[?25h[C[?25l[?12l[?25h[C[?25l[?12l[?25h[C[?25l[?12l[?25h[C[?25l[?12l[?25h[C[?25l[?12l[?25h[C[?25l[?12l[?25h [?25l[?12l[?25h[C[?25l[?12l[?25h[C[?25l[?12l[?25h[C[?25l[?12l[?25h[C[?25l[?12l[?25h[5d[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[4;33H[?25l[1;65H(B[0;7m*[111G(B[m[?12l[?25h[4;29H"(B[0;1m[31m$3[39m(B[m[K[?25l[?12l[?25h[32m$[39m(B[m[K[?25l[?12l[?25h [?25l[?12l[?25h[42m [49m(B[m[K[?25l[?12l[?25h [?25l[?12l[?25h -[K[?25l[?12l[?25h[42m [49m(B[m[K[?25l[?12l[?25h [?25l[?12l[?25htai[K[?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h[42m [49m(B[m[K[?25l[?12l[?25h [?25l[?12l[?25h[42m [49m(B[m[K[?25l[?12l[?25h [?25l[?12l[?25h"(B[0;1m[31m$1[39m(B[m[K[?25l[?12l[?25h[32m$[39m(B[m[K[?25l[?12l[?25h [?25l[?12l[?25h[42m [49m(B[m[K[?25l[?12l[?25h [?25l[?12l[?25h"(B[0;1m[31m$2[39m(B[m[K[?25l[?12l[?25h[32m$[39m(B[m[K[?25l[?12l[?25h [?25l[?12l[?25h[42m [49m(B[m[K[?25l[?12l[?25h [?25l[?12l[?25h -[K[?25l[?12l[?25h[42m [49m(B[m[K[?25l[?12l[?25h [?25l[?12l[?25hhea[K[?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h[K[?25l[3;52H[?12l[?25h[?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h[42m [49m(B[m[K[?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h[42m [49m(B[m[K[?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h[42m [49m(B[m[K[?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h[42m [49m(B[m[K[?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h[42m [49m(B[m[K[?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h[42m [49m(B[m[K[?25l[?12l[?25h [?25l[?12l[?25h[K[?25l[2;42H[?12l[?25h[?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h[42m [49m(B[m[K[?25l[?12l[?25h [?25l[?12l[?25h[42m [49m(B[m[K[?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h[42m [49m(B[m[K[?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h[42m [49m(B[m[K[?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h[42m [49m(B[m[K[?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h[42m [49m(B[m[K[?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h[42m [49m(B[m[K[?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h[42m [49m(B[m[K[?25l[?12l[?25h [?25l[?12l[?25h[K[?25l(B[0;1m[34mhead[35m -n[39m(B[m 15 octane.pdb [32m|[39m(B[m (B[0;1m[34mtail[35m -n[39m(B[m 5[?12l[?25h[?25l[27;17H            (B[0;7mM-D(B[m DOS Format[14X[27;57H(B[0;7mM-A(B[m Append        [81G    (B[0;7mM-B(B[m Backup File[K[28;2H(B[0;7mC(B[m Cancel[17G            (B[0;7mM-M(B[m Mac Format[49G        (B[0;7mM-P(B[m Prepend       [81G    (B[0;7m^T(B[m Browse[K[26d(B[0;7mFile Name to Write: middle.sh                                                                                   [26;30H(B[m[?12l[?25h[?25l[26;49H[1K (B[0;7m[ Writing... ](B[m[K[1;65H(B[0;7m [111G(B[m[26;49H(B[0;7m[ Wrote 1 line ](B[m[27;17H(B[0;7m^O(B[m Write Out    (B[0;7m^W(B[m Where Is     (B[0;7m^K(B[m Cut          (B[0;7m^T(B[m Execute[81G(B[0;7m^C(B[m Location     (B[0;7mM-U(B[m Undo[28;2H(B[0;7mX(B[m Exit  [17G(B[0;7m^R(B[m Read File    (B[0;7m^\(B[m Replace[49G(B[0;7m^U(B[m Paste        (B[0;7m^J(B[m Justify[81G(B[0;7m^/(B[m Go To Line   (B[0;7mM-E(B[m Redo[?12l[?25h[2;34H[?25l[26d[J[28d[?12l[?25h[28;1H[?1049l[23;0;0t[?1l>[?2004l[?2004h]0;kelvin@TIGER04458: ~/shell-lesson-data/exercise-data/alkanes[01;32mkelvin@TIGER04458[00m:[01;34m~/shell-lesson-data/exercise-data/alkanes[00m$ [7mbash middle.sh[27mbash middle.sh
+[?2004lATOM      9  H           1      -4.502   0.681   0.785  1.00  0.00
+ATOM     10  H           1      -5.254  -0.243  -0.537  1.00  0.00
+ATOM     11  H           1      -4.357   1.252  -0.895  1.00  0.00
+ATOM     12  H           1      -3.009  -0.741  -1.467  1.00  0.00
+ATOM     13  H           1      -3.172  -1.337   0.206  1.00  0.00
+[?2004h]0;kelvin@TIGER04458: ~/shell-lesson-data/exercise-data/alkanes[01;32mkelvin@TIGER04458[00m:[01;34m~/shell-lesson-data/exercise-data/alkanes[00m$ [7mnano middle.sh[27mnano middle.sh
+[?2004l[?2004h[?1049h[22;0;0t[1;28r(B[m[4l[?7h[39;49m[?1h=[?1h=[?25l[39;49m(B[m[H[2J[26;50H(B[0;7m[ Reading... ](B[m[26;49H(B[0;7m[ Read 1 line ](B[m[H(B[0;7m  GNU nano 6.2                                        middle.sh                                                 [1;111H(B[m[27d(B[0;7m^G(B[m Help[27;17H(B[0;7m^O(B[m Write Out    (B[0;7m^W(B[m Where Is     (B[0;7m^K(B[m Cut[27;65H(B[0;7m^T(B[m Execute[81G(B[0;7m^C(B[m Location     (B[0;7mM-U(B[m Undo[28d(B[0;7m^X(B[m Exit[28;17H(B[0;7m^R(B[m Read File    (B[0;7m^\(B[m Replace[49G(B[0;7m^U(B[m Paste[28;65H(B[0;7m^J(B[m Justify[81G(B[0;7m^/(B[m Go To Line   (B[0;7mM-E(B[m Redo[2d(B[0;1m[34mhead[35m -n[39m(B[m 15 octane.pdb [32m|[39m(B[m (B[0;1m[34mtail[35m -n[39m(B[m 5[?12l[?25h[?25l[?12l[?25h[C[?25l[?12l[?25h[C[?25l[?12l[?25h[C[?25l[?12l[?25h[C[?25l[?12l[?25h[C[?25l[?12l[?25h[C[?25l[?12l[?25h[C[?25l[?12l[?25h [?25l[?12l[?25h1[?25l[?12l[?25h5[?25l[?12l[?25h [?25l[?12l[?25ho[?25l[?12l[?25hc[?25l[?12l[?25ht[?25l[?12l[?25ha[?25l[?12l[?25hn[?25l[?12l[?25he[?25l[?12l[?25h.[?25l[?12l[?25hp[?25l[26d[K[?12l[?25h[2;21H[?25l[?12l[?25hb[?25l[?12l[?25h [?25l[?12l[?25h[C[?25l[?12l[?25h [?25l[?12l[?25h[C[?25l[?12l[?25h[C[?25l[?12l[?25h[C[?25l[?12l[?25h[C[?25l[?12l[?25h[C[?25l[?12l[?25h[C[?25l[?12l[?25h[C[?25l[?12l[?25h [?25l[?12l[?25h5[?25l[1;65H(B[0;7m*[111G(B[m[?12l[?25h[2;34H[32m\[39m(B[m[?25l[?12l[?25h[32m\[39m(B[m[?25l[?12l[?25h[32m\[39m(B[m[?25l[?12l[?25h[32m\[39m(B[m[?25l[?12l[?25h[32m\[39m(B[m[?25l[?12l[?25h[32m\[39m(B[m[?25l[?12l[?25h[32m\[39m(B[m[?25l[?12l[?25h[32m\[39m(B[m[?25l[?12l[?25h[32m\[39m(B[m[?25l[?12l[?25h[32m\[39m(B[m[?25l[?12l[?25h[32m\[39m(B[m[?25l[?12l[?25h[32m\[39m(B[m[?25l[?12l[?25h[32m\[39m(B[m[?25l[?12l[?25h[32m\[39m(B[m[?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h[42m [49m(B[m[K[?25l[?12l[?25h [?25l[?12l[?25h -[K[?25l[?12l[?25h[42m [49m(B[m[K[?25l[?12l[?25h [?25l[?12l[?25htai[K[?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h[42m [49m(B[m[K[?25l[?12l[?25h [?25l[?12l[?25h[42m [49m(B[m[K[?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h[42m [49m(B[m[K[?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h[42m [49m(B[m[K[?25l[?12l[?25h [?25l[?12l[?25h -[K[?25l[?12l[?25h[42m [49m(B[m[K[?25l[?12l[?25h [?25l[?12l[?25hhea[K[?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h[K[?25l(B[0;1m[34mhead[35m -n[39m(B[m 15 (B[0;1m[33m"$1"[39m(B[m [32m|[39m(B[m (B[0;1m[34mtail[35m -n[39m(B[m 5[?12l[?25h[?25l[27;17H            (B[0;7mM-D(B[m DOS Format[14X[27;57H(B[0;7mM-A(B[m Append        [81G    (B[0;7mM-B(B[m Backup File[K[28;2H(B[0;7mC(B[m Cancel[17G            (B[0;7mM-M(B[m Mac Format[49G        (B[0;7mM-P(B[m Prepend       [81G    (B[0;7m^T(B[m Browse[K[26d(B[0;7mFile Name to Write: middle.sh                                                                                   [26;30H(B[m[?12l[?25h[?25l[26;49H[1K (B[0;7m[ Writing... ](B[m[K[1;65H(B[0;7m [111G(B[m[26;49H(B[0;7m[ Wrote 1 line ](B[m[27;17H(B[0;7m^O(B[m Write Out    (B[0;7m^W(B[m Where Is     (B[0;7m^K(B[m Cut          (B[0;7m^T(B[m Execute[81G(B[0;7m^C(B[m Location     (B[0;7mM-U(B[m Undo[28;2H(B[0;7mX(B[m Exit  [17G(B[0;7m^R(B[m Read File    (B[0;7m^\(B[m Replace[49G(B[0;7m^U(B[m Paste        (B[0;7m^J(B[m Justify[81G(B[0;7m^/(B[m Go To Line   (B[0;7mM-E(B[m Redo[?12l[?25h[2;28H[?25l[26d[J[28d[?12l[?25h[28;1H[?1049l[23;0;0t[?1l>[?2004l[?2004h]0;kelvin@TIGER04458: ~/shell-lesson-data/exercise-data/alkanes[01;32mkelvin@TIGER04458[00m:[01;34m~/shell-lesson-data/exercise-data/alkanes[00m$ [7mbash middle.sh octane.pdb[27mbash middle.sh octane.pdb
+[?2004lATOM      9  H           1      -4.502   0.681   0.785  1.00  0.00
+ATOM     10  H           1      -5.254  -0.243  -0.537  1.00  0.00
+ATOM     11  H           1      -4.357   1.252  -0.895  1.00  0.00
+ATOM     12  H           1      -3.009  -0.741  -1.467  1.00  0.00
+ATOM     13  H           1      -3.172  -1.337   0.206  1.00  0.00
+[?2004h]0;kelvin@TIGER04458: ~/shell-lesson-data/exercise-data/alkanes[01;32mkelvin@TIGER04458[00m:[01;34m~/shell-lesson-data/exercise-data/alkanes[00m$ [7mbash middle.sh pentane.pdb[27mbash middle.sh pentane.pdb
+[?2004lATOM      9  H           1       1.324   0.350  -1.332  1.00  0.00
+ATOM     10  H           1       1.271   1.378   0.122  1.00  0.00
+ATOM     11  H           1      -0.074  -0.384   1.288  1.00  0.00
+ATOM     12  H           1      -0.048  -1.362  -0.205  1.00  0.00
+ATOM     13  H           1      -1.183   0.500  -1.412  1.00  0.00
+[?2004h]0;kelvin@TIGER04458: ~/shell-lesson-data/exercise-data/alkanes[01;32mkelvin@TIGER04458[00m:[01;34m~/shell-lesson-data/exercise-data/alkanes[00m$ [7mnano middle.sh[27mnano middle.sh
+[?2004l[?2004h[?1049h[22;0;0t[1;28r(B[m[4l[?7h[39;49m[?1h=[?1h=[?25l[39;49m(B[m[H[2J[26;50H(B[0;7m[ Reading... ](B[m[26;49H(B[0;7m[ Read 1 line ](B[m[H(B[0;7m  GNU nano 6.2                                        middle.sh                                                 [1;111H(B[m[27d(B[0;7m^G(B[m Help[27;17H(B[0;7m^O(B[m Write Out    (B[0;7m^W(B[m Where Is     (B[0;7m^K(B[m Cut[27;65H(B[0;7m^T(B[m Execute[81G(B[0;7m^C(B[m Location     (B[0;7mM-U(B[m Undo[28d(B[0;7m^X(B[m Exit[28;17H(B[0;7m^R(B[m Read File    (B[0;7m^\(B[m Replace[49G(B[0;7m^U(B[m Paste[28;65H(B[0;7m^J(B[m Justify[81G(B[0;7m^/(B[m Go To Line   (B[0;7mM-E(B[m Redo[2d(B[0;1m[34mhead[35m -n[39m(B[m 15 (B[0;1m[33m"$1"[39m(B[m [32m|[39m(B[m (B[0;1m[34mtail[35m -n[39m(B[m 5[?12l[?25h[?25l[?12l[?25h[C[?25l[?12l[?25h[C[?25l[?12l[?25h[C[?25l[?12l[?25h[C[?25l[?12l[?25h[C[?25l[?12l[?25h[C[?25l[?12l[?25h[C[?25l[?12l[?25h [?25l[?12l[?25h1[?25l[?12l[?25h5[?25l[?12l[?25h [?25l[?12l[?25h[C[?25l[?12l[?25h[C[?25l[?12l[?25h[C[?25l[?12l[?25h[C[?25l[?12l[?25h [?25l[?12l[?25h[C[?25l[?12l[?25h [?25l[?12l[?25h[C[?25l[26d[K[?12l[?25h[2;21H[?25l[?12l[?25h[C[?25l[?12l[?25h[C[?25l[?12l[?25h[C[?25l[?12l[?25h[C[?25l[?12l[?25h[C[?25l[?12l[?25h [?25l[?12l[?25h5[?25l[1;65H(B[0;7m*[111G(B[m[?12l[?25h[2;26H[42m [49m(B[m[K[?25l[?12l[?25h [?25l[?12l[?25h -[K[?25l[?12l[?25h[42m [49m(B[m[K[?25l[?12l[?25h [?25l[?12l[?25htai[K[?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h[42m [49m(B[m[K[?25l[?12l[?25h [?25l[?12l[?25h[42m [49m(B[m[K[?25l[?12l[?25h [?25l[?12l[?25h"(B[0;1m[31m$1[39m(B[m[K[?25l[?12l[?25h[32m$[39m(B[m[K[?25l[?12l[?25h [?25l[?12l[?25h[42m [49m(B[m[K[?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h[42m [49m(B[m[K[?25l[?12l[?25h [?25l[?12l[?25h -[K[?25l[?12l[?25h[42m [49m(B[m[K[?25l[?12l[?25h [?25l[?12l[?25hhea[K[?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h[K[?25l(B[0;1m[34mhead[35m -n[39m(B[m (B[0;1m[33m"$2"[39m(B[m (B[0;1m[33m"$1"[39m(B[m [32m|[39m(B[m (B[0;1m[34mtail[35m -n[39m(B[m (B[0;1m[33m"$3"[39m(B[m[?12l[?25h[?25l[27;17H            (B[0;7mM-D(B[m DOS Format[14X[27;57H(B[0;7mM-A(B[m Append        [81G    (B[0;7mM-B(B[m Backup File[K[28;2H(B[0;7mC(B[m Cancel[17G            (B[0;7mM-M(B[m Mac Format[49G        (B[0;7mM-P(B[m Prepend       [81G    (B[0;7m^T(B[m Browse[K[26d(B[0;7mFile Name to Write: middle.sh                                                                                   [26;30H(B[m[?12l[?25h[?25l[26;49H[1K (B[0;7m[ Writing... ](B[m[K[1;65H(B[0;7m [111G(B[m[26;49H(B[0;7m[ Wrote 1 line ](B[m[27;17H(B[0;7m^O(B[m Write Out    (B[0;7m^W(B[m Where Is     (B[0;7m^K(B[m Cut          (B[0;7m^T(B[m Execute[81G(B[0;7m^C(B[m Location     (B[0;7mM-U(B[m Undo[28;2H(B[0;7mX(B[m Exit  [17G(B[0;7m^R(B[m Read File    (B[0;7m^\(B[m Replace[49G(B[0;7m^U(B[m Paste        (B[0;7m^J(B[m Justify[81G(B[0;7m^/(B[m Go To Line   (B[0;7mM-E(B[m Redo[?12l[?25h[2;33H[?25l[26d[J[28d[?12l[?25h[28;1H[?1049l[23;0;0t[?1l>[?2004l[?2004h]0;kelvin@TIGER04458: ~/shell-lesson-data/exercise-data/alkanes[01;32mkelvin@TIGER04458[00m:[01;34m~/shell-lesson-data/exercise-data/alkanes[00m$ [7mbash middle.sh pentane.pdb 15 5[27mbash middle.sh pentane.pdb 15 5
+[?2004lATOM      9  H           1       1.324   0.350  -1.332  1.00  0.00
+ATOM     10  H           1       1.271   1.378   0.122  1.00  0.00
+ATOM     11  H           1      -0.074  -0.384   1.288  1.00  0.00
+ATOM     12  H           1      -0.048  -1.362  -0.205  1.00  0.00
+ATOM     13  H           1      -1.183   0.500  -1.412  1.00  0.00
+[?2004h]0;kelvin@TIGER04458: ~/shell-lesson-data/exercise-data/alkanes[01;32mkelvin@TIGER04458[00m:[01;34m~/shell-lesson-data/exercise-data/alkanes[00m$ [7mbash middle.sh pentane.pdb 20 5[27mbash middle.sh pentane.pdb 20 5
+[?2004lATOM     14  H           1      -1.259   1.420   0.112  1.00  0.00
+ATOM     15  H           1      -2.608  -0.407   1.130  1.00  0.00
+ATOM     16  H           1      -2.540  -1.303  -0.404  1.00  0.00
+ATOM     17  H           1      -3.393   0.254  -0.321  1.00  0.00
+TER      18              1
+[?2004h]0;kelvin@TIGER04458: ~/shell-lesson-data/exercise-data/alkanes[01;32mkelvin@TIGER04458[00m:[01;34m~/shell-lesson-data/exercise-data/alkanes[00m$ [7mnano middle.sh[27mnano middle.sh
+[?2004l[?2004h[?1049h[22;0;0t[1;28r(B[m[4l[?7h[39;49m[?1h=[?1h=[?25l[39;49m(B[m[H[2J[26;50H(B[0;7m[ Reading... ](B[m[26;49H(B[0;7m[ Read 1 line ](B[m[H(B[0;7m  GNU nano 6.2                                        middle.sh                                                 [1;111H(B[m[27d(B[0;7m^G(B[m Help[27;17H(B[0;7m^O(B[m Write Out    (B[0;7m^W(B[m Where Is     (B[0;7m^K(B[m Cut[27;65H(B[0;7m^T(B[m Execute[81G(B[0;7m^C(B[m Location     (B[0;7mM-U(B[m Undo[28d(B[0;7m^X(B[m Exit[28;17H(B[0;7m^R(B[m Read File    (B[0;7m^\(B[m Replace[49G(B[0;7m^U(B[m Paste[28;65H(B[0;7m^J(B[m Justify[81G(B[0;7m^/(B[m Go To Line   (B[0;7mM-E(B[m Redo[2d(B[0;1m[34mhead[35m -n[39m(B[m (B[0;1m[33m"$2"[39m(B[m (B[0;1m[33m"$1"[39m(B[m [32m|[39m(B[m (B[0;1m[34mtail[35m -n[39m(B[m (B[0;1m[33m"$3"[39m(B[m[?12l[?25h[?25l[?12l[?25h[C[?25l[?12l[?25h[C[?25l[?12l[?25h[C[?25l[?12l[?25h[C[?25l[?12l[?25h[C[?25l[?12l[?25h[C[?25l[?12l[?25h[C[?25l[?12l[?25h [?25l[?12l[?25h[C[?25l[?12l[?25h[C[?25l[?12l[?25h[C[?25l[?12l[?25h[C[?25l[?12l[?25h [?25l[?12l[?25h[C[?25l[?12l[?25h[C[?25l[?12l[?25h[C[?25l[?12l[?25h[C[?25l[?12l[?25h [?25l[?12l[?25h[C[?25l[26d[K[?12l[?25h[2;21H[?25l[?12l[?25h[C[?25l[?12l[?25h[C[?25l[?12l[?25h[C[?25l[?12l[?25h[C[?25l[?12l[?25h[C[?25l[?12l[?25h[C[?25l[?12l[?25h[C[?25l[?12l[?25h [?25l[?12l[?25h[C[?25l[?12l[?25h[C[?25l[?12l[?25h[C[?25l[?12l[?25h[C[?25l[?12l[?25h[3d[?25l[?12l[?25h[2;33H[?25l[1;65H(B[0;7m*[111G(B[m[?12l[?25h[2;29H"(B[0;1m[31m$3[39m(B[m[K[?25l[?12l[?25h[32m$[39m(B[m[K[?25l[?12l[?25h [?25l[?12l[?25h[42m [49m(B[m[K[?25l[?12l[?25h [?25l[?12l[?25h -[K[?25l[?12l[?25h[42m [49m(B[m[K[?25l[?12l[?25h [?25l[?12l[?25htai[K[?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h[42m [49m(B[m[K[?25l[?12l[?25h [?25l[?12l[?25h[42m [49m(B[m[K[?25l[?12l[?25h [?25l[?12l[?25h"(B[0;1m[31m$1[39m(B[m[K[?25l[?12l[?25h[32m$[39m(B[m[K[?25l[?12l[?25h [?25l[?12l[?25h[42m [49m(B[m[K[?25l[?12l[?25h [?25l[?12l[?25h"(B[0;1m[31m$2[39m(B[m[K[?25l[?12l[?25h[32m$[39m(B[m[K[?25l[?12l[?25h [?25l[?12l[?25h[42m [49m(B[m[K[?25l[?12l[?25h [?25l[?12l[?25h -[K[?25l[?12l[?25h[42m [49m(B[m[K[?25l[?12l[?25h [?25l[?12l[?25hhea[K[?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h[K[?25l[36m# Select lines from the middle of a file.[3d# Usage: bash middle.sh filename end_line num_lines[4d(B[0;1m[34mhead[35m -n[39m(B[m (B[0;1m[33m"$2"[39m(B[m (B[0;1m[33m"$1"[39m(B[m [32m|[39m(B[m (B[0;1m[34mtail[35m -n[39m(B[m (B[0;1m[33m"$3"[39m(B[m[?12l[?25h[?25l[27;17H            (B[0;7mM-D(B[m DOS Format[14X[27;57H(B[0;7mM-A(B[m Append        [81G    (B[0;7mM-B(B[m Backup File[K[28;2H(B[0;7mC(B[m Cancel[17G            (B[0;7mM-M(B[m Mac Format[49G        (B[0;7mM-P(B[m Prepend       [81G    (B[0;7m^T(B[m Browse[K[26d(B[0;7mFile Name to Write: middle.sh                                                                                   [26;30H(B[m[?12l[?25h[?25l[26;49H[1K (B[0;7m[ Writing... ](B[m[K[1;65H(B[0;7m [111G(B[m[26;48H(B[0;7m[ Wrote 3 lines ](B[m[27;17H(B[0;7m^O(B[m Write Out    (B[0;7m^W(B[m Where Is     (B[0;7m^K(B[m Cut          (B[0;7m^T(B[m Execute[81G(B[0;7m^C(B[m Location     (B[0;7mM-U(B[m Undo[28;2H(B[0;7mX(B[m Exit  [17G(B[0;7m^R(B[m Read File    (B[0;7m^\(B[m Replace[49G(B[0;7m^U(B[m Paste        (B[0;7m^J(B[m Justify[81G(B[0;7m^/(B[m Go To Line   (B[0;7mM-E(B[m Redo[?12l[?25h[4;33H[?25l[26d[J[28d[?12l[?25h[28;1H[?1049l[23;0;0t[?1l>[?2004l[?2004h]0;kelvin@TIGER04458: ~/shell-lesson-data/exercise-data/alkanes[01;32mkelvin@TIGER04458[00m:[01;34m~/shell-lesson-data/exercise-data/alkanes[00m$ [7mwc -l *.pdb | sort -n[27mwc -l *.pdb | sort -n
+[?2004l    9 methane.pdb
+   12 ethane.pdb
+   15 alkanes.pdb
+   15 propane.pdb
+   20 cubane.pdb
+   21 pentane.pdb
+   30 octane.pdb
+  122 all.pdb
+  244 total
+[?2004h]0;kelvin@TIGER04458: ~/shell-lesson-data/exercise-data/alkanes[01;32mkelvin@TIGER04458[00m:[01;34m~/shell-lesson-data/exercise-data/alkanes[00m$ nano sorted.sh
+[?2004l[?2004h[?1049h[22;0;0t[1;28r(B[m[4l[?7h[39;49m[?1h=[?1h=[?25l[39;49m(B[m[H[2J[26;51H(B[0;7m[ New File ](B[m[H(B[0;7m  GNU nano 6.2                                        sorted.sh                                                 [1;111H(B[m[27d(B[0;7m^G(B[m Help[27;17H(B[0;7m^O(B[m Write Out    (B[0;7m^W(B[m Where Is     (B[0;7m^K(B[m Cut[27;65H(B[0;7m^T(B[m Execute[81G(B[0;7m^C(B[m Location     (B[0;7mM-U(B[m Undo[28d(B[0;7m^X(B[m Exit[28;17H(B[0;7m^R(B[m Read File    (B[0;7m^\(B[m Replace[49G(B[0;7m^U(B[m Paste[28;65H(B[0;7m^J(B[m Justify[81G(B[0;7m^/(B[m Go To Line   (B[0;7mM-E(B[m Redo[2d[?12l[?25h[?25l[26d[K[1;65H(B[0;7m*[111G(B[m[2d[36m# Sort files by their length.[3d# Usage: bash sorted.sh one_or_more_filenames[4d[39m(B[mwc(B[0;1m[35m -l[39m(B[m (B[0;1m[33m"$@"[39m(B[m [32m|[39m(B[m (B[0;1m[34msort[35m -n[39m(B[m[?12l[?25h[?25l[27;17H            (B[0;7mM-D(B[m DOS Format[14X[27;57H(B[0;7mM-A(B[m Append        [81G    (B[0;7mM-B(B[m Backup File[K[28;2H(B[0;7mC(B[m Cancel[17G            (B[0;7mM-M(B[m Mac Format[49G        (B[0;7mM-P(B[m Prepend       [81G    (B[0;7m^T(B[m Browse[K[26d(B[0;7mFile Name to Write: sorted.sh                                                                                   [26;30H(B[m[?12l[?25h[?25l[26;49H[1K (B[0;7m[ Writing... ](B[m[K[1;65H(B[0;7m [111G(B[m[26;48H(B[0;7m[ Wrote 3 lines ](B[m[27;17H(B[0;7m^O(B[m Write Out    (B[0;7m^W(B[m Where Is     (B[0;7m^K(B[m Cut          (B[0;7m^T(B[m Execute[81G(B[0;7m^C(B[m Location     (B[0;7mM-U(B[m Undo[28;2H(B[0;7mX(B[m Exit  [17G(B[0;7m^R(B[m Read File    (B[0;7m^\(B[m Replace[49G(B[0;7m^U(B[m Paste        (B[0;7m^J(B[m Justify[81G(B[0;7m^/(B[m Go To Line   (B[0;7mM-E(B[m Redo[?12l[?25h[4;21H[?25l[26d[J[28d[?12l[?25h[28;1H[?1049l[23;0;0t[?1l>[?2004l[?2004h]0;kelvin@TIGER04458: ~/shell-lesson-data/exercise-data/alkanes[01;32mkelvin@TIGER04458[00m:[01;34m~/shell-lesson-data/exercise-data/alkanes[00m$ [7mbash sorted.sh *.pdb ../creatures/*.dat[27mbash sorted.sh *.pdb ../creatures/*.dat
+[?2004l    9 methane.pdb
+   12 ethane.pdb
+   15 alkanes.pdb
+   15 propane.pdb
+   20 cubane.pdb
+   21 pentane.pdb
+   30 octane.pdb
+  122 all.pdb
+  163 ../creatures/basilisk.dat
+  163 ../creatures/minotaur.dat
+  163 ../creatures/original-basilisk.dat
+  163 ../creatures/original-minotaur.dat
+  163 ../creatures/original-unicorn.dat
+  163 ../creatures/unicorn.dat
+ 1222 total
+[?2004h]0;kelvin@TIGER04458: ~/shell-lesson-data/exercise-data/alkanes[01;32mkelvin@TIGER04458[00m:[01;34m~/shell-lesson-data/exercise-data/alkanes[00m$ [7mhistory | tail -n 5 > redo-figure-3.sh[27mhistory | tail -n 5 > redo-figure-3.sh
+[?2004l[?2004h]0;kelvin@TIGER04458: ~/shell-lesson-data/exercise-data/alkanes[01;32mkelvin@TIGER04458[00m:[01;34m~/shell-lesson-data/exercise-data/alkanes[00m$ cd ~/shell-lesson-data/north-pacific-gyre/
+[?2004l[?2004h]0;kelvin@TIGER04458: ~/shell-lesson-data/north-pacific-gyre[01;32mkelvin@TIGER04458[00m:[01;34m~/shell-lesson-data/north-pacific-gyre[00m$ [7mnano do-stats.sh[27mnano do-stats.sh
+[?2004l[?2004h[?1049h[22;0;0t[1;28r(B[m[4l[?7h[39;49m[?1h=[?1h=[?25l[39;49m(B[m[H[2J[26;50H(B[0;7m[ Reading... ](B[m[26;49H(B[0;7m[ Read 6 lines ](B[m[H(B[0;7m  GNU nano 6.2                                       do-stats.sh                                                [1;111H(B[m[27d(B[0;7m^G(B[m Help[27;17H(B[0;7m^O(B[m Write Out    (B[0;7m^W(B[m Where Is     (B[0;7m^K(B[m Cut[27;65H(B[0;7m^T(B[m Execute[81G(B[0;7m^C(B[m Location     (B[0;7mM-U(B[m Undo[28d(B[0;7m^X(B[m Exit[28;17H(B[0;7m^R(B[m Read File    (B[0;7m^\(B[m Replace[49G(B[0;7m^U(B[m Paste[28;65H(B[0;7m^J(B[m Justify[81G(B[0;7m^/(B[m Go To Line   (B[0;7mM-E(B[m Redo[2d[36m# Calculate stats for data files.[3d[32mfor[39m(B[m datafile [32min[39m(B[m (B[0;1m[33m"$@"[4d(B[0m[32mdo[5;5H(B[0;1m[34mecho[39m(B[m (B[0;1m[31m$datafile[6;5H[39m(B[mbash goostats.sh (B[0;1m[31m$datafile[39m(B[m stats-(B[0;1m[31m$datafile[7d(B[0m[32mdone[2d[39m(B[m[?12l[?25h[?25l[27;17H            (B[0;7mM-D(B[m DOS Format[14X[27;57H(B[0;7mM-A(B[m Append        [81G    (B[0;7mM-B(B[m Backup File[K[28;2H(B[0;7mC(B[m Cancel[17G            (B[0;7mM-M(B[m Mac Format[49G        (B[0;7mM-P(B[m Prepend       [81G    (B[0;7m^T(B[m Browse[K[26d(B[0;7mFile Name to Write: do-stats.sh                                                                                 [26;32H(B[m[?12l[?25h[?25l[26;49H[1K (B[0;7m[ Writing... ](B[m[K[1;111H[26;48H(B[0;7m[ Wrote 6 lines ](B[m[27;17H(B[0;7m^O(B[m Write Out    (B[0;7m^W(B[m Where Is     (B[0;7m^K(B[m Cut          (B[0;7m^T(B[m Execute[81G(B[0;7m^C(B[m Location     (B[0;7mM-U(B[m Undo[28;2H(B[0;7mX(B[m Exit  [17G(B[0;7m^R(B[m Read File    (B[0;7m^\(B[m Replace[49G(B[0;7m^U(B[m Paste        (B[0;7m^J(B[m Justify[81G(B[0;7m^/(B[m Go To Line   (B[0;7mM-E(B[m Redo[?12l[?25h[2d[?25l[26d[J[28d[?12l[?25h[28;1H[?1049l[23;0;0t[?1l>[?2004l[?2004h]0;kelvin@TIGER04458: ~/shell-lesson-data/north-pacific-gyre[01;32mkelvin@TIGER04458[00m:[01;34m~/shell-lesson-data/north-pacific-gyre[00m$ [7mbash do-stats.sh NENE*A.txt NENE*B.txt[27mbash do-stats.sh NENE*A.txt NENE*B.txt
+[?2004lNENE01729A.txt
+NENE01736A.txt
+NENE01751A.txt
+NENE01812A.txt
+NENE01843A.txt
+NENE01978A.txt
+NENE02040A.txt
+NENE02043A.txt
+NENE01729B.txt
+NENE01751B.txt
+NENE01843B.txt
+NENE01978B.txt
+NENE02018B.txt
+NENE02040B.txt
+NENE02043B.txt
+[?2004h]0;kelvin@TIGER04458: ~/shell-lesson-data/north-pacific-gyre[01;32mkelvin@TIGER04458[00m:[01;34m~/shell-lesson-data/north-pacific-gyre[00m$ [7mbash do-stats.sh NENE*A.txt NENE*B.txt | wc -l[27mbash do-stats.sh NENE*A.txt NENE*B.txt | wc -l
+[?2004l15
+[?2004h]0;kelvin@TIGER04458: ~/shell-lesson-data/north-pacific-gyre[01;32mkelvin@TIGER04458[00m:[01;34m~/shell-lesson-data/north-pacific-gyre[00m$ cd
+[?2004l[?2004h]0;kelvin@TIGER04458: ~[01;32mkelvin@TIGER04458[00m:[01;34m~[00m$ exit
+[?2004lexit
+
+Script done on 2024-03-11 13:55:29+05:30 [COMMAND_EXIT_CODE="0"]
+Script started on 2024-03-11 13:57:08+05:30 [TERM="xterm-256color" TTY="/dev/pts/2" COLUMNS="112" LINES="28"]
+To run a command as administrator (user "root"), use "sudo <command>".
+See "man sudo_root" for details.
+
+[?2004h]0;kelvin@TIGER04458: ~[01;32mkelvin@TIGER04458[00m:[01;34m~[00m$ cd ~/shell-lesson-data/exercise-data/writing/
+[?2004l[?2004h]0;kelvin@TIGER04458: ~/shell-lesson-data/exercise-data/writing[01;32mkelvin@TIGER04458[00m:[01;34m~/shell-lesson-data/exercise-data/writing[00m$ [7mcat haiku.txt[27mcat haiku.txt
+[?2004lThe Tao that is seen
+Is not the true Tao, until
+You bring fresh toner.
+
+With searching comes loss
+and the presence of absence:
+"My Thesis" not found.
+
+Yesterday it worked
+Today it is not working
+Software is like that.
+[?2004h]0;kelvin@TIGER04458: ~/shell-lesson-data/exercise-data/writing[01;32mkelvin@TIGER04458[00m:[01;34m~/shell-lesson-data/exercise-data/writing[00m$ [7mgrep not haiku.txt[27mgrep not haiku.txt
+[?2004lIs [01;31m[Knot[m[K the true Tao, until
+"My Thesis" [01;31m[Knot[m[K found.
+Today it is [01;31m[Knot[m[K working
+[?2004h]0;kelvin@TIGER04458: ~/shell-lesson-data/exercise-data/writing[01;32mkelvin@TIGER04458[00m:[01;34m~/shell-lesson-data/exercise-data/writing[00m$ [7mgrep The haiku.txt[27mgrep The haiku.txt
+[?2004l[01;31m[KThe[m[K Tao that is seen
+"My [01;31m[KThe[m[Ksis" not found.
+[?2004h]0;kelvin@TIGER04458: ~/shell-lesson-data/exercise-data/writing[01;32mkelvin@TIGER04458[00m:[01;34m~/shell-lesson-data/exercise-data/writing[00m$ [7mgrep -w The haiku.txt[27mgrep -w The haiku.txt
+[?2004l[01;31m[KThe[m[K Tao that is seen
+[?2004h]0;kelvin@TIGER04458: ~/shell-lesson-data/exercise-data/writing[01;32mkelvin@TIGER04458[00m:[01;34m~/shell-lesson-data/exercise-data/writing[00m$ [7mgrep -w "is not" haiku.txt[27mgrep -w "is not" haiku.txt
+[?2004lToday it [01;31m[Kis not[m[K working
+[?2004h]0;kelvin@TIGER04458: ~/shell-lesson-data/exercise-data/writing[01;32mkelvin@TIGER04458[00m:[01;34m~/shell-lesson-data/exercise-data/writing[00m$ [7mgrep -n "it" haiku.txt[27mgrep -n "it" haiku.txt
+[?2004l[32m[K5[m[K[36m[K:[m[KW[01;31m[Kit[m[Kh searching comes loss
+[32m[K9[m[K[36m[K:[m[KYesterday [01;31m[Kit[m[K worked
+[32m[K10[m[K[36m[K:[m[KToday [01;31m[Kit[m[K is not working
+[?2004h]0;kelvin@TIGER04458: ~/shell-lesson-data/exercise-data/writing[01;32mkelvin@TIGER04458[00m:[01;34m~/shell-lesson-data/exercise-data/writing[00m$ [7mgrep -n -w "the" haiku.txt[27mgrep -n -w "the" haiku.txt
+[?2004l[32m[K2[m[K[36m[K:[m[KIs not [01;31m[Kthe[m[K true Tao, until
+[32m[K6[m[K[36m[K:[m[Kand [01;31m[Kthe[m[K presence of absence:
+[?2004h]0;kelvin@TIGER04458: ~/shell-lesson-data/exercise-data/writing[01;32mkelvin@TIGER04458[00m:[01;34m~/shell-lesson-data/exercise-data/writing[00m$ [7mgrep -n -w -i "the" haiku.txt[27mgrep -n -w -i "the" haiku.txt
+[?2004l[32m[K1[m[K[36m[K:[m[K[01;31m[KThe[m[K Tao that is seen
+[32m[K2[m[K[36m[K:[m[KIs not [01;31m[Kthe[m[K true Tao, until
+[32m[K6[m[K[36m[K:[m[Kand [01;31m[Kthe[m[K presence of absence:
+[?2004h]0;kelvin@TIGER04458: ~/shell-lesson-data/exercise-data/writing[01;32mkelvin@TIGER04458[00m:[01;34m~/shell-lesson-data/exercise-data/writing[00m$ [7mgrep -n -w -v "the" haiku.txt[27mgrep -n -w -v "the" haiku.txt
+[?2004l[32m[K1[m[K[36m[K:[m[KThe Tao that is seen
+[32m[K3[m[K[36m[K:[m[KYou bring fresh toner.
+[32m[K4[m[K[36m[K:[m[K
+[32m[K5[m[K[36m[K:[m[KWith searching comes loss
+[32m[K7[m[K[36m[K:[m[K"My Thesis" not found.
+[32m[K8[m[K[36m[K:[m[K
+[32m[K9[m[K[36m[K:[m[KYesterday it worked
+[32m[K10[m[K[36m[K:[m[KToday it is not working
+[32m[K11[m[K[36m[K:[m[KSoftware is like that.
+[?2004h]0;kelvin@TIGER04458: ~/shell-lesson-data/exercise-data/writing[01;32mkelvin@TIGER04458[00m:[01;34m~/shell-lesson-data/exercise-data/writing[00m$ [7mgrep -r Yesterday .[27mgrep -r Yesterday .
+[?2004l[35m[K./haiku.txt[m[K[36m[K:[m[K[01;31m[KYesterday[m[K it worked
+[35m[K./LittleWomen.txt[m[K[36m[K:[m[K"[01;31m[KYesterday[m[K, when Aunt was asleep and I was trying to be as still as a
+[35m[K./LittleWomen.txt[m[K[36m[K:[m[K[01;31m[KYesterday[m[K at dinner, when an Austrian officer stared at us and then
+[35m[K./LittleWomen.txt[m[K[36m[K:[m[K[01;31m[KYesterday[m[K was a quiet day spent in teaching, sewing, and writing in my
+[?2004h]0;kelvin@TIGER04458: ~/shell-lesson-data/exercise-data/writing[01;32mkelvin@TIGER04458[00m:[01;34m~/shell-lesson-data/exercise-data/writing[00m$ [7mgrep --help[27mgrep --help
+[?2004lUsage: grep [OPTION]... PATTERNS [FILE]...
+Search for PATTERNS in each FILE.
+Example: grep -i 'hello world' menu.h main.c
+PATTERNS can contain multiple patterns separated by newlines.
+
+Pattern selection and interpretation:
+  -E, --extended-regexp     PATTERNS are extended regular expressions
+  -F, --fixed-strings       PATTERNS are strings
+  -G, --basic-regexp        PATTERNS are basic regular expressions
+  -P, --perl-regexp         PATTERNS are Perl regular expressions
+  -e, --regexp=PATTERNS     use PATTERNS for matching
+  -f, --file=FILE           take PATTERNS from FILE
+  -i, --ignore-case         ignore case distinctions in patterns and data
+      --no-ignore-case      do not ignore case distinctions (default)
+  -w, --word-regexp         match only whole words
+  -x, --line-regexp         match only whole lines
+  -z, --null-data           a data line ends in 0 byte, not newline
+
+Miscellaneous:
+  -s, --no-messages         suppress error messages
+  -v, --invert-match        select non-matching lines
+  -V, --version             display version information and exit
+      --help                display this help text and exit
+
+Output control:
+  -m, --max-count=NUM       stop after NUM selected lines
+  -b, --byte-offset         print the byte offset with output lines
+  -n, --line-number         print line number with output lines
+      --line-buffered       flush output on every line
+  -H, --with-filename       print file name with output lines
+  -h, --no-filename         suppress the file name prefix on output
+      --label=LABEL         use LABEL as the standard input file name prefix
+  -o, --only-matching       show only nonempty parts of lines that match
+  -q, --quiet, --silent     suppress all normal output
+      --binary-files=TYPE   assume that binary files are TYPE;
+                            TYPE is 'binary', 'text', or 'without-match'
+  -a, --text                equivalent to --binary-files=text
+  -I                        equivalent to --binary-files=without-match
+  -d, --directories=ACTION  how to handle directories;
+                            ACTION is 'read', 'recurse', or 'skip'
+  -D, --devices=ACTION      how to handle devices, FIFOs and sockets;
+                            ACTION is 'read' or 'skip'
+  -r, --recursive           like --directories=recurse
+  -R, --dereference-recursive  likewise, but follow all symlinks
+      --include=GLOB        search only files that match GLOB (a file pattern)
+      --exclude=GLOB        skip files that match GLOB
+      --exclude-from=FILE   skip files that match any file pattern from FILE
+      --exclude-dir=GLOB    skip directories that match GLOB
+  -L, --files-without-match  print only names of FILEs with no selected lines
+  -l, --files-with-matches  print only names of FILEs with selected lines
+  -c, --count               print only a count of selected lines per FILE
+  -T, --initial-tab         make tabs line up (if needed)
+  -Z, --null                print 0 byte after FILE name
+
+Context control:
+  -B, --before-context=NUM  print NUM lines of leading context
+  -A, --after-context=NUM   print NUM lines of trailing context
+  -C, --context=NUM         print NUM lines of output context
+  -NUM                      same as --context=NUM
+      --group-separator=SEP  print SEP on line between matches with context
+      --no-group-separator  do not print separator for matches with context
+      --color[=WHEN],
+      --colour[=WHEN]       use markers to highlight the matching strings;
+                            WHEN is 'always', 'never', or 'auto'
+  -U, --binary              do not strip CR characters at EOL (MSDOS/Windows)
+
+When FILE is '-', read standard input.  With no FILE, read '.' if
+recursive, '-' otherwise.  With fewer than two FILEs, assume -h.
+Exit status is 0 if any line is selected, 1 otherwise;
+if any error occurs and -q is not given, the exit status is 2.
+
+Report bugs to: bug-grep@gnu.org
+GNU grep home page: <https://www.gnu.org/software/grep/>
+General help using GNU software: <https://www.gnu.org/gethelp/>
+[?2004h]0;kelvin@TIGER04458: ~/shell-lesson-data/exercise-data/writing[01;32mkelvin@TIGER04458[00m:[01;34m~/shell-lesson-data/exercise-data/writing[00m$ [7mgrep -E "^.o" haiku.txt[27mgrep -E "^.o" haiku.txt
+[?2004l[01;31m[KYo[m[Ku bring fresh toner.
+[01;31m[KTo[m[Kday it is not working
+[01;31m[KSo[m[Kftware is like that.
+[?2004h]0;kelvin@TIGER04458: ~/shell-lesson-data/exercise-data/writing[01;32mkelvin@TIGER04458[00m:[01;34m~/shell-lesson-data/exercise-data/writing[00m$ [7mfind .[27mfind .
+[?2004l.
+./haiku.txt
+./haiku.txt:Zone.Identifier
+./LittleWomen.txt
+./LittleWomen.txt:Zone.Identifier
+./thesis_backup
+./thesis_backup/quotations.txt
+[?2004h]0;kelvin@TIGER04458: ~/shell-lesson-data/exercise-data/writing[01;32mkelvin@TIGER04458[00m:[01;34m~/shell-lesson-data/exercise-data/writing[00m$ cd ..
+[?2004l[?2004h]0;kelvin@TIGER04458: ~/shell-lesson-data/exercise-data[01;32mkelvin@TIGER04458[00m:[01;34m~/shell-lesson-data/exercise-data[00m$ [7mfind .[27mfind .
+[?2004l.
+./writing
+./writing/haiku.txt
+./writing/haiku.txt:Zone.Identifier
+./writing/LittleWomen.txt
+./writing/LittleWomen.txt:Zone.Identifier
+./writing/thesis_backup
+./writing/thesis_backup/quotations.txt
+./backup
+./backup/unicorn.dat
+./backup/minotaur.dat
+./animal-counts
+./animal-counts/final.txt
+./animal-counts/redo-figure-3.sh
+./animal-counts/species.sh
+./animal-counts/animals-subset.csv
+./animal-counts/animals.csv:Zone.Identifier
+./animal-counts/animals.csv
+./numbers.txt
+./numbers.txt:Zone.Identifier
+./creatures
+./creatures/basilisk.dat
+./creatures/minotaur.dat:Zone.Identifier
+./creatures/unicorn.dat
+./creatures/minotaur.dat
+./creatures/basilisk.dat:Zone.Identifier
+./creatures/original-unicorn.dat
+./creatures/unicorn.dat:Zone.Identifier
+./creatures/original-basilisk.dat
+./creatures/original-minotaur.dat
+./project
+./project/data
+./project/results
+./alkanes
+./alkanes/sorted-lengths.txt
+./alkanes/all.pdb
+./alkanes/octane.pdb:Zone.Identifier
+./alkanes/sorted.sh
+./alkanes/pentane.pdb:Zone.Identifier
+./alkanes/lengths.txt
+./alkanes/alkanes.pdb
+./alkanes/redo-figure-3.sh
+./alkanes/propane.pdb:Zone.Identifier
+./alkanes/methane.pdb
+./alkanes/testfile02.txt
+./alkanes/propane.pdb
+./alkanes/octane.pdb
+./alkanes/cubane.pdb:Zone.Identifier
+./alkanes/ethane.pdb:Zone.Identifier
+./alkanes/middle.sh
+./alkanes/methane.pdb:Zone.Identifier
+./alkanes/testfile01.txt
+./alkanes/ethane.pdb
+./alkanes/cubane.pdb
+./alkanes/pentane.pdb
+[?2004h]0;kelvin@TIGER04458: ~/shell-lesson-data/exercise-data[01;32mkelvin@TIGER04458[00m:[01;34m~/shell-lesson-data/exercise-data[00m$ [7mfind . -type d[27mfind . -type d
+[?2004l.
+./writing
+./writing/thesis_backup
+./backup
+./animal-counts
+./creatures
+./project
+./project/data
+./project/results
+./alkanes
+[?2004h]0;kelvin@TIGER04458: ~/shell-lesson-data/exercise-data[01;32mkelvin@TIGER04458[00m:[01;34m~/shell-lesson-data/exercise-data[00m$ [7mfind . -type f[27mfind . -type f
+[?2004l./writing/haiku.txt
+./writing/haiku.txt:Zone.Identifier
+./writing/LittleWomen.txt
+./writing/LittleWomen.txt:Zone.Identifier
+./writing/thesis_backup/quotations.txt
+./backup/unicorn.dat
+./backup/minotaur.dat
+./animal-counts/final.txt
+./animal-counts/redo-figure-3.sh
+./animal-counts/species.sh
+./animal-counts/animals-subset.csv
+./animal-counts/animals.csv:Zone.Identifier
+./animal-counts/animals.csv
+./numbers.txt
+./numbers.txt:Zone.Identifier
+./creatures/basilisk.dat
+./creatures/minotaur.dat:Zone.Identifier
+./creatures/unicorn.dat
+./creatures/minotaur.dat
+./creatures/basilisk.dat:Zone.Identifier
+./creatures/original-unicorn.dat
+./creatures/unicorn.dat:Zone.Identifier
+./creatures/original-basilisk.dat
+./creatures/original-minotaur.dat
+./alkanes/sorted-lengths.txt
+./alkanes/all.pdb
+./alkanes/octane.pdb:Zone.Identifier
+./alkanes/sorted.sh
+./alkanes/pentane.pdb:Zone.Identifier
+./alkanes/lengths.txt
+./alkanes/alkanes.pdb
+./alkanes/redo-figure-3.sh
+./alkanes/propane.pdb:Zone.Identifier
+./alkanes/methane.pdb
+./alkanes/testfile02.txt
+./alkanes/propane.pdb
+./alkanes/octane.pdb
+./alkanes/cubane.pdb:Zone.Identifier
+./alkanes/ethane.pdb:Zone.Identifier
+./alkanes/middle.sh
+./alkanes/methane.pdb:Zone.Identifier
+./alkanes/testfile01.txt
+./alkanes/ethane.pdb
+./alkanes/cubane.pdb
+./alkanes/pentane.pdb
+[?2004h]0;kelvin@TIGER04458: ~/shell-lesson-data/exercise-data[01;32mkelvin@TIGER04458[00m:[01;34m~/shell-lesson-data/exercise-data[00m$ [7mfind . -name *.txt[27mfind . -name *.txt
+[?2004l./numbers.txt
+[?2004h]0;kelvin@TIGER04458: ~/shell-lesson-data/exercise-data[01;32mkelvin@TIGER04458[00m:[01;34m~/shell-lesson-data/exercise-data[00m$ [7mfind . -name "*.txt"[27mfind . -name "*.txt"
+[?2004l./writing/haiku.txt
+./writing/LittleWomen.txt
+./writing/thesis_backup/quotations.txt
+./animal-counts/final.txt
+./numbers.txt
+./alkanes/sorted-lengths.txt
+./alkanes/lengths.txt
+./alkanes/testfile02.txt
+./alkanes/testfile01.txt
+[?2004h]0;kelvin@TIGER04458: ~/shell-lesson-data/exercise-data[01;32mkelvin@TIGER04458[00m:[01;34m~/shell-lesson-data/exercise-data[00m$ [7mwc -l $(find . -name "*.txt")[27mwc -l $(find . -name "*.txt")
+[?2004l     11 ./writing/haiku.txt
+  21022 ./writing/LittleWomen.txt
+      2 ./writing/thesis_backup/quotations.txt
+      3 ./animal-counts/final.txt
+      5 ./numbers.txt
+      7 ./alkanes/sorted-lengths.txt
+      7 ./alkanes/lengths.txt
+      2 ./alkanes/testfile02.txt
+      1 ./alkanes/testfile01.txt
+  21060 total
+[?2004h]0;kelvin@TIGER04458: ~/shell-lesson-data/exercise-data[01;32mkelvin@TIGER04458[00m:[01;34m~/shell-lesson-data/exercise-data[00m$ [7mwc -l ./writing/LittleWomen.txt ./writing/haiku.txt ./numbe[27m[7mr[27m[7ms.txt[27m[A]0;kelvin@TIGER04458: ~/shell-lesson-data/exercise-data[01;32mkelvin@TIGER04458[00m:[01;34m~/shell-lesson-data/exercise-data[00m$ wc -l ./writing/LittleWomen.txt ./writing/haiku.txt ./numbers.txt
+[?2004l  21022 ./writing/LittleWomen.txt
+     11 ./writing/haiku.txt
+      5 ./numbers.txt
+  21038 total
+[?2004h]0;kelvin@TIGER04458: ~/shell-lesson-data/exercise-data[01;32mkelvin@TIGER04458[00m:[01;34m~/shell-lesson-data/exercise-data[00m$ [7mgrep "searching" $(find . -name "*.txt")[27mgrep "searching" $(find . -name "*.txt")
+[?2004l[35m[K./writing/haiku.txt[m[K[36m[K:[m[KWith [01;31m[Ksearching[m[K comes loss
+[35m[K./writing/LittleWomen.txt[m[K[36m[K:[m[Ksitting on the top step, affected to be [01;31m[Ksearching[m[K for her book, but was
+[?2004h]0;kelvin@TIGER04458: ~/shell-lesson-data/exercise-data[01;32mkelvin@TIGER04458[00m:[01;34m~/shell-lesson-data/exercise-data[00m$ cd
+[?2004l[?2004h]0;kelvin@TIGER04458: ~[01;32mkelvin@TIGER04458[00m:[01;34m~[00m$ exit
+[?2004lexit
+
+Script done on 2024-03-11 14:09:00+05:30 [COMMAND_EXIT_CODE="0"]
